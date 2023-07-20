@@ -1,0 +1,373 @@
+\documentclass{article}
+
+\usepackage{graphicx} % for images
+\usepackage{amsmath} % for math
+\usepackage{amssymb} % for \mathbb
+\usepackage{siunitx} % for \SI, \num
+\usepackage{hyperref} % for \url{}
+
+% This stuff is for figures
+\usepackage{float}
+\DeclareGraphicsExtensions{.pdf, .png, .jpg}
+
+% coloring of links for PDF format
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue
+}
+
+% \c command redefinition (for monospaced font)
+\renewcommand{\c}[1]{\texttt{#1}}
+% \today command re-definition
+% https://tex.stackexchange.com/questions/112932/today-month-as-text
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi\space%
+\number \year} 
+
+\begin{document}
+
+\noindent
+Rodrigo Becerril Ferreyra\\
+Dr. Alireza Mehrnia\\
+Homework 4\\
+\today
+
+The code used to generate the following results can be found at
+the end of this document.
+
+\section*{Problem 3.15}
+If \(\mathcal{F}[x(n)] = e^{-j\alpha \omega}\) for
+\(\omega_c < |\omega| \le \pi\), then
+\begin{align*}
+    x(n) &= \frac{1}{2\pi} \int_{-\pi}^\pi e^{-j\alpha \omega} e^{j\omega n}\,d\omega\\
+    &= \frac{1}{2\pi} \int_{-\pi}^\pi \left( e^{-j\alpha} e^{jn} \right)^\omega\,d\omega\\
+    &= \frac{1}{2\pi} \left. \frac{\left( e^{-j\alpha} e^{jn} \right)^\omega}{\ln\left(e^{jn - j\alpha}\right)} \right|_{-\pi}^\pi\\
+    &= \frac{\left( e^{-j\alpha} e^{jn} \right)^\pi - \left( e^{-j\alpha} e^{jn} \right)^{-\pi}}{2\pi(jn-j\alpha)}\\
+    &= \frac{e^{\pi(jn-j\alpha)} - e^{-\pi(jn-j\alpha)}}{2\pi j(n-\alpha)} \\
+    &= \frac{e^{j\pi(n-\alpha)} - e^{-j\pi(n-\alpha)}}{2 j} \frac{1}{\pi(n-\alpha)}\\
+    &= \frac{\sin(\pi(n-\alpha))}{\pi(n-\alpha)}
+\end{align*}
+
+\section*{Problem 3.17}
+For the following problems, it is important to understand that
+if \(h\) is the impulse response, \(x\) is the excitation, and
+\(y\) is the result, then \(Y = HX\), where \(Y\), \(H\), and
+\(X\) are the DTFTs of \(y\), \(h\), and \(x\), respectively.
+
+\subsection*{Part 1}
+\begin{gather*}
+    y(n) = \frac15 \sum_{m = 0}^4 x(n-m) = \frac15 \left[ x(n) + x(n-1) + x(n-2) + x(n-3) + x(n-4) \right]\\
+    Y\left( e^{j\omega} \right) = \frac15\left[ X\left( e^{j\omega} \right) + X\left( e^{j\omega} \right)e^{-j\omega}\right.\\ \left.+ X\left( e^{j\omega} \right)e^{-2j\omega} + X\left( e^{j\omega} \right)e^{-3j\omega} + X\left( e^{j\omega} \right)e^{-4j\omega}\right]\\
+    Y\left( e^{j\omega} \right) = \frac{X\left( e^{j\omega} \right)}{5} \sum_{m=0}^4 e^{-j\omega m}\\
+    \frac{Y\left( e^{j\omega} \right)}{X\left( e^{j\omega} \right)} = H\left( e^{j\omega} \right) = \frac15 \sum_{m=0}^4 e^{-j\omega m}
+\end{gather*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-17 Part 1"}
+    \caption{Magnitude and argument plot.}
+    \label{plot:3.17.1}
+\end{figure}
+
+\subsection*{Part 4}
+\begin{gather*}
+    y(n) = x(n)-1.7678x(n-1)+1.5625x(n-2)\\+1.1314y(n-1)-0.64y(n-2)\\
+    Y\left( e^{j\omega} \right) = X\left( e^{j\omega} \right) - 1.7678X\left( e^{j\omega} \right)e^{-j\omega} + 1.5625X\left( e^{j\omega} \right)e^{-2j\omega}\\ + 1.1314Y\left( e^{j\omega} \right)e^{-j\omega} - 0.64Y\left( e^{j\omega} \right)e^{-2j\omega}\\
+    Y\left( e^{j\omega} \right) - 1.1314Y\left( e^{j\omega} \right)e^{-j\omega} + 0.64Y\left( e^{j\omega} \right)e^{-2j\omega}\\
+    = X\left( e^{j\omega} \right) - 1.7678X\left( e^{j\omega} \right)e^{-j\omega} + 1.5625X\left( e^{j\omega} \right)e^{-2j\omega}\\
+    Y\left( e^{j\omega} \right) (1 - 1.1314e^{-j\omega} + 0.64e^{-2j\omega}) \\= X\left( e^{j\omega} \right)(1 - 1.7678e^{-j\omega} + 1.5625e^{-2j\omega})\\
+    \frac{Y\left( e^{j\omega} \right)}{X\left( e^{j\omega} \right)} = H\left( e^{j\omega} \right) = \frac{1 - 1.7678e^{-j\omega} + 1.5625e^{-2j\omega}}{1 - 1.1314e^{-j\omega} + 0.64e^{-2j\omega}}
+\end{gather*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-17 Part 4"}
+    \caption{Magnitude and argument plot.}
+    \label{plot:3.17.4}
+\end{figure}
+
+\section*{Problem 3.18}
+The frequency response can be found using the difference
+equation given.
+\begin{gather*}
+    y(n) = x(n) + x(n - 2) + x(n - 4) + x(n - 6)\\ - 0.81y(n - 2) - 0.81^2 y(n - 4) - 0.81^3 y(n-6)\\
+    y(n) + 0.81y(n - 2) + 0.81^2 y(n - 4) + 0.81^3 y(n-6)\\ =
+    x(n) + x(n - 2) + x(n - 4) + x(n - 6)\\
+    Y\left( e^{j\omega} \right)\left(1  + 0.81e^{-2j\omega} + 0.81^2e^{-4j\omega} + 0.81^3 e^{-6j\omega} \right)\\
+    = X\left( e^{j\omega} \right) \left( 1 + e^{-2j\omega} + e^{-4j\omega} + e^{-6j\omega} \right)\\
+    \frac{Y\left( e^{j\omega} \right)}{X\left( e^{j\omega} \right)} = H\left( e^{j\omega} \right) = \frac{1 + e^{-2j\omega} + e^{-4j\omega} + e^{-6j\omega}}{1  + 0.81e^{-2j\omega} + 0.81^2e^{-4j\omega} + 0.81^3 e^{-6j\omega}}
+\end{gather*}
+
+\subsection*{Part 1}
+Through Fourier analysis (numerical DTFT), it can be seen that
+the signal \(x(n) = 5 + 10(-1)^n\) is identical (in the discrete
+case) to the signal \(x(n) = 5\cos(0n) + 10\cos(\pi n)\).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-18 Fig1"}
+    \caption{DTFT of signal.}
+    \label{plot:3.18.1}
+\end{figure}
+
+Using the frequency response in MATLAB and the definition of the
+steady-state response, one can determine numerically the steady-%
+state response of the system when \(x(n) = 5+10(-1)^n\) is
+applied. The resulting plot can be found below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-18 Fig2"}
+    \caption{Magnitude and argument plot of steady-state response.}
+    \label{plot:3.18.1.5}
+\end{figure}
+
+\subsection*{Part 2}
+The steady-state response for the same system when a signal of
+\(x(n) = 1 + \cos(0.5\pi n + \pi/2)\) can be found below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-18 Fig3"}
+    \caption{Magnitude and argument plot of steady-state response.}
+    \label{plot:3.18.2}
+\end{figure}
+
+\section*{Problem 3.20}
+\subsection*{Part 1}
+Let \(x_a(t) = 10\cos(10000\pi t)\). The angular frequency is
+\(\omega_x = \num{10000}\pi~\si{\per\second}\) (radian per second).
+If we divide by the ADC sample rate of \SI{8000}{\hertz}
+(samples per second), we arrive at the discrete angular
+frequency of \(1.25\pi\) (unitless, or radian per sample).
+This translates to a discrete signal \(x(n) = 10\cos(1.25\pi n)\).
+
+\subsection*{Part 2}
+If the impulse response \(h(n) = (-0.9)^n u(n)\), then the
+frequency response is \(H\left( e^{j\omega} \right)
+= \frac{1}{1 + 0.9e^{-j\omega}}\). This comes from the DTFT pair
+\begin{equation*}
+    \mathcal{F}[\alpha^n u(n)] = \frac{1}{1-\alpha e^{-j\omega}}
+\end{equation*} for \(-\pi \le \omega \le \pi\).
+The magnitude and argument of \(H\left(e^{j\omega}\right)\) are
+calculated below.
+\begin{gather*}
+    H\left( e^{j\omega} \right) = \frac{1}{1 + 0.9e^{-j\omega}} \\
+    = \frac{1}{(1 + 0.9\cos(\omega)) - j0.9\sin(\omega)} \cdot \frac{(1 + 0.9\cos(\omega)) + j0.9\sin(\omega)}{(1 + 0.9\cos(\omega)) + j0.9\sin(\omega)}\\
+    = \frac{(1 + 0.9\cos(\omega)) + j0.9\sin(\omega)}{(1 + 0.9\cos(\omega))^2 - j^2 (0.9 \sin(\omega))^2}\\
+    = \frac{(1 + 0.9\cos(\omega)) + j0.9\sin(\omega)}{1 + 1.8\cos(\omega) + 0.81\cos^2(\omega) + 0.81\sin^2(\omega)}\\
+    = \frac{(1 + 0.9\cos(\omega)) + j0.9\sin(\omega)}{1.81 + 1.8\cos(\omega)}\\
+    = \frac{1 + 0.9\cos(\omega)}{1.81 + 1.8\cos(\omega)} + j\frac{0.9\sin(\omega)}{1.81 + 1.8\cos(\omega)}
+\end{gather*}
+\begin{gather*}
+    \operatorname{arg} \left(H\left(e^{j\omega}\right)\right) = \arctan\left( \frac{\operatorname{Im}\left(H\left(e^{j\omega}\right)\right)}{\operatorname{Re}\left(H\left(e^{j\omega}\right)\right)} \right)\\
+    = \arctan \left( \frac{0.9\sin(\omega)}{1.81 + 1.8\cos(\omega)} \div \frac{1 + 0.9\cos(\omega)}{1.81 + 1.8\cos(\omega)} \right) = \arctan \left(\frac{0.9\sin(\omega)}{1 + 0.9\cos(\omega)}\right)\\
+    \left| H\left(e^{j\omega}\right) \right| = \sqrt{ \left(\frac{1 + 0.9\cos(\omega)}{1.81 + 1.8\cos(\omega)}\right)^2 + \left(\frac{0.9\sin(\omega)}{1.81 + 1.8\cos(\omega)}\right)^2 }\\
+    = \sqrt{ \frac{1 + 1.8\cos(\omega) + 0.81\cos^2(\omega) + 0.81\sin^2(\omega)}{(1.81 + 1.8\cos(\omega))^2}}\\
+    = \sqrt{ \frac{1.81 + 1.8\cos(\omega)}{(1.81 + 1.8\cos(\omega))^2} } = \sqrt{\frac{1}{1.81 + 1.8\cos(\omega)}}
+\end{gather*}
+Thus, \( H\left(e^{j\omega}\right) \) can also be written as
+\begin{equation*}
+    H\left(e^{j\omega}\right) = \frac{1}{1 + 0.9e^{-j\omega}}
+    =\sqrt{\frac{1}{1.81 + 1.8\cos(\omega)}}\exp \left(j\arctan \left(\frac{0.9\sin(\omega)}{1 + 0.9\cos(\omega)}\right)\right)
+\end{equation*}
+
+Below are four plots visually confirming the validity of
+this result. The left two plots graph the magnitude and argument
+of \(1/(1 + 0.9e^{-j\omega})\), while the right two plots
+graph \(\operatorname{arg}\left( H\left(e^{j\omega}\right) \right)\)
+and \(\left| H\left(e^{j\omega}\right) \right|\), respectively,
+as derived above.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/3-20"}
+    \caption{Magnitude and argument plots.}
+    \label{plot:3.20}
+\end{figure}
+
+The steady-state response of \(x(n) = 10\cos(1.25\pi n)\)
+is
+\begin{align*}
+    y(n) &= 10\sqrt{\frac{1}{1.81 - 1.8/\sqrt2}} \cos\left( 1.25\pi n + \arctan\left( \frac{-0.9/\sqrt2}{1 - 0.9/\sqrt2} \right) \right)\\
+    &\approx 13.644\cos(1.25\pi n - 1.052)
+\end{align*}
+
+\subsection*{Part 3}
+If the continuous signal is \(x(t) = 5\sin(8000\pi t)\),
+then at a \SI{8000}{\hertz} ADC sample rate, the discrete signal
+will be \(x(n) = 5\sin(\pi n)\). The steady-state response to this
+signal is
+\begin{align*}
+    y(n) &= 5\sqrt{\frac1{1.81 - 1.8}}\sin\left( \pi n + \arctan\left( \frac{-0.9}{1 - 0.9} \right) \right)\\
+    &\approx 50\sin(\pi n - 1.460)
+\end{align*}
+
+\subsection*{Part 4}
+
+Both the magnitude and the argument of \( H\left(e^{j\omega}\right) \)
+are functions of \(\omega\), and both functions are periodic
+with respect to \(2\pi\); this is because \(\omega\) is contained
+solely within sine and cosine functions. Therefore, the discrete
+frequencies \(3.25\pi\) and \(5.25\pi\). In other words, the
+signals \(x(n) = 10\cos(3.25\pi n)\) and \(x(n) = 10\cos(5.25\pi n)\) will
+produce the same steady-state response as the signal
+\(x(n) = 10\cos(1.25\pi n)\).
+
+Assuming the same ADC sample rate of \SI{8000}{\hertz}, this is
+achieved by analog radian frequencies of
+\(26\pi \times 10^3~\si{\per\second}\) and
+\(42\pi \times 10^3~\si{\per\second}\), respectively (the associated
+signals are \(x(t) = 10\cos(26000\pi t)\) and \(x(t) = 10\cos(42000\pi t)\),
+respectively).
+
+\subsection*{Part 5}
+
+To prevent aliasing, a low-pass filter should be used. This is
+to remove any signals with frequencies greater than half of the
+desired Nyquist rate. Since the ADC is sampling at a rate of
+\SI{8000}{\hertz}, the filter would need to remove any signals
+with frequencies above \SI{4000}{\hertz}.
+
+\section*{Problem 4.1}
+For the following parts, remember that the \(z\)-transform is
+defined as follows:
+\begin{equation*}
+    \mathcal{Z}[x(n)] \equiv X(z) = \sum_{n = -\infty}^\infty x(n)z^{-n}
+\end{equation*}
+
+\subsection*{Part 2}
+\begin{gather*}
+    x(n) = 0.8^n u(n - 2)\\
+    X(z) = \sum_{n=2}^\infty 0.8^nz^{-n} = \sum_{n = 0}^\infty \left(\frac{0.8}{z}\right)^n - 0.8^0z^0 - 0.8^1z^{-1}\\
+    = \frac{1}{1 - 0.8z^{-1}} - 1 - 0.8z^{-1}, \text{ROC: } |z|>0.8\\
+    =\frac{1 - (1 - 0.8z^{-1}) - 0.8z^{-1}(1 - 0.8z^{-1})}{1 - 0.8z^{-1}}, \text{ROC: } |z|>0.8\\
+    =\frac{1 - 1 + 0.8z^{-1} - 0.8z^{-1} + 0.64 z^{-2}}{1 - 0.8z^{-1}}, \text{ROC: } |z|>0.8\\
+    =\frac{0.64z^{-2}}{1 - 0.8z^{-1}}, \text{ROC: } |z| > 0.8
+\end{gather*}
+
+Below is a plot of the original signal \(x(n)\) and the \(z\)-%
+transform filter when excited by a unit impulse at index \(n=2\).
+If the \(z\)-transform is truly correct, the two plots would be
+the same. In the plot, the two signals are identical save for
+a shift of two indexes. I could not figure out why this was
+the case.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/4-1 Fig1"}
+    \caption{Verification of filter.}
+    \label{plot:4.1.2}
+\end{figure}
+
+\subsection*{Part 3}
+\begin{gather*}
+    x(n) = \left[0.5^n + (-0.8)^n\right]u(n)\\
+    X(z) = \sum_{n = 0}^\infty \left( 0.5^n + (-0.8)^n \right)z^{-n}
+    = \sum_{n = 0}^\infty 0.5^nz^{-n} + \sum_{n=0}^\infty (-0.8)^nz^{-n}\\
+    = \sum_{n=0}^\infty \left(0.5z^{-1}\right)^n + \sum_{n=0}^\infty (-0.8z^{-1})^n\\
+    = \frac{1}{1 - 0.5z^-1}, \text{ROC: } |z| > 0.5 + \frac{1}{1 + 0.8z^{-1}}, \text{ROC:} |z| > 0.8\\
+    = \frac{1}{1 - 0.5z^-1} + \frac{1}{1 + 0.8z^{-1}}, \text{ROC: } |z| > 0.8
+\end{gather*}
+
+The verification plots can be found below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/4-1 Fig2"}
+    \caption{Verification of filter.}
+    \label{plot:4.1.3}
+\end{figure}
+
+\section*{Problem 4.3}
+\subsection*{Part 1}
+\begin{gather*}
+    x(n) = 2\delta(n-2) + 3u(n-3)\\
+    X(z) = 2z^{-2} + \frac{3z^{-3}}{1 - z^{-1}}, \text{ROC: }|z| > 1\\
+    = \frac{2z^{-2}(1 - z^{-1}) + 3z^-3}{1-z^{-1}}, \text{ROC: }|z| > 1\\
+    = \frac{2z^{-2} - 2z^{-3} + 3z^{-3}}{1-z^{-1}}, \text{ROC: } |z| > 1\\
+    =\frac{2z^{-2} + z^{-3}}{1-z^{-1}}, \text{ROC: } |z| > 1
+\end{gather*}
+
+The verification plots can be found below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/4-3 Fig1"}
+    \caption{Verification of filter.}
+    \label{plot:4.3.1}
+\end{figure}
+
+\subsection*{Part 2}
+\begin{gather*}
+    x(n) = 3(0.75)^n \cos(0.3\pi n) u(n) + 4(0.75)^n\sin(0.3\pi n)u(n)\\
+    X(z) = \frac{3 - 2.25\cos(0.3\pi)z^{-1}}{1 - 1.5\cos(0.3\pi)z^{-1} + 0.5625z^{-2}}, \text{ROC: } |z| > 0.75\\
+    + \frac{3\sin(0.3\pi)z^{-1}}{1 - 1.5\cos(0.3\pi)z^{-1} + 0.5625z^{-2}}, \text{ROC: } |z| > 0.75\\
+    = \frac{3 + (3\sin(0.3\pi)-2.25\cos(0.3\pi))z^{-1}}{1 - 1.5\cos(0.3\pi)z^{-1} + 0.5625z^{-2}}, \text{ROC: } |z| > 0.75
+\end{gather*}
+
+The verification plots can be found below.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{"Images/4-3 Fig2"}
+    \caption{Verification of filter.}
+    \label{plot:4.3.2}
+\end{figure}
+
+\section*{Problem 4.5}
+For the following problems, let \(\mathcal{Z}[x(n)] =
+X(z) = \frac{1}{1 + 0.5z^{-1}}, \text{ROC:} |z| > 0.5\).
+
+\subsection*{Part 1}
+\begin{gather*}
+    x_1(n) = x(-n + 3) + x(n - 3)\\
+    X_1(z) = X(1/z)z^3, \text{ROC: } 0 < |z| < 2 + X(z)z^{-3},  \text{ROC:} |z| > 0.5\\
+    = \frac{z^3}{1 + 0.5z} + \frac{z^{-3}}{1+0.5x^{-1}}, \text{ROC: } 0.5 < |z| < 2
+\end{gather*}
+
+\subsection*{Part 2}
+\begin{gather*}
+    x_2(n) = (1 + n + n^2)x(n) = x(n) + nx(n) + n^2x(n)\\
+    X_2(z) = X(z), \text{ROC:} |z| > 0.5 + \frac{-2z}{(2z+1)^2}, \text{ROC:} |z| > 0.5\\
+    +\frac{-2z(2z-1)}{(2z+1)^3}\\
+    X_2(z) = \frac{1}{1+0.5z^{-1}} - \frac{2z}{(2z+1)^2} - \frac{2z(2z-1)}{(2z+1)^3},  \text{ROC:} |z| > 0.5
+\end{gather*}
+
+\subsection*{Part 3}
+\begin{gather*}
+    x_3(n) = \left(0.5\right)^n x(n-2)\\
+    X_3(z) = X(2z)z^{-2}, \text{ROC: } |z| > 0.25\\
+    = \frac{z^{-2}}{1 + 0.5(2z)^{-1}}, \text{ROC: } |z| > 0.25\\
+    = \frac{z^{-2}}{1 + 0.25z^{-1}}, \text{ROC: } |z| > 0.25
+\end{gather*}
+
+\subsection*{Part 4}
+\begin{gather*}
+    x_4(n) = x(n + 2) * x(n - 2)\\
+    X_4(z) = X(z)z^{2}X(z)z^{-2}, \text{ROC: } |z| > 0.5\\
+    = \left(\frac{1}{1+0.5z^{-1}}\right)^2, \text{ROC: } |z| > 0.5\\
+    = \frac{1}{1 + z^{-1} + 0.25z^{-2}}, \text{ROC: } |z| > 0.5
+\end{gather*}
+
+\subsection*{Part 5}
+\begin{gather*}
+    x_5(n) = \cos(\pi n/2)x^*(n)\\
+    X_5(n) = \frac{1}{2\pi j} \oint_C \mathcal{Z}[\cos(\pi n/2)]X^*(z^*/v)v^{-1}\,dv,\\
+    \text{ROC:} |z| > 0.5
+\end{gather*}
+
+\end{document}
+
+\begin{gather*}
+    \left| H\left(e^{j\omega}\right) \right| = \sqrt{\left(\frac{1}{1 + 0.9e^{-j\omega}}\right)^2}
+    = \sqrt{\frac{1}{1 + 1.8e^{-j\omega} + 0.81e^{-2j\omega}}}
+\end{gather*}
+
+X(z) = \sum_{n = -2}^\infty 0.8^n z^{-n} %\text{Let } k = n - 2 \Rightarrow n = k + 2
+    = 0.8^{-2}z^2 + 0.8^{-1}z + \sum_{n = 0}^\infty \left( \frac{0.8}{z} \right) ^n\\
+    = 0.8^{-2}z^2 + 0.8^{-1}z + \frac{1}{1 - 0.8z^{-1}}, \text{ROC: } |z| > 0.8\\
+    = \frac{0.8^{-2}z^2(1-0.8z^{-1}) + 0.8z^{-1}(1-0.8z^{-1}) + 1}{1-0.8z^{-1}}, \text{ROC: } |z| > 0.8\\
+    = \frac{ 0.8^{-2}z^2 - 0.8^{-1}z + 1 + 0.8z^{-1} - 0.8^2z^{-2}}{1 - 0.8z^{-1}}, \text{ROC: } |z| > 0.8

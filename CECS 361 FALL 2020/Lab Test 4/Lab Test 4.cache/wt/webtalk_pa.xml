@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Sep 24 18:39:25 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="dc0fae3a05f6424f827ad9139904cf61" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="CloseProject" value="3" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="3" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="14" type="JavaHandler"/>
+<property name="SimulationRun" value="23" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.DockingHolder_AUTO_HIDE, Minimize" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, fib_beh (fib_beh.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, fig_str (fig_str.v" value="9" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, fib_tb (fib_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 4/Lab Test 4.xpr, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="7" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="10" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="4" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="6" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 363, 242" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 397, 285" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 65, 200" value="1" type="GuiResourceData"/>
+<property name="dff.v, 190, 283" value="1" type="GuiResourceData"/>
+<property name="dff.v, 210, 372" value="1" type="GuiResourceData"/>
+<property name="dff.v, 214, 280" value="1" type="GuiResourceData"/>
+<property name="dff.v, 217, 317" value="1" type="GuiResourceData"/>
+<property name="dff.v, 237, 304" value="1" type="GuiResourceData"/>
+<property name="dff.v, 253, 298" value="1" type="GuiResourceData"/>
+<property name="dff.v, 293, 34" value="1" type="GuiResourceData"/>
+<property name="dff.v, 305, 250" value="1" type="GuiResourceData"/>
+<property name="dff.v, 340, 270" value="1" type="GuiResourceData"/>
+<property name="dff.v, 91, 366" value="1" type="GuiResourceData"/>
+<property name="dff.v, 97, 280" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 135, 332" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 140, 362" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 155, 282" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 170, 345" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 175, 232" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 178, 372" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 187, 230" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 188, 225" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 205, 232" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 30, 382" value="1" type="GuiResourceData"/>
+<property name="fib_beh.v, 70, 297" value="1" type="GuiResourceData"/>
+<property name="fib_tb.v, 165, 296" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 1016, 210" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 103, 362" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 105, 159" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 105, 382" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 112, 425" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 117, 164" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 153, 432" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 160, 159" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 160, 162" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 162, 435" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 163, 179" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 170, 432" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 197, 435" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 201, 178" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 202, 280" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 203, 267" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 205, 435" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 209, 215" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 227, 196" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 229, 300" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 237, 193" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 243, 387" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 248, 369" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 249, 383" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 259, 398" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 263, 442" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 293, 180" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 306, 90" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 315, 180" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 334, 392" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 336, 380" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 342, 364" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 343, 382" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 355, 198" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 357, 164" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 360, 307" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 364, 375" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 365, 297" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 41, 317" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 481, 296" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 486, 315" value="1" type="GuiResourceData"/>
+<property name="fig_str.v, 88, 162" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="51" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="47" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

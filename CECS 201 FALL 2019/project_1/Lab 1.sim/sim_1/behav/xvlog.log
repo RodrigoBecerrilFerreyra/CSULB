@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/Lab 1/Lab 1.srcs/sources_1/new/add_behavioral.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_behavioral
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/Lab 1/Lab 1.srcs/sources_1/new/add_behavioral_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_behavioral_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/Lab 1/Lab 1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

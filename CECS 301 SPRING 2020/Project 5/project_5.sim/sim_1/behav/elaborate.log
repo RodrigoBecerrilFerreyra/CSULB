@@ -1,0 +1,18 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 0d04841b93a84ae699d8ef6ca663576b --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Mem_top_tb_behav xil_defaultlib.Mem_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port state [C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 5/project_5.srcs/sources_1/new/Mem_top.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_controller_state_machine
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.ipmemory
+Compiling module xil_defaultlib.supplemental_logic
+Compiling module xil_defaultlib.Mem_top
+Compiling module xil_defaultlib.Mem_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Mem_top_tb_behav

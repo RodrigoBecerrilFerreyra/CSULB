@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Project 2.srcs/sources_1/new/decoder.v"
+verilog xil_defaultlib  "../../../Project 2.srcs/sources_1/new/shift_reg.v"
+verilog xil_defaultlib  "../../../Project 2.srcs/sources_1/new/pulse_gen.v"
+verilog xil_defaultlib  "../../../Project 2.srcs/sources_1/new/counter8.v"
+verilog xil_defaultlib  "../../../Project 2.srcs/sources_1/new/top_level_seven_segment.v"
+verilog xil_defaultlib  "../../../Project 2.srcs/sim_1/imported/SevenSegmentDisplay_tf.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

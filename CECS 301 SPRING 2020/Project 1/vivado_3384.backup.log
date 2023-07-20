@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 04 15:13:27 2020
+# Process ID: 3384
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2272 C:\Users\oscar\Coding Projects\CSULB\CECS 301 SPRING 2020\Project 1\Project 1.xpr
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/vivado.log
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 705.105 ; gain = 79.293
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'FA8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj FA8_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/sources_1/new/FA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/sources_1/new/FA4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/sources_1/new/FA8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/sim_1/new/FA8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA8_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 6d77b4300a10479eb8348208bebf8794 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FA8_tb_behav xil_defaultlib.FA8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FA
+Compiling module xil_defaultlib.FA4
+Compiling module xil_defaultlib.FA8
+Compiling module xil_defaultlib.FA8_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FA8_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/oscar/Coding -notrace
+couldn't read file "C:/Users/oscar/Coding": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 04 15:14:48 2020...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 752.184 ; gain = 20.074
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FA8_tb_behav -key {Behavioral:sim_1:Functional:FA8_tb} -tclbatch {FA8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source FA8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1600ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FA8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1600ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 754.684 ; gain = 22.574
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 04 15:15:28 2020...

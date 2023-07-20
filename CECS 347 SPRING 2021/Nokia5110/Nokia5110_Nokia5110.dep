@@ -1,0 +1,10 @@
+Dependencies for Project 'Nokia5110', Target 'Nokia5110': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
+F (.\startup.s)(0x57020DF4)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Nokia5110-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1" --pd "_RTE_ SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Nokia_simple_test.c)(0x5F7D61F9)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\..-I.\RTE\_Nokia5110-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="531" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\nokia_simple_test.o --omf_browse .\nokia_simple_test.crf --depend .\nokia_simple_test.d)
+I (Nokia5110.h)(0x6070E66B)
+I (PLL.h)(0x52310D0A)
+F (.\Nokia5110.c)(0x5F83A354)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\..-I.\RTE\_Nokia5110-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="531" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (Nokia5110.h)(0x6070E66B)
+F (.\PLL.c)(0x52310D0A)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .. -I ..\..\..-I.\RTE\_Nokia5110-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Program Files (x86)\Keil uVision 5 ARM\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="531" -D_RTE_ -DTM4C123GH6PM -D_RTE_ -Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x52310D0A)

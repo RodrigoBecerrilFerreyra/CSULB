@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Sep 08 18:35:30 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="a78096c36c95497d97be833faa01f810" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="3" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="4" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="4" type="GuiResourceData"/>
+<property name="NEXT, Next " value="7" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, d_latch" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, dff" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, dff_" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, dff_d_latch_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 0, (String" value="4" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 1, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 2, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 4, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, clk ; input ; false ; 0 ; 0, 3, clk, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, clk, 3, Port Name, 0" value="5" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, d, 0, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, en, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 1, Direction, 1" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 2, Direction, 1" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 3, Direction, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 1, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 2, Direction, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 3, Direction, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q ; input ; false ; 0 ; 0, 1, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q ; input ; false ; 0 ; 0, 2, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q, 2, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q_not ; input ; false ; 0 ; 0, 2, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q_not ; input ; false ; 0 ; 0, 3, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q_not, 2, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, q_not, 3, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, d_latch" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, d_latch (d_latch.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, dff (dff.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, dff_d_latch_tb (dff_d_latch_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Nexys A7-100T ; digilentinc.com ; D.0 ; xc7a100tcsg324-1 ; 324 ; 1.0 ; 135 ; 240 ; 126800 ; 0 ; 0 ; 210 ; 63400 ; 6 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0, 0, Nexys A7-100T, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Lab Test 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="3" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="4" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_ADD_ELEMENT, Add Definition" value="2" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="3" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="10" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="3" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="3" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 1" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, q_not_dff], 4, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, q_not_latch], 5, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, q_not_latch], 5, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_COPY, Copy" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 113, 108" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 118, 78" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 124, 93" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 16, 360" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 24, 130" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 24, 233" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 64, 258" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 65, 298" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 69, 198" value="1" type="GuiResourceData"/>
+<property name="d_latch.v, 79, 258" value="1" type="GuiResourceData"/>
+<property name="dff.v, 129, 93" value="1" type="GuiResourceData"/>
+<property name="dff.v, 24, 230" value="2" type="GuiResourceData"/>
+<property name="dff.v, 241, 63" value="1" type="GuiResourceData"/>
+<property name="dff.v, 29, 195" value="1" type="GuiResourceData"/>
+<property name="dff.v, 8, 366" value="1" type="GuiResourceData"/>
+<property name="dff.v, 81, 31" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 106, 340" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 106, 352" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 116, 252" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 121, 458" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 124, 442" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 128, 455" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 133, 130" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 141, 230" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 158, 397" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 169, 212" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 171, 450" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 178, 242" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 263, 178" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 263, 258" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 29, 175" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 293, 196" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 295, 465" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 349, 232" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 354, 187" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 36, 433" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 4, 368" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 41, 200" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 49, 368" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 51, 290" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 61, 312" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 64, 295" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 64, 365" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 66, 183" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 66, 282" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 66, 337" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 96, 365" value="1" type="GuiResourceData"/>
+<property name="dff_d_latch_tb.v, 98, 432" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="44" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="40" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

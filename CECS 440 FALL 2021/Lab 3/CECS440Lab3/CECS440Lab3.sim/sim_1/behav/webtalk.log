@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Oct 14 21:30:35 2021
+# Process ID: 14788
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.sim/sim_1/behav/xsim.dir/full_adder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/oscar/Coding -notrace
+invalid command name "Common"
+    while executing
+"Common 17-165"
+    invoked from within
+"ERROR: [Common 17-165] Too many positional options when parsing '3/CECS440Lab3/CECS440Lab3.hw/webtalk/labtool_webtalk.log', please type 'webtalk -help..."
+    (file "C:/Users/oscar/Coding" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 14 21:30:35 2021...

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>HW4</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2021-04-17"><meta name="DC.source" content="HW4.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">3.15</a></li><li><a href="#2">3.17</a></li><li><a href="#3">3.18</a></li><li><a href="#4">3.20</a></li><li><a href="#5">4.1</a></li><li><a href="#6">4.3</a></li></ul></div><h2 id="1">3.15</h2><pre class="codeinput"><span class="comment">%{
+</span><span class="comment">N = 31; a = 15; wc = 0.5*pi;
+</span><span class="comment">n = 0:(N-1); omega = linspace(-pi, pi, 101);
+</span><span class="comment">h = sin(pi.*(n - a))./(pi.*(n - a)); h = rmmissing(h); new_n = 0:(N-2);
+</span><span class="comment">H = numerical_dtft_2(h, new_n, omega);
+</span><span class="comment">
+</span><span class="comment">H_ideal = zeros(size(omega));
+</span><span class="comment">for j = 1:length(omega)
+</span><span class="comment">    if abs(omega(j)) &lt;= wc
+</span><span class="comment">        H_ideal(j) = 0 + 0i;
+</span><span class="comment">    else
+</span><span class="comment">        H_ideal(j) = exp(-1i * a * omega(j));
+</span><span class="comment">    end
+</span><span class="comment">end
+</span><span class="comment">
+</span><span class="comment">figure();
+</span><span class="comment">subplot(3, 2, [1 2]); stem(new_n, h, 'filled');
+</span><span class="comment">title("Plot of impulse response $$h_d(n)$$", 'interpreter', 'latex');
+</span><span class="comment">subplot(3, 2, 3); stem(omega, abs(H), 'filled');
+</span><span class="comment">title("Magnitude of DTFT $$H_d(\omega)$$", 'interpreter', 'latex');
+</span><span class="comment">grid on;
+</span><span class="comment">subplot(3, 2, 4); stem(omega, angle(H), 'filled');
+</span><span class="comment">title("Argument of DTFT $$H_d(\omega)$$", 'interpreter', 'latex');
+</span><span class="comment">grid on;
+</span><span class="comment">subplot(3, 2, 5); stem(omega, abs(H_ideal), 'filled');
+</span><span class="comment">title("Magnitude of ideal $$H_d(\omega)$$", 'interpreter', 'latex');
+</span><span class="comment">grid on;
+</span><span class="comment">subplot(3, 2, 6); stem(omega, angle(H_ideal), 'filled');
+</span><span class="comment">title("Argument of ideal $$H_d(\omega)$$", 'interpreter', 'latex');
+</span><span class="comment">grid on;
+</span><span class="comment">%}</span>
+</pre><h2 id="2">3.17</h2><pre class="codeinput">omega = linspace(-pi, pi, 101);
+
+H = 0.2 * (1 + exp(-1i.*omega.*1) + exp(-1i.*omega.*2) + exp(-1i.*omega.*3) + exp(-1i.*omega.*4));
+figure();
+subplot(2, 1, 1); stem(omega, abs(H), <span class="string">'filled'</span>);
+title(<span class="string">"Magnitude of $$H\left(e^{j\omega}\right)$$"</span>, <span class="string">'interpreter'</span>, <span class="string">'latex'</span>);
+axis <span class="string">tight</span>; grid <span class="string">on</span>;
+subplot(2, 1, 2); stem(omega, angle(H), <span class="string">'filled'</span>);
+title(<span class="string">"Argument of $$H\left(e^{j\omega}\right)$$"</span>, <span class="string">'interpreter'</span>, <span class="string">'latex'</span>);
+axis <span class="string">tight</span>; grid <span class="string">on</span>;
+
+H = (1 - 1.7678*exp(-1i.*omega) + 1.5625*exp(-2i*omega))./(1 - 1.1314*exp(-1i.*omega) + 0.64*exp(-2i.*omega));
+figure();
+subplot(2, 1, 1); stem(omega, abs(H), <span class="string">'filled'</span>);
+title(<span class="string">"Magnitude of $$H\left(e^{j\omega}\right)$$"</span>, <span class="string">'interpreter'</span>, <span class="string">'latex'</span>);
+axis <span class="string">tight</span>; grid <span class="string">on</span>;
+subplot(2, 1, 2); stem(omega, angle(H), <span class="string">'filled'</span>);
+title(<span class="string">"Argument of $$H\left(e^{j\omega}\right)$$"</span>, <span class="string">'interpreter'</span>, <span class="string">'latex'</span>);
+axis <span class="string">tight</span>; grid <span class="string">on</span>;
+</pre><img vspace="5" hspace="5" src="HW4_01.png" alt=""> <img vspace="5" hspace="5" src="HW4_02.png" alt=""> <h2 id="3">3.18</h2><pre class="codeinput">omega = linspace(-pi, pi, 101); n = 0:200;
+H = @(omega) (1 + exp(-2i.*omega) + exp(-4i.*omega) + exp(-6i.*omega))./(1 + 0.81*exp(-2i.*omega) + 0.81^2*exp(-4i.*omega) + 0.81^3*exp(-6i.*omega));
+
+x = 5 + 10.*(-1).^n;
+figure();
+stem(omega, abs(numerical_dtft_2(x, n, omega)), <span class="string">'filled'</span>); grid <span class="string">on</span>;
+title(<span class="string">"DTFT of given signal"</span>);
+
+y = 5 * abs(H(0)) * cos(angle(H(0))) + 10 * abs(H(pi)) * cos(pi.*n + angle(H(pi)));
+figure();
+subplot(2, 1, 2); stem(n, y, <span class="string">'filled'</span>);
+title(<span class="string">"Steady-state response"</span>);
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+title(<span class="string">"Original signal"</span>);
+
+x = 1 + cos(0.5*pi.*n + pi/2);
+y = abs(H(0)) * cos(angle(H(0))) + abs(H(0.5*pi))*cos(0.5*pi.*n + pi/2 + angle(H(0.5*pi)));
+figure();
+subplot(2, 1, 2); stem(n, y, <span class="string">'filled'</span>);
+title(<span class="string">"Steady-state response"</span>);
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+title(<span class="string">"Original signal"</span>);
+</pre><img vspace="5" hspace="5" src="HW4_03.png" alt=""> <img vspace="5" hspace="5" src="HW4_04.png" alt=""> <img vspace="5" hspace="5" src="HW4_05.png" alt=""> <h2 id="4">3.20</h2><pre class="codeinput">omega = linspace(-pi, pi, 101);
+H = 1./(1 + 0.9*exp(-1i.*omega));
+arg = @(omega) atan((0.9*sin(omega))./(1 + 0.9*cos(omega)));
+mag = @(omega) sqrt( 1./(1.81 + 1.8*cos(omega)) );
+
+figure();
+subplot(2, 2, 1); stem(omega, abs(H), <span class="string">'filled'</span>);
+title(<span class="string">"Magnitude of H"</span>);
+subplot(2, 2, 2); stem(omega, mag(omega), <span class="string">'filled'</span>);
+title(<span class="string">"Calculated magnitude"</span>);
+subplot(2, 2, 3); stem(omega, angle(H), <span class="string">'filled'</span>);
+title(<span class="string">"Argument of H"</span>);
+subplot(2, 2, 4); stem(omega, arg(omega), <span class="string">'filled'</span>);
+title(<span class="string">"Calculated argument"</span>);
+</pre><img vspace="5" hspace="5" src="HW4_06.png" alt=""> <h2 id="5">4.1</h2><pre class="codeinput">n = (0:9) + 2; x = 0.8.^n;
+doublecheck = filter([0, 0, 0.8^2], [1, -0.8], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Original signal"</span>);
+subplot(2, 1, 2); stem(n, doublecheck, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Numerical verification"</span>);
+
+n = 0:9; x = 0.5.^n + (-0.8).^n;
+doublecheck = filter(1, [1 -0.5], n == n(1)) + filter(1, [1 0.8], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Original signal"</span>);
+subplot(2, 1, 2); stem(n, doublecheck, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Numerical verification"</span>);
+</pre><img vspace="5" hspace="5" src="HW4_07.png" alt=""> <img vspace="5" hspace="5" src="HW4_08.png" alt=""> <h2 id="6">4.3</h2><pre class="codeinput">n = 0:9; x = [0 0 2 3 3 3 3 3 3 3];
+doublecheck = filter([0 0 2 1], [1 -1], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Original signal"</span>);
+subplot(2, 1, 2); stem(n, doublecheck, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Numerical verification"</span>);
+
+n = 0:9; x = 3 * 0.75.^n .* cos(0.3*pi*n) + 4 * 0.75.^n .* sin(0.3 * pi * n);
+doublecheck = filter([3, 3*sin(0.3*pi) - 2.25*cos(0.3*pi)], [1, -1.5*cos(0.3*pi), 0.5625], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Original signal"</span>);
+subplot(2, 1, 2); stem(n, doublecheck, <span class="string">'filled'</span>);
+grid <span class="string">on</span>; title(<span class="string">"Numerical verification"</span>);
+</pre><img vspace="5" hspace="5" src="HW4_09.png" alt=""> <img vspace="5" hspace="5" src="HW4_10.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 3.15
+%{
+N = 31; a = 15; wc = 0.5*pi;
+n = 0:(N-1); omega = linspace(-pi, pi, 101);
+h = sin(pi.*(n - a))./(pi.*(n - a)); h = rmmissing(h); new_n = 0:(N-2);
+H = numerical_dtft_2(h, new_n, omega);
+
+H_ideal = zeros(size(omega));
+for j = 1:length(omega)
+    if abs(omega(j)) <= wc
+        H_ideal(j) = 0 + 0i;
+    else
+        H_ideal(j) = exp(-1i * a * omega(j));
+    end
+end
+
+figure();
+subplot(3, 2, [1 2]); stem(new_n, h, 'filled');
+title("Plot of impulse response $$h_d(n)$$", 'interpreter', 'latex');
+subplot(3, 2, 3); stem(omega, abs(H), 'filled');
+title("Magnitude of DTFT $$H_d(\omega)$$", 'interpreter', 'latex');
+grid on;
+subplot(3, 2, 4); stem(omega, angle(H), 'filled');
+title("Argument of DTFT $$H_d(\omega)$$", 'interpreter', 'latex');
+grid on;
+subplot(3, 2, 5); stem(omega, abs(H_ideal), 'filled');
+title("Magnitude of ideal $$H_d(\omega)$$", 'interpreter', 'latex');
+grid on;
+subplot(3, 2, 6); stem(omega, angle(H_ideal), 'filled');
+title("Argument of ideal $$H_d(\omega)$$", 'interpreter', 'latex');
+grid on;
+%}
+%% 3.17
+
+omega = linspace(-pi, pi, 101);
+
+H = 0.2 * (1 + exp(-1i.*omega.*1) + exp(-1i.*omega.*2) + exp(-1i.*omega.*3) + exp(-1i.*omega.*4));
+figure();
+subplot(2, 1, 1); stem(omega, abs(H), 'filled');
+title("Magnitude of $$H\left(e^{j\omega}\right)$$", 'interpreter', 'latex');
+axis tight; grid on;
+subplot(2, 1, 2); stem(omega, angle(H), 'filled');
+title("Argument of $$H\left(e^{j\omega}\right)$$", 'interpreter', 'latex');
+axis tight; grid on;
+
+H = (1 - 1.7678*exp(-1i.*omega) + 1.5625*exp(-2i*omega))./(1 - 1.1314*exp(-1i.*omega) + 0.64*exp(-2i.*omega));
+figure();
+subplot(2, 1, 1); stem(omega, abs(H), 'filled');
+title("Magnitude of $$H\left(e^{j\omega}\right)$$", 'interpreter', 'latex');
+axis tight; grid on;
+subplot(2, 1, 2); stem(omega, angle(H), 'filled');
+title("Argument of $$H\left(e^{j\omega}\right)$$", 'interpreter', 'latex');
+axis tight; grid on;
+
+%% 3.18
+omega = linspace(-pi, pi, 101); n = 0:200;
+H = @(omega) (1 + exp(-2i.*omega) + exp(-4i.*omega) + exp(-6i.*omega))./(1 + 0.81*exp(-2i.*omega) + 0.81^2*exp(-4i.*omega) + 0.81^3*exp(-6i.*omega));
+
+x = 5 + 10.*(-1).^n;
+figure();
+stem(omega, abs(numerical_dtft_2(x, n, omega)), 'filled'); grid on;
+title("DTFT of given signal");
+
+y = 5 * abs(H(0)) * cos(angle(H(0))) + 10 * abs(H(pi)) * cos(pi.*n + angle(H(pi)));
+figure();
+subplot(2, 1, 2); stem(n, y, 'filled');
+title("Steady-state response");
+subplot(2, 1, 1); stem(n, x, 'filled');
+title("Original signal");
+
+x = 1 + cos(0.5*pi.*n + pi/2);
+y = abs(H(0)) * cos(angle(H(0))) + abs(H(0.5*pi))*cos(0.5*pi.*n + pi/2 + angle(H(0.5*pi)));
+figure();
+subplot(2, 1, 2); stem(n, y, 'filled');
+title("Steady-state response");
+subplot(2, 1, 1); stem(n, x, 'filled');
+title("Original signal");
+
+%% 3.20
+omega = linspace(-pi, pi, 101);
+H = 1./(1 + 0.9*exp(-1i.*omega));
+arg = @(omega) atan((0.9*sin(omega))./(1 + 0.9*cos(omega)));
+mag = @(omega) sqrt( 1./(1.81 + 1.8*cos(omega)) );
+
+figure();
+subplot(2, 2, 1); stem(omega, abs(H), 'filled');
+title("Magnitude of H");
+subplot(2, 2, 2); stem(omega, mag(omega), 'filled');
+title("Calculated magnitude");
+subplot(2, 2, 3); stem(omega, angle(H), 'filled');
+title("Argument of H");
+subplot(2, 2, 4); stem(omega, arg(omega), 'filled');
+title("Calculated argument");
+
+%% 4.1
+n = (0:9) + 2; x = 0.8.^n;
+doublecheck = filter([0, 0, 0.8^2], [1, -0.8], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, 'filled');
+grid on; title("Original signal");
+subplot(2, 1, 2); stem(n, doublecheck, 'filled');
+grid on; title("Numerical verification");
+
+n = 0:9; x = 0.5.^n + (-0.8).^n;
+doublecheck = filter(1, [1 -0.5], n == n(1)) + filter(1, [1 0.8], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, 'filled');
+grid on; title("Original signal");
+subplot(2, 1, 2); stem(n, doublecheck, 'filled');
+grid on; title("Numerical verification");
+
+%% 4.3
+n = 0:9; x = [0 0 2 3 3 3 3 3 3 3];
+doublecheck = filter([0 0 2 1], [1 -1], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, 'filled');
+grid on; title("Original signal");
+subplot(2, 1, 2); stem(n, doublecheck, 'filled');
+grid on; title("Numerical verification");
+
+n = 0:9; x = 3 * 0.75.^n .* cos(0.3*pi*n) + 4 * 0.75.^n .* sin(0.3 * pi * n);
+doublecheck = filter([3, 3*sin(0.3*pi) - 2.25*cos(0.3*pi)], [1, -1.5*cos(0.3*pi), 0.5625], n == n(1));
+
+figure();
+subplot(2, 1, 1); stem(n, x, 'filled');
+grid on; title("Original signal");
+subplot(2, 1, 2); stem(n, doublecheck, 'filled');
+grid on; title("Numerical verification");
+
+##### SOURCE END #####
+--></body></html>

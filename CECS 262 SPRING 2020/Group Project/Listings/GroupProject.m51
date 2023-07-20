@@ -1,0 +1,388 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/07/2020  21:19:05  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\PROGRAM FILES (X86)\KEIL UVISION 5\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\main.obj TO .\Objects\GroupProje
+>> ct PRINT (.\Listings\GroupProject.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\main.obj (MAIN)
+  C:\PROGRAM FILES (X86)\KEIL UVISION 5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+
+
+LINK MAP OF MODULE:  .\Objects\GroupProject (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0006H     UNIT         ?DT?MAIN
+            DATA    000EH     0006H     UNIT         _DATA_GROUP_
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+                    0006H     000DH                  *** GAP ***
+            CODE    0013H     0003H     ABSOLUTE     
+                    0016H     07EAH                  *** GAP ***
+            CODE    0800H     00D3H     UNIT         ?PR?EWBUTTON?MAIN
+            CODE    08D3H     00D3H     UNIT         ?PR?NSBUTTON?MAIN
+            CODE    09A6H     0071H     UNIT         ?PR?LIGHTHANDLER?MAIN
+            CODE    0A17H     003FH     UNIT         ?PR?OUTPUTHANDLER?MAIN
+            CODE    0A56H     003CH     UNIT         ?PR?_DELAY?MAIN
+            CODE    0A92H     0034H     UNIT         ?PR?_STRING?MAIN
+            CODE    0AC6H     0032H     UNIT         ?CO?MAIN
+            CODE    0AF8H     002DH     UNIT         ?C?LIB_CODE
+            CODE    0B25H     0014H     UNIT         ?PR?MAIN?MAIN
+            CODE    0B39H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0B45H     000CH     UNIT         ?PR?UART_INIT?MAIN
+            CODE    0B51H     0008H     UNIT         ?PR?_TRANSMIT_DATA?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\GroupProject (?C_STARTUP)
+
+
+SEGMENT                           DATA_GROUP 
+  +--> CALLED SEGMENT           START    LENGTH
+-----------------------------------------------
+?C_C51STARTUP                   -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                   -----    -----
+  +--> ?PR?UART_INIT?MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 2
+
+
+  +--> ?PR?LIGHTHANDLER?MAIN
+  +--> ?PR?OUTPUTHANDLER?MAIN
+
+?PR?LIGHTHANDLER?MAIN           -----    -----
+  +--> ?PR?_DELAY?MAIN
+
+*** NEW ROOT ***************************************************
+
+?PR?EWBUTTON?MAIN               -----    -----
+  +--> ?PR?_DELAY?MAIN
+  +--> ?PR?OUTPUTHANDLER?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_STRING?MAIN
+  +--> ?PR?LIGHTHANDLER?MAIN
+
+?PR?_STRING?MAIN                0011H    0003H
+  +--> ?PR?_DELAY?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_TRANSMIT_DATA?MAIN
+
+*** NEW ROOT ***************************************************
+
+?PR?NSBUTTON?MAIN               -----    -----
+  +--> ?PR?_DELAY?MAIN
+  +--> ?PR?OUTPUTHANDLER?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_STRING?MAIN
+  +--> ?PR?LIGHTHANDLER?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\GroupProject (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0B39H         SEGMENT       ?C_C51STARTUP
+  I:0014H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0B3CH         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0B39H         SYMBOL        STARTUP1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 3
+
+
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0B39H         LINE#         133
+  C:0B3BH         LINE#         134
+  C:0B3CH         LINE#         135
+  C:0B3DH         LINE#         136
+  C:0B3FH         LINE#         185
+  C:0B42H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:0008H         PUBLIC        current_state_light_EW
+  D:0009H         PUBLIC        current_state_light_NS
+  D:00A8H         PUBLIC        IE
+  C:0A66H         PUBLIC        _delay
+  B:0098H.1       PUBLIC        TI
+  C:0B25H         PUBLIC        main
+  D:000AH         PUBLIC        timer_high
+  D:0099H         PUBLIC        SBUF
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:0800H         PUBLIC        EWbutton
+  C:08D3H         PUBLIC        NSbutton
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008DH         PUBLIC        TH1
+  D:008AH         PUBLIC        TL0
+  B:0090H.7       PUBLIC        pedLightEW
+  C:0B45H         PUBLIC        UART_init
+  B:0088H.4       PUBLIC        TR0
+  B:0088H.6       PUBLIC        TR1
+  D:000CH         PUBLIC        timer_low
+  B:0090H.6       PUBLIC        pedLightNS
+  B:00A0H.3       PUBLIC        redEW
+  C:09A6H         PUBLIC        lightHandler
+  B:00A0H.0       PUBLIC        redNS
+  B:00A0H.5       PUBLIC        grnEW
+  B:00A0H.4       PUBLIC        yelEW
+  B:00A0H.2       PUBLIC        grnNS
+  B:00A0H.1       PUBLIC        yelNS
+  C:0B51H         PUBLIC        _transmit_data
+  C:0A17H         PUBLIC        outputHandler
+  C:0A9DH         PUBLIC        _String
+  -------         PROC          MAIN
+  C:0B25H         LINE#         33
+  C:0B25H         LINE#         34
+  C:0B25H         LINE#         37
+  C:0B28H         LINE#         41
+  C:0B2BH         LINE#         43
+  C:0B31H         LINE#         45
+  C:0B31H         LINE#         46
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 4
+
+
+  C:0B31H         LINE#         47
+  C:0B34H         LINE#         48
+  C:0B37H         LINE#         49
+  -------         ENDPROC       MAIN
+  -------         PROC          OUTPUTHANDLER
+  C:0A17H         LINE#         52
+  C:0A17H         LINE#         53
+  C:0A17H         LINE#         54
+  C:0A21H         LINE#         55
+  C:0A21H         LINE#         56
+  C:0A21H         LINE#         57
+  C:0A27H         LINE#         58
+  C:0A29H         LINE#         59
+  C:0A29H         LINE#         60
+  C:0A2FH         LINE#         61
+  C:0A31H         LINE#         62
+  C:0A31H         LINE#         63
+  C:0A37H         LINE#         64
+  C:0A37H         LINE#         65
+  C:0A37H         LINE#         67
+  C:0A41H         LINE#         68
+  C:0A41H         LINE#         69
+  C:0A41H         LINE#         70
+  C:0A47H         LINE#         71
+  C:0A48H         LINE#         72
+  C:0A48H         LINE#         73
+  C:0A4EH         LINE#         74
+  C:0A4FH         LINE#         75
+  C:0A4FH         LINE#         76
+  C:0A55H         LINE#         77
+  C:0A55H         LINE#         78
+  C:0A55H         LINE#         79
+  -------         ENDPROC       OUTPUTHANDLER
+  -------         PROC          L?0044
+  -------         ENDPROC       L?0044
+  -------         PROC          _DELAY
+  D:0007H         SYMBOL        seconds
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  -------         ENDDO         
+  C:0A66H         LINE#         81
+  C:0A66H         LINE#         82
+  C:0A66H         LINE#         85
+  C:0A6DH         LINE#         86
+  C:0A6DH         LINE#         87
+  C:0A79H         LINE#         88
+  C:0A79H         LINE#         89
+  C:0A7CH         LINE#         90
+  C:0A82H         LINE#         91
+  C:0A84H         LINE#         92
+  C:0A87H         LINE#         93
+  C:0A89H         LINE#         94
+  C:0A8CH         LINE#         95
+  C:0A8EH         LINE#         96
+  C:0A91H         LINE#         97
+  -------         ENDPROC       _DELAY
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 5
+
+
+  -------         PROC          LIGHTHANDLER
+  C:09A6H         LINE#         117
+  C:09A6H         LINE#         118
+  C:09A6H         LINE#         119
+  C:09B2H         LINE#         120
+  C:09B2H         LINE#         121
+  C:09B7H         LINE#         122
+  C:09BAH         LINE#         123
+  C:09BBH         LINE#         124
+  C:09C9H         LINE#         125
+  C:09C9H         LINE#         126
+  C:09CEH         LINE#         127
+  C:09D4H         LINE#         128
+  C:09D5H         LINE#         129
+  C:09E1H         LINE#         130
+  C:09E1H         LINE#         131
+  C:09E6H         LINE#         132
+  C:09E9H         LINE#         133
+  C:09EAH         LINE#         134
+  C:09F8H         LINE#         135
+  C:09F8H         LINE#         136
+  C:09FDH         LINE#         137
+  C:0A03H         LINE#         138
+  C:0A04H         LINE#         141
+  C:0A04H         LINE#         142
+  C:0A0AH         LINE#         143
+  C:0A10H         LINE#         144
+  C:0A16H         LINE#         145
+  C:0A16H         LINE#         146
+  -------         ENDPROC       LIGHTHANDLER
+  -------         PROC          EWBUTTON
+  C:0800H         LINE#         148
+  C:081DH         LINE#         151
+  C:0825H         LINE#         152
+  C:0825H         LINE#         154
+  C:0825H         LINE#         155
+  C:0825H         LINE#         156
+  C:0828H         LINE#         157
+  C:082EH         LINE#         158
+  C:0832H         LINE#         159
+  C:083BH         LINE#         161
+  C:083DH         LINE#         164
+  C:0846H         LINE#         166
+  C:084FH         LINE#         167
+  C:0857H         LINE#         168
+  C:0865H         LINE#         169
+  C:0873H         LINE#         170
+  C:0881H         LINE#         171
+  C:088FH         LINE#         173
+  C:0891H         LINE#         174
+  C:0897H         LINE#         176
+  C:089CH         LINE#         177
+  C:08A1H         LINE#         178
+  C:08AAH         LINE#         180
+  C:08B0H         LINE#         181
+  C:08B6H         LINE#         182
+  C:08B8H         LINE#         183
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 6
+
+
+  C:08B8H         LINE#         184
+  -------         ENDPROC       EWBUTTON
+  -------         PROC          NSBUTTON
+  C:08D3H         LINE#         186
+  C:08F0H         LINE#         189
+  C:08F8H         LINE#         190
+  C:08F8H         LINE#         191
+  C:08F8H         LINE#         192
+  C:08F8H         LINE#         193
+  C:08FBH         LINE#         194
+  C:0901H         LINE#         195
+  C:0905H         LINE#         196
+  C:090EH         LINE#         198
+  C:0910H         LINE#         201
+  C:0919H         LINE#         203
+  C:0922H         LINE#         204
+  C:092AH         LINE#         205
+  C:0938H         LINE#         206
+  C:0946H         LINE#         207
+  C:0954H         LINE#         208
+  C:0962H         LINE#         210
+  C:0964H         LINE#         211
+  C:096AH         LINE#         213
+  C:096FH         LINE#         214
+  C:0974H         LINE#         215
+  C:097DH         LINE#         217
+  C:0983H         LINE#         218
+  C:0989H         LINE#         219
+  C:098BH         LINE#         220
+  C:098BH         LINE#         221
+  -------         ENDPROC       NSBUTTON
+  -------         PROC          UART_INIT
+  C:0B45H         LINE#         226
+  C:0B45H         LINE#         227
+  C:0B45H         LINE#         228
+  C:0B48H         LINE#         229
+  C:0B4BH         LINE#         230
+  C:0B4EH         LINE#         231
+  C:0B50H         LINE#         233
+  -------         ENDPROC       UART_INIT
+  -------         PROC          _TRANSMIT_DATA
+  D:0007H         SYMBOL        tx_data
+  C:0B51H         LINE#         235
+  C:0B51H         LINE#         236
+  C:0B51H         LINE#         237
+  C:0B53H         LINE#         238
+  C:0B56H         LINE#         239
+  C:0B58H         LINE#         242
+  -------         ENDPROC       _TRANSMIT_DATA
+  -------         PROC          L?0045
+  -------         ENDPROC       L?0045
+  -------         PROC          _STRING
+  D:0011H         SYMBOL        str
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0A9DH         LINE#         244
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/07/2020  21:19:05  PAGE 7
+
+
+  C:0AA3H         LINE#         246
+  C:0AA3H         LINE#         248
+  C:0ABBH         LINE#         249
+  C:0ABBH         LINE#         250
+  C:0ABEH         LINE#         251
+  C:0AC5H         LINE#         253
+  -------         ENDPROC       _STRING
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0AF8H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?_STRING?MAIN
+    CALLER1: ?PR?EWBUTTON?MAIN
+    CALLER2: ?PR?NSBUTTON?MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0335H BYTE (40%) *
+******************************************************************************
+
+Program Size: data=21.0 xdata=0 code=866
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

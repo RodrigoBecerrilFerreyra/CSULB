@@ -1,0 +1,506 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Exam2</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-10-30"><meta name="DC.source" content="Exam2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Copyright</a></li><li><a href="#2">Problem 1</a></li><li><a href="#3">Problem 2</a></li><li><a href="#4">Problem 3</a></li><li><a href="#5">Problem 4</a></li><li><a href="#6">Problem 5</a></li></ul></div><h2 id="1">Copyright</h2><pre class="codeinput">close <span class="string">all</span>; format <span class="string">compact</span>; clc;
+fprintf(<span class="string">"Engineer: Rodrigo Becerril Ferreyra\n"</span>);
+fprintf(<span class="string">"Company: California State University, Long Beach\n"</span>);
+fprintf(<span class="string">"Project Name: Exam 2\n"</span>);
+fprintf(<span class="string">"Date: 29 October 2020\n"</span>);
+</pre><pre class="codeoutput">Engineer: Rodrigo Becerril Ferreyra
+Company: California State University, Long Beach
+Project Name: Exam 2
+Date: 29 October 2020
+</pre><h2 id="2">Problem 1</h2><pre class="codeinput">clear <span class="string">variables</span>;
+fprintf(<span class="string">"\nProblem 1\n"</span>);
+
+x = [0.6, 1.25, 1.85, 1.9, 2.5]; y = [0.909690, -0.990435, 0.384905, 0.482509, 0.993593];
+[c, ~, ~] = nfde(x, y);
+f_x0 = polyval(c, 1.5);
+realvalue = -0.511075;
+
+figure(); hold <span class="string">on</span>;
+
+domain = linspace(0.5, 2.5, 1000);
+interpol = plot(domain, polyval(c, domain), <span class="string">'b'</span>);
+points = plot(x, y, <span class="string">'r.'</span>, <span class="string">"Markersize"</span>, 10);
+interpolated_point = plot(1.5, f_x0, <span class="string">'k.'</span>, <span class="string">"Markersize"</span>, 10);
+legend([points, interpol, interpolated_point], [<span class="string">"Data points"</span>, <span class="string">"Interpolated curve"</span>, <span class="string">"Interpolated point"</span>]);
+
+grid <span class="string">on</span>;
+title(<span class="string">"Problem 1"</span>); xlabel(<span class="string">"x"</span>); ylabel(<span class="string">"f(x)"</span>);
+
+text(1.525, f_x0, <span class="string">"$$\leftarrow(x_0, f(x_0))$$"</span>, <span class="string">"Interpreter"</span>, <span class="string">"latex"</span>);
+
+hold <span class="string">off</span>;
+
+fprintf(<span class="string">"Coefficients:"</span>); disp(c);
+fprintf(<span class="string">"f(x0) = %9.6f\n"</span>, f_x0);
+fprintf(<span class="string">"Relative error: %f%%\n"</span>, 100 * abs(1 - f_x0/realvalue));
+</pre><pre class="codeoutput">
+Problem 1
+Coefficients:    1.4087  -11.5009   33.3182  -38.8362   14.5184
+f(x0) = -0.453635
+Relative error: 11.238976%
+</pre><img vspace="5" hspace="5" src="Exam2_01.png" alt=""> <h2 id="3">Problem 2</h2><pre class="codeinput">clear <span class="string">variables</span>;
+fprintf(<span class="string">"\nProblem 2\n"</span>);
+
+<span class="comment">% 2(a)</span>
+pole = [0, 1/4, 1/2, 1, 5/4]; time = [0, 25.4, 49.4, 97.6, 122.4];
+f = @(x) spline(pole, time, x);
+pole34 = f(3/4); expectedvalue = 72.4;
+fprintf(<span class="string">"Time at 3/4 mi pole: %f\n"</span>, pole34);
+fprintf(<span class="string">"Relative error: %f%%\n"</span>, 100 * abs(1 - pole34/expectedvalue));
+
+figure(); hold <span class="string">on</span>;
+
+domain = linspace(0, 5/4, 500);
+interpol = plot(f(domain), domain, <span class="string">'b'</span>);
+points = plot(time, pole, <span class="string">'r.'</span>, <span class="string">"Markersize"</span>, 10);
+interpolated_point = plot(pole34, 3/4, <span class="string">"k."</span>, <span class="string">"Markersize"</span>, 10);
+legend([points, interpol], [<span class="string">"Data points"</span>, <span class="string">"Interpolated curve"</span>], <span class="string">"Location"</span>, <span class="string">"northwest"</span>);
+
+text(pole34+2.5, 3/4, <span class="string">"$$\leftarrow$$ Interpolated point"</span>, <span class="string">"Interpreter"</span>, <span class="string">"latex"</span>);
+
+grid <span class="string">on</span>;
+title(<span class="string">"Problem 2(a)"</span>); ylabel(<span class="string">"Distance (mi)"</span>); xlabel(<span class="string">"Time taken (s)"</span>);
+
+hold <span class="string">off</span>;
+
+<span class="comment">% 2(b)</span>
+<span class="comment">% Approximating f as a linear function, the derivative of the inverse function at 1/4 is 1/f'(1/4)</span>
+h = 1e-6; a = 1/4;
+m = h/(f(a+h) - f(a)); <span class="comment">% reciprocal of an approximation of the definition of the derivative (mi/s)</span>
+m = m * 60 * 60; <span class="comment">% (conversion to mi/h)</span>
+fprintf(<span class="string">"The horse is moving at about %f miles per hour at the 1/4 mi pole.\n"</span>, m);
+
+<span class="comment">% approximating the derivative as above at a = 5/4</span>
+a = 5/4;
+m = 60*60*(h/(f(a+h) - f(a))); <span class="comment">% mi/h</span>
+fprintf(<span class="string">"The horse is moving at about %f miles per hour at the 5/4 mi pole.\n"</span>, m);
+
+<span class="comment">% 2(c)</span>
+pole = [0, 1/4, 1/2, 3/4, 1, 5/4]; time = [0, 25.4, 49.4, 72.4, 97.6, 122.4];
+c = polyfit(pole, time, 3);
+t = @(x) polyval(c, x);
+cubic_time = t(pole);
+fprintf(<span class="string">"[a, b, c, d] = "</span>); disp(c(end:-1:1));
+
+figure(); hold <span class="string">on</span>;
+
+domain = linspace(0, 1.25, 250);
+interpol = plot(domain, t(domain), <span class="string">"Color"</span>, [0 0.5 0]);
+points = plot(pole, time, <span class="string">'b.'</span>, <span class="string">"Markersize"</span>, 10);
+cubic_points = plot(pole, cubic_time, <span class="string">'r.'</span>, <span class="string">"Markersize"</span>, 10);
+legend([points, interpol, cubic_points], [<span class="string">"Data points"</span>, <span class="string">"Cubic of best fit"</span>, <span class="string">"Data points on cubic"</span>], <span class="string">"Location"</span>, <span class="string">"northwest"</span>);
+
+grid <span class="string">on</span>;
+title(<span class="string">"Problem 2(c)"</span>); xlabel(<span class="string">"Distance (mi)"</span>); ylabel(<span class="string">"Time taken (s)"</span>);
+
+hold <span class="string">off</span>;
+
+fprintf(<span class="string">"cubic times: "</span>); disp(cubic_time);
+</pre><pre class="codeoutput">
+Problem 2
+Time at 3/4 mi pole: 73.328571
+Relative error: 1.282557%
+The horse is moving at about 36.824164 miles per hour at the 1/4 mi pole.
+The horse is moving at about 35.819196 miles per hour at the 5/4 mi pole.
+[a, b, c, d] =     0.0730  104.0910  -15.7079    8.6519
+cubic times:     0.0730   25.2492   49.2730   72.9556   97.1079  122.5413
+</pre><img vspace="5" hspace="5" src="Exam2_02.png" alt=""> <img vspace="5" hspace="5" src="Exam2_03.png" alt=""> <h2 id="4">Problem 3</h2><pre class="codeinput">clear <span class="string">variables</span>;
+fprintf(<span class="string">"\nProblem 3\n"</span>);
+
+A = @(r) det([r^3 -5*r 4 -2 -1; -r 3 -1 r^2 1; 1 2 3*r -2 -1; 4 -2 -1 -2*r 1; 3 -r 1 -1 -2]); <span class="comment">% This needs to return a scalar for arrayfun to work.</span>
+f = @(r) arrayfun(A, r); <span class="comment">% We need to find c such that f(c) = 0.</span>
+
+a = -10; b = 10; <span class="comment">% initial guesses</span>
+c = (a + b)/2; last_c = 1e6;
+iterations = 100;
+
+<span class="keyword">while</span> (abs(last_c - c) &gt;= 1e-6) &amp;&amp; (iterations &gt; 0)
+
+    <span class="keyword">if</span> sign(f(a)) == sign(f(c))
+        a = c;
+    <span class="keyword">elseif</span> sign(f(b)) == sign(f(c))
+        b = c;
+    <span class="keyword">else</span>
+        fprintf(<span class="string">"Error occured: a, b, c = %f %f %f\n"</span>, a, b, c);
+    <span class="keyword">end</span>
+
+    last_c = c;
+    c = (a + b)/2;
+    iterations = iterations - 1;
+<span class="keyword">end</span>
+
+fprintf(<span class="string">"c = %f\nf(c) = %f\n"</span>, c, f(c));
+
+figure(); hold <span class="string">on</span>;
+
+domain = linspace(c-0.5, c+0.5, 1000);
+plotted_line = plot(domain, f(domain), <span class="string">'b-'</span>);
+points = plot(c, f(c), <span class="string">'r.'</span>, <span class="string">"Markersize"</span>, 10);
+legend([plotted_line, points], [<span class="string">"f"</span>, <span class="string">"Root of f"</span>]);
+
+grid <span class="string">on</span>;
+title(sprintf(<span class="string">"Problem 3, Root at %f"</span>, c)); xlabel(<span class="string">"r"</span>); ylabel(<span class="string">"det(A(r))"</span>);
+
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">
+Problem 3
+c = 3.154523
+f(c) = 0.000479
+</pre><img vspace="5" hspace="5" src="Exam2_04.png" alt=""> <h2 id="5">Problem 4</h2><pre class="codeinput">clear <span class="string">variables</span>;
+fprintf(<span class="string">"\nProblem 4\n"</span>);
+
+a = [1 2 -1; 3 -4 2]; b = [2 -1; 4 3; -1 5]; c = [a; 1 2 3]; d = [a' b(:, 1)];
+
+result = a(:)' * b(:);
+fprintf(<span class="string">"(a)"</span>); disp(result);
+
+result = sum((d*c - c*d)*a', <span class="string">"all"</span>);
+fprintf(<span class="string">"(b)"</span>); disp(result);
+
+result = (d'*c + b*a); <span class="comment">% original is (d'*c + a*a'), which is not defined (d'*c has dimensions 3x3 while a*a' has dimensions 2x2)</span>
+result = sum(result(1:2:3, :), <span class="string">"all"</span>);
+fprintf(<span class="string">"(c)"</span>); disp(result);
+
+result = a(2, :) * c(:, 3);
+fprintf(<span class="string">"(d)"</span>); disp(result);
+
+f = (b*b' - [c*a' b(:, 2)])^2 ./ 100;
+result = sum(diag(f)) + sum(diag(f(:, end:-1:1)));
+fprintf(<span class="string">"(e)"</span>); disp(result);
+</pre><pre class="codeoutput">
+Problem 4
+(a)    23
+(b)    71
+(c)     6
+(d)    -5
+(e)   11.7000
+</pre><h2 id="6">Problem 5</h2><pre class="codeinput">clear <span class="string">variables</span>;
+fprintf(<span class="string">"\nProblem 5\n"</span>);
+
+fprintf(<span class="string">"\n(a)\n"</span>);
+a = [1 2 3; 2 -3 5; -1 -2 1];
+ag = [a [2;7;1]];
+fprintf(<span class="string">"rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n"</span>, rank(a), rank(ag), length(a(1, :)));
+fprintf(<span class="string">"Set of linear equations (a) has one solution.\n"</span>);
+
+fprintf(<span class="string">"\n(b)\n"</span>);
+a = [1 1 -1 1 -1; 1 -1 -1 -1 1; -1 -1 1 -1 -1; 1 -1 1 -1 1; 1 1 1 1 1];
+ag = [a [0; 1; -1; 1; 0]];
+fprintf(<span class="string">"rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n"</span>, rank(a), rank(ag), length(a(1, :)));
+fprintf(<span class="string">"Set of linear equations (b) has no solution.\n"</span>);
+
+fprintf(<span class="string">"\n(c)\n"</span>);
+a = [1 4 -2 5; 3 -1 1 -4; -2 1 -2 3; 1 -1 1 -2];
+ag = [a [0; 9; -2; 2]];
+fprintf(<span class="string">"rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n"</span>, rank(a), rank(ag), length(a(1, :)));
+fprintf(<span class="string">"Set of linear equations (c) has one solution.\n"</span>);
+
+fprintf(<span class="string">"\n(d)\n"</span>);
+a = [3 -2 -1; -2 4/3 1/3; 1 -2 4];
+ag = [a [-1; 3; 5]];
+fprintf(<span class="string">"rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n"</span>, rank(a), rank(ag), length(a(1, :)));
+fprintf(<span class="string">"Set of linear equations (d) has one solution.\n"</span>);
+
+fprintf(<span class="string">"\n(e)\n"</span>);
+a = [1,1,-1; 1,1,1; 1,-1,1];
+ag = [a [3;2;1]];
+fprintf(<span class="string">"rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n"</span>, rank(a), rank(ag), length(a(1, :)));
+fprintf(<span class="string">"Set of linear equations (e) has one solution.\n"</span>);
+</pre><pre class="codeoutput">
+Problem 5
+
+(a)
+rank(A) = 3
+rank(A|b) = 3
+number of variables = 3
+Set of linear equations (a) has one solution.
+
+(b)
+rank(A) = 4
+rank(A|b) = 5
+number of variables = 5
+Set of linear equations (b) has no solution.
+
+(c)
+rank(A) = 4
+rank(A|b) = 4
+number of variables = 4
+Set of linear equations (c) has one solution.
+
+(d)
+rank(A) = 3
+rank(A|b) = 3
+number of variables = 3
+Set of linear equations (d) has one solution.
+
+(e)
+rank(A) = 3
+rank(A|b) = 3
+number of variables = 3
+Set of linear equations (e) has one solution.
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Copyright
+
+close all; format compact; clc;
+fprintf("Engineer: Rodrigo Becerril Ferreyra\n");
+fprintf("Company: California State University, Long Beach\n");
+fprintf("Project Name: Exam 2\n");
+fprintf("Date: 29 October 2020\n");
+
+%% Problem 1
+clear variables;
+fprintf("\nProblem 1\n");
+
+x = [0.6, 1.25, 1.85, 1.9, 2.5]; y = [0.909690, -0.990435, 0.384905, 0.482509, 0.993593];
+[c, ~, ~] = nfde(x, y);
+f_x0 = polyval(c, 1.5);
+realvalue = -0.511075;
+
+figure(); hold on;
+
+domain = linspace(0.5, 2.5, 1000);
+interpol = plot(domain, polyval(c, domain), 'b');
+points = plot(x, y, 'r.', "Markersize", 10);
+interpolated_point = plot(1.5, f_x0, 'k.', "Markersize", 10);
+legend([points, interpol, interpolated_point], ["Data points", "Interpolated curve", "Interpolated point"]);
+
+grid on;
+title("Problem 1"); xlabel("x"); ylabel("f(x)");
+
+text(1.525, f_x0, "$$\leftarrow(x_0, f(x_0))$$", "Interpreter", "latex");
+
+hold off;
+
+fprintf("Coefficients:"); disp(c);
+fprintf("f(x0) = %9.6f\n", f_x0);
+fprintf("Relative error: %f%%\n", 100 * abs(1 - f_x0/realvalue));
+
+%% Problem 2
+clear variables;
+fprintf("\nProblem 2\n");
+
+% 2(a)
+pole = [0, 1/4, 1/2, 1, 5/4]; time = [0, 25.4, 49.4, 97.6, 122.4];
+f = @(x) spline(pole, time, x);
+pole34 = f(3/4); expectedvalue = 72.4;
+fprintf("Time at 3/4 mi pole: %f\n", pole34);
+fprintf("Relative error: %f%%\n", 100 * abs(1 - pole34/expectedvalue));
+
+figure(); hold on;
+
+domain = linspace(0, 5/4, 500);
+interpol = plot(f(domain), domain, 'b');
+points = plot(time, pole, 'r.', "Markersize", 10);
+interpolated_point = plot(pole34, 3/4, "k.", "Markersize", 10);
+legend([points, interpol], ["Data points", "Interpolated curve"], "Location", "northwest");
+
+text(pole34+2.5, 3/4, "$$\leftarrow$$ Interpolated point", "Interpreter", "latex");
+
+grid on;
+title("Problem 2(a)"); ylabel("Distance (mi)"); xlabel("Time taken (s)");
+
+hold off;
+
+% 2(b)
+% Approximating f as a linear function, the derivative of the inverse function at 1/4 is 1/f'(1/4)
+h = 1e-6; a = 1/4;
+m = h/(f(a+h) - f(a)); % reciprocal of an approximation of the definition of the derivative (mi/s)
+m = m * 60 * 60; % (conversion to mi/h)
+fprintf("The horse is moving at about %f miles per hour at the 1/4 mi pole.\n", m);
+
+% approximating the derivative as above at a = 5/4
+a = 5/4;
+m = 60*60*(h/(f(a+h) - f(a))); % mi/h
+fprintf("The horse is moving at about %f miles per hour at the 5/4 mi pole.\n", m);
+
+% 2(c)
+pole = [0, 1/4, 1/2, 3/4, 1, 5/4]; time = [0, 25.4, 49.4, 72.4, 97.6, 122.4];
+c = polyfit(pole, time, 3);
+t = @(x) polyval(c, x);
+cubic_time = t(pole);
+fprintf("[a, b, c, d] = "); disp(c(end:-1:1));
+
+figure(); hold on;
+
+domain = linspace(0, 1.25, 250);
+interpol = plot(domain, t(domain), "Color", [0 0.5 0]);
+points = plot(pole, time, 'b.', "Markersize", 10);
+cubic_points = plot(pole, cubic_time, 'r.', "Markersize", 10);
+legend([points, interpol, cubic_points], ["Data points", "Cubic of best fit", "Data points on cubic"], "Location", "northwest");
+
+grid on;
+title("Problem 2(c)"); xlabel("Distance (mi)"); ylabel("Time taken (s)");
+
+hold off;
+
+fprintf("cubic times: "); disp(cubic_time);
+
+%% Problem 3
+clear variables;
+fprintf("\nProblem 3\n");
+
+A = @(r) det([r^3 -5*r 4 -2 -1; -r 3 -1 r^2 1; 1 2 3*r -2 -1; 4 -2 -1 -2*r 1; 3 -r 1 -1 -2]); % This needs to return a scalar for arrayfun to work.
+f = @(r) arrayfun(A, r); % We need to find c such that f(c) = 0.
+
+a = -10; b = 10; % initial guesses
+c = (a + b)/2; last_c = 1e6;
+iterations = 100;
+
+while (abs(last_c - c) >= 1e-6) && (iterations > 0)
+
+    if sign(f(a)) == sign(f(c))
+        a = c;
+    elseif sign(f(b)) == sign(f(c))
+        b = c;
+    else
+        fprintf("Error occured: a, b, c = %f %f %f\n", a, b, c);
+    end
+
+    last_c = c;
+    c = (a + b)/2;
+    iterations = iterations - 1;
+end
+
+fprintf("c = %f\nf(c) = %f\n", c, f(c));
+
+figure(); hold on;
+
+domain = linspace(c-0.5, c+0.5, 1000);
+plotted_line = plot(domain, f(domain), 'b-');
+points = plot(c, f(c), 'r.', "Markersize", 10);
+legend([plotted_line, points], ["f", "Root of f"]);
+
+grid on;
+title(sprintf("Problem 3, Root at %f", c)); xlabel("r"); ylabel("det(A(r))");
+
+hold off;
+
+%% Problem 4
+clear variables;
+fprintf("\nProblem 4\n");
+
+a = [1 2 -1; 3 -4 2]; b = [2 -1; 4 3; -1 5]; c = [a; 1 2 3]; d = [a' b(:, 1)];
+
+result = a(:)' * b(:);
+fprintf("(a)"); disp(result);
+
+result = sum((d*c - c*d)*a', "all");
+fprintf("(b)"); disp(result);
+
+result = (d'*c + b*a); % original is (d'*c + a*a'), which is not defined (d'*c has dimensions 3x3 while a*a' has dimensions 2x2)
+result = sum(result(1:2:3, :), "all");
+fprintf("(c)"); disp(result);
+
+result = a(2, :) * c(:, 3);
+fprintf("(d)"); disp(result);
+
+f = (b*b' - [c*a' b(:, 2)])^2 ./ 100;
+result = sum(diag(f)) + sum(diag(f(:, end:-1:1)));
+fprintf("(e)"); disp(result);
+
+%% Problem 5
+clear variables;
+fprintf("\nProblem 5\n");
+
+fprintf("\n(a)\n");
+a = [1 2 3; 2 -3 5; -1 -2 1];
+ag = [a [2;7;1]];
+fprintf("rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n", rank(a), rank(ag), length(a(1, :)));
+fprintf("Set of linear equations (a) has one solution.\n");
+
+fprintf("\n(b)\n");
+a = [1 1 -1 1 -1; 1 -1 -1 -1 1; -1 -1 1 -1 -1; 1 -1 1 -1 1; 1 1 1 1 1];
+ag = [a [0; 1; -1; 1; 0]];
+fprintf("rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n", rank(a), rank(ag), length(a(1, :)));
+fprintf("Set of linear equations (b) has no solution.\n");
+
+fprintf("\n(c)\n");
+a = [1 4 -2 5; 3 -1 1 -4; -2 1 -2 3; 1 -1 1 -2];
+ag = [a [0; 9; -2; 2]];
+fprintf("rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n", rank(a), rank(ag), length(a(1, :)));
+fprintf("Set of linear equations (c) has one solution.\n");
+
+fprintf("\n(d)\n");
+a = [3 -2 -1; -2 4/3 1/3; 1 -2 4];
+ag = [a [-1; 3; 5]];
+fprintf("rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n", rank(a), rank(ag), length(a(1, :)));
+fprintf("Set of linear equations (d) has one solution.\n");
+
+fprintf("\n(e)\n");
+a = [1,1,-1; 1,1,1; 1,-1,1];
+ag = [a [3;2;1]];
+fprintf("rank(A) = %d\nrank(A|b) = %d\nnumber of variables = %d\n", rank(a), rank(ag), length(a(1, :)));
+fprintf("Set of linear equations (e) has one solution.\n");
+
+##### SOURCE END #####
+--></body></html>

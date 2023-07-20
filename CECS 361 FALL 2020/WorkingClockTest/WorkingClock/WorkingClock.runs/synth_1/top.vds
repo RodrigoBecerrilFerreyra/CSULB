@@ -1,0 +1,547 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 06 21:14:19 2020
+# Process ID: 11388
+# Current directory: C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.runs/synth_1
+# Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.runs/synth_1/top.vds
+# Journal file: C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 275.469 ; gain = 68.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:39]
+INFO: [Synth 8-638] synthesizing module 'ThreeSecondTimer' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ThreeSecondTimer' (1#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:23]
+INFO: [Synth 8-638] synthesizing module 'Clock' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Clock.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Clock.v:232]
+INFO: [Synth 8-638] synthesizing module 'Music' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Music.v:22]
+INFO: [Synth 8-638] synthesizing module 'Music_ROM' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Music_ROM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Music_ROM' (2#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Music_ROM.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'address' does not match port width (8) of module 'Music_ROM' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Music.v:40]
+INFO: [Synth 8-638] synthesizing module 'Divide_by12' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Divide_by12.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Divide_by12' (3#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Divide_by12.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Music' (4#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Music.v:22]
+WARNING: [Synth 8-5788] Register songChoice_reg in module Clock is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Clock.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Clock' (5#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/Clock.v:23]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentDisplay' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/SevenSegmentDisplay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentDisplay' (6#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/SevenSegmentDisplay.v:23]
+WARNING: [Synth 8-3848] Net alarmOutVal in module/entity top does not have driver. [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:31]
+WARNING: [Synth 8-3848] Net stopwatchOutVal in module/entity top does not have driver. [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:31]
+WARNING: [Synth 8-3848] Net timerOutVal in module/entity top does not have driver. [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:31]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design Clock has unconnected port mode[1]
+WARNING: [Synth 8-3331] design Clock has unconnected port mode[0]
+WARNING: [Synth 8-3331] design Clock has unconnected port BTNU
+WARNING: [Synth 8-3331] design Clock has unconnected port BTNL
+WARNING: [Synth 8-3331] design Clock has unconnected port BTNR
+WARNING: [Synth 8-3331] design Clock has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 312.875 ; gain = 106.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 312.875 ; gain = 106.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]
+Finished Parsing XDC File [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 618.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "note" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_octave" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clockLock" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clockLock" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 5     
+	  13 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	  33 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   8 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ThreeSecondTimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 1     
+Module Music_ROM 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  33 Input      5 Bit        Muxes := 1     
+Module Divide_by12 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      3 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 1     
+Module Music 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  13 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 8     
+Module SevenSegmentDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clock/nolabel_line232/counter_octave" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port cathode[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 618.145 ; gain = 411.340
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------------------------+---------------+----------------+
+|Module Name | RTL Object                              | Depth x Width | Implemented As | 
++------------+-----------------------------------------+---------------+----------------+
+|Music_ROM   | note                                    | 256x6         | LUT            | 
+|top         | clock/nolabel_line232/get_fullnote/note | 256x6         | Block RAM      | 
++------------+-----------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (center/tst_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tst_reg__1) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'center/tst_reg__1/Q' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[28]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[27]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[26]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[25]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[24]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[23]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[22]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[21]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[20]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[19]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[18]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[17]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[16]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[15]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[14]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[13]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[12]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[11]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[10]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[9]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[8]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[7]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[6]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[5]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[4]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[3]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[2]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[1]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (center/tcount_reg[0]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tst_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tst_reg__1) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'up/tst_reg__1/Q' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[28]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[27]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[26]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[25]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[24]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[23]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[22]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[21]__0) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (up/tcount_reg[20]__0) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'left/tst_reg__1/Q' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'right/tst_reg__1/Q' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/imcol/Documents/School/Fall 2020/CECS 361/Final Project/workingclock/WorkingClock/WorkingClock.srcs/sources_1/new/ThreeSecondTimer.v:35]
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 618.145 ; gain = 411.340
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 618.145 ; gain = 411.340
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    25|
+|3     |LUT1       |    80|
+|4     |LUT2       |    47|
+|5     |LUT3       |    19|
+|6     |LUT4       |    29|
+|7     |LUT5       |    26|
+|8     |LUT6       |    44|
+|9     |RAMB18E1_1 |     1|
+|10    |FDCE       |    81|
+|11    |FDPE       |     7|
+|12    |FDRE       |    57|
+|13    |IBUF       |     2|
+|14    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    |   437|
+|2     |  clock             |Clock               |   356|
+|3     |    nolabel_line232 |Music               |   180|
+|4     |      get_fullnote  |Music_ROM           |    35|
+|5     |  ssg               |SevenSegmentDisplay |    59|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 306 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 618.145 ; gain = 106.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 618.145 ; gain = 411.340
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 113 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 618.145 ; gain = 411.340
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 618.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 06 21:14:46 2020...

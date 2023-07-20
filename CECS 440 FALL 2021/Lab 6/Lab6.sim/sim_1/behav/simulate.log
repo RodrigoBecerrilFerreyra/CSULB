@@ -1,0 +1,5 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+Failure: simulation finished successfully
+Time: 100 ns  Iteration: 0  Process: /signextend_tb/main  File: C:/Users/oscar/CodingProjects/CSULB/CECS 440 FALL 2021/Lab 6/Lab6.srcs/sim_1/new/signextend_tb.vhd
+$finish called at time : 100 ns : File "C:/Users/oscar/CodingProjects/CSULB/CECS 440 FALL 2021/Lab 6/Lab6.srcs/sim_1/new/signextend_tb.vhd" Line 37

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_7/project_7.srcs/sources_1/new/multiplexor_16bit_2_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexor_16bit_2_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_7/project_7.srcs/sources_1/new/counter_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_7/project_7.srcs/sources_1/new/top_counter_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_counter_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_7/project_7.srcs/sim_1/new/top_counter_32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_counter_32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_7/project_7.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

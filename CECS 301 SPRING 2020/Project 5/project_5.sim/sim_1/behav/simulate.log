@@ -1,0 +1,5 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished.
+$finish called at time : 5898465 ns : File "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 5/project_5.srcs/sim_1/new/Mem_top_tb.v" Line 36

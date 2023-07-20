@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog dist_mem_gen_v8_0_10  "../../../project_5.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v"
+verilog xil_defaultlib  "../../../project_5.srcs/sources_1/ip/ipmemory/sim/ipmemory.v"
+verilog xil_defaultlib  "../../../project_5.srcs/sources_1/new/supplemental_logic.v"
+verilog xil_defaultlib  "../../../project_5.srcs/sources_1/new/memory_controller_state_machine.v"
+verilog xil_defaultlib  "../../../project_5.srcs/sources_1/new/Mem_top.v"
+verilog xil_defaultlib  "../../../project_5.srcs/sim_1/new/Mem_top_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

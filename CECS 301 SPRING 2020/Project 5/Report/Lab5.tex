@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[binary-units]{siunitx}
+
+\renewcommand{\c}[1]{\texttt{#1}}
+%\DeclareBinaryPrefix{\kibi}{Ki}{10}
+
+\begin{document}
+
+\begin{flushright}
+    \noindent
+    Rodrigo Becerril Ferreyra\\
+    CECS 301 Section 03\\
+    Lab 5\\
+    Due 14 May 2020
+\end{flushright}
+
+\section{Introduction} In this lab, we were tasked with creating
+a state machine that would control various logic
+(supplemental logic)
+that would
+be used to test and exercise all addresses of a
+\(\SI{32}{\kibi b} \times \SI{16}{b} \) memory. Specifically,
+we were only tasked with creating the state machine, as the
+supplemental logic was given, and the memory was obtained by
+using the Vivado IP Catalog library included in most versions
+of Vivado (I am using Vivado version 2016.2). The state machine
+runs a total of four times, and
+fills each address of the memory with
+\begin{enumerate}
+    \item the address number.
+    \item the bitwise NOT of the address number.
+    \item hex value \c{0x5555}.
+    \item hex value \c{0xaaaa}.
+\end{enumerate}
+
+The contents of the address is checked after each pass.
+If an error occurred in the process of loading the addresses,
+then an error bit is raised. This can help with debugging the
+memory by tracing which register was being loaded at the time
+the error bit was raised.
+
+\section{State Machine} The state machine was the main part of
+the lab, and the piece of the circuit that performed the most
+work. It consists of eight states, five inputs (including
+\c{clk} and \c{rst}), and four outputs. The basic function
+of the state machine is documented by a state transition
+diagram. The state machine was programmed using a
+modified Moore model, which means that the outputs are not
+dependant on the inputs.
+
+\end{document}

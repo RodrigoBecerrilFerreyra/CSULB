@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\begin{document}
+
+\begin{flushright}
+    \noindent
+    Rodrigo Becerril Ferreyra\\
+    CECS 311 Section 01\\
+    Lab 1\\
+    2020-01-23 to 2020-01-28
+\end{flushright}
+
+\section{Introduction} In this lab, we were tasked with experimenting
+with the idea of a diode---specifically a light-emitting
+diode, or LED---and seeing how applying different voltages
+to it affected how much current ran through the diode, and
+how bright the LED lit up. A diode's main purpose is to
+only allow current to run in one direction; LEDs also
+happen to emit light while current runs through them. All
+diodes have a forward voltage (\(V_f\)), which is the voltage
+that must be applied to it in order for it to act as a wire
+with very low resistance. Our LED also had a maximum current
+(\(I_f\)), which is the maximum amount of current that
+can safely go through it.
+
+\section{Lab Setup} Our red LED came with a data sheet:
+on this data sheet, it noted the forward voltage \(V_f\) as
+between \SI{1.8}{\volt} and \SI{2.2}{V}. It also listed the
+maximum current \(I_f\) as \SI{30}{mA}. Our circuit consisted
+of the LED connected in series with a \SI{330}{\ohm} resistor.
+We were tasked with applying voltages from \SI{0}{V}--\SI{5}{V}
+in increments of \SI{0.25}{V}, and
+taking measurements of
+the current going through the circuit (\(I\)),
+the voltage across the LED (\(V_D\)),
+and the voltage across the resistor (\(V_R\)),
+along with a short description of the
+amount of light that the LED is emitting. The results are
+listed below.
+
+\begin{equation*}
+\begin{array}{l | l | l | l | l}
+        
+    V_\text{applied} \text{ (\si{V})} & I \text{ (\si{mA})} & V_D\text{ (\si{V})} & V_R \text{ (\si{V})} & \text{Comments}\\ \hline
+    0.50 & 1.6 & 0.018& 0.500& \text{Off}\\
+    0.75 & 2.1 & 0.024& 0.682& \text{Off}\\
+    1.00 & 3.0 & 0.035& 1.00 & \text{Off}\\
+    1.25 & 3.8 & 0.043& 1.24 & \text{Off}\\
+    1.50 & 4.5 & 0.13 & 1.49 & \text{Off}\\
+    1.75 & 5.1 & 0.06 & 1.68 & \text{Slight glow}\\
+    2.00 & 5.9 & 0.067& 1.94 & \text{Bright glow}\\
+    2.25 & 6.3 & 0.071& 2.06 & \text{Very bright glow}\\
+    2.50 & 7.2 & 0.078& 2.37 & \text{Very bright glow}\\
+    2.75 & 7.6 & 0.086& 2.50 & \text{Very bright glow}\\
+    3.00 & 8.8 & 0.10 & 2.92 & \text{Very bright glow}\\
+    3.50 &10.5 & 0.12 & 3.47 & \text{Intense glow}\\
+    4.00 &11.6 & 0.13 & 3.82 & \text{Max glow}\\
+    4.50 &13.0 & 0.14 & 4.30 & \text{Max glow}\\
+    5.00 &14.6 & 0.15 & 4.83 & \text{Max glow}
+    
+\end{array}
+\end{equation*}
+
+\section{Conclusions} It is uncertain just from looking at
+the data whether LEDs are either voltage- or current-driven
+devices. This is because both the voltage measured across
+the LED and the current going through the LED are increasing
+as the LED gets brighter. One might be inclined to think that the more voltage
+applied to the LED, the more light is given off, but this idea
+fails to acknowledge Ohm's Law: voltage and current are directly
+proportional, so as voltage increases, current increases as well,
+assuming that the resistance of the resistor stays constant.
+
+In one sentence, if an LED is either current- or voltage-
+driven, that means that as either current or voltage
+increases, the LED gives off more light.
+
+\(V_f\) (forward voltage) according to the datasheet falls into
+the range of \SI{1.8}{V}--\SI{2.2}{V}, and the first sign of
+light we observed in the lab was at \SI{1.75}{V}, so it's
+pretty close to the expected result. According to the datasheet,
+the maximum current that is safe for the LED is \SI{30}{mA}.
+We found that at around \SI{6}{mA} the LED is bright enough
+to be an indication light, therefore the usable brightness
+is achieved at \SI{6}{mA}.
+
+Lastly, it is never acceptable to use an LED without having
+some resistance to limit the current. When the voltage applied
+reaches the forward voltage, the resistance of the diode falls
+to zero, and the current increases hyperbolically. This is
+dangerous for the engineer messing with the current, as well as
+for the equipment used to generate it.
+
+\end{document}

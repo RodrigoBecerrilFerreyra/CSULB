@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/or_gate.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/MUX31.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/full_adder.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/and_gate.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/ALU1bit.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/imports/new/ALU16bit.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/new/RegisterFile.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sources_1/new/Lab5Top.vhd"
+vhdl xil_defaultlib  "../../../Lab 5.srcs/sim_1/new/Lab5Top_tb.vhd"
+
+# Do not sort compile order
+nosort

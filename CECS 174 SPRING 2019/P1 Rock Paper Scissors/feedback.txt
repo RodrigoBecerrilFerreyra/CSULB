@@ -1,0 +1,3 @@
+10 out of 10
+
+You are using a for loop to determine if there is a winning combination- while this looks like a good solution but it is not efficient as you will end up iterating several times.

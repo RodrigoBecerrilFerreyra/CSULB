@@ -1,0 +1,8 @@
+Patient was admitted for 5 days.
+Services Rendered
+*****************
+Daily Rate...............: $9.00
+Medication Fees..........: $9.00
+Services Fees............: $1.00
+
+Final charges incurred...: $55.00

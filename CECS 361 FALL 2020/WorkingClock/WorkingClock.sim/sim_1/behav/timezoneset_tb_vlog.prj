@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../WorkingClock.srcs/sources_1/new/timezoneset.v"
+verilog xil_defaultlib  "../../../WorkingClock.srcs/sim_1/new/timezoneset_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

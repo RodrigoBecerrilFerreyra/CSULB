@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sources_1/new/Processor_Components_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor_Components_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sources_1/imports/new/DB_PED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DB_PED
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sources_1/imports/new/seven_segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sim_1/new/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sim_1/new/register_file_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sim_1/imports/Downloads/alu_tb_instructor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb_instructor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.srcs/sim_1/imports/Downloads/RegFile_tb_instructor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 4/Project 4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,4 @@
+https://chortle.ccsu.edu/assemblytutorial/index.html
+https://stackoverflow.com/questions/8380135/mips-assembly-lui-t0-4097
+https://stackoverflow.com/questions/12768329/why-does-lw-return-immediate-value-is-too-large-for-field-in-qtspim
+https://www2.engr.arizona.edu/~ece369/Resources/spim/QtSPIM_examples.pdf

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1604108113">
+  <File Type="ROUTE-STATUS-PB" Name="Iter_Div_route_status.pb"/>
+  <File Type="PA-TCL" Name="Iter_Div.tcl"/>
+  <File Type="OPT-DCP" Name="Iter_Div_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Iter_Div_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Iter_Div_methodology_drc_opted.rpt"/>
+  <File Type="RDI-RDI" Name="Iter_Div.vdi"/>
+  <File Type="PWROPT-DRC" Name="Iter_Div_drc_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="Iter_Div_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Iter_Div_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Iter_Div.hwdef"/>
+  <File Type="OPT-TIMING" Name="Iter_Div_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Iter_Div_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Iter_Div_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Iter_Div_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Iter_Div_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Iter_Div_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Iter_Div_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Iter_Div_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Iter_Div_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Iter_Div_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Iter_Div_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Iter_Div_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Iter_Div_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Iter_Div_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Iter_Div_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Iter_Div_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="Iter_Div_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Iter_Div_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Iter_Div_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Iter_Div_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Iter_Div_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Iter_Div_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="Iter_Div.bit"/>
+  <File Type="ROUTE-PWR" Name="Iter_Div_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Iter_Div_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Iter_Div_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Iter_Div_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Iter_Div_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Iter_Div_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Iter_Div_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Iter_Div_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Iter_Div_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Iter_Div_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Iter_Div_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Iter_Div_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Iter_Div_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Iter_Div_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="Iter_Div.bin"/>
+  <File Type="BITSTR-MSK" Name="Iter_Div.msk"/>
+  <File Type="BITSTR-RBT" Name="Iter_Div.rbt"/>
+  <File Type="BITSTR-NKY" Name="Iter_Div.nky"/>
+  <File Type="BITSTR-BMM" Name="Iter_Div_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Iter_Div.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Iter_Div.sysdef"/>
+  <File Type="BG-BGN" Name="Iter_Div.bgn"/>
+  <File Type="BG-DRC" Name="Iter_Div.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/LShift_Reg_Clr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/LShift_Reg_Clr.v"/>
+        <Attr Name="ImportTime" Val="1604005019"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA_5bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/LShift_Reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/LShift_Reg.v"/>
+        <Attr Name="ImportTime" Val="1604005015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM_try1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Iter_Div.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Iter_Div"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CECS 361 FALL 2020/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1581119087"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

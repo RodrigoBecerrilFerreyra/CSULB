@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sat Oct 31 20:16:32 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="5818b27cd21a40539af3e4fc56d1803a" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="6" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="5" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="11" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="8" type="JavaHandler"/>
+<property name="ZoomFit" value="1" type="JavaHandler"/>
+<property name="ZoomIn" value="7" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AlarmClock.v, 100, 380" value="2" type="GuiResourceData"/>
+<property name="AlarmClock.v, 101, 161" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 101, 161, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 103, 330" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 103, 425" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 106, 236" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 106, 236, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 106, 295" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 106, 303" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 108, 145" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 108, 178" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 108, 293" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 109, 455" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 11, 22" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 113, 431" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 113, 431, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 115, 181" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 121, 343" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 123, 283" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 123, 318" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 124, 420" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 125, 296" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 128, 193" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 128, 485" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 13, 383" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 13, 383, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 130, 236" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 131, 213" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 131, 370" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 139, 327" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 140, 128" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 140, 413" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 141, 143" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 141, 315" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 143, 132" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 143, 132, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 143, 450" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 146, 305" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 151, 88" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 153, 215" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 155, 183" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 156, 488" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 156, 7" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 158, 301" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 161, 306" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 161, 422" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 170, 80" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 171, 103" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 173, 443" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 178, 447" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 179, 447" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 180, 198" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 185, 125" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 185, 385" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 188, 398" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 21, 377" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 211, 125" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 211, 125, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 216, 215" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 218, 198" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 23, 130" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 230, 383" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 241, 275" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 243, 113" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 25, 158" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 259, 347" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 26, 250" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 26, 347" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 3, 371" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 308, 178" value="2" type="GuiResourceData"/>
+<property name="AlarmClock.v, 315, 240" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 328, 268" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 34, 168" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 351, 435" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 353, 190" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 360, 327" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 375, 115" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 378, 162" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 39, 111" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 393, 380" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 396, 345" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 398, 121" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 41, 180" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 413, 135" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 414, 262" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 425, 126" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 43, 230" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 43, 316" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 490, 128" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 51, 230" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 51, 230, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 53, 143" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 58, 163" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 6, 27" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 61, 166" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 65, 115" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 76, 316" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 81, 263" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 85, 113" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 86, 280" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 86, 380" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 86, 428" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 88, 250" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 88, 263" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 90, 215" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 93, 413" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 94, 295" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 94, 295, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 95, 471" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 98, 362" value="1" type="GuiResourceData"/>
+<property name="AlarmClock.v, 98, 380" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 115, 193" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 118, 208" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 120, 277" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 143, 178" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 15, 363" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 167, 62" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 188, 145" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 188, 145, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 202, 221" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 233, 223" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 235, 268" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 28, 166" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 35, 148" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 388, 205" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 475, 283" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 530, 241" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 530, 241, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 612, 246" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 65, 206, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="AlarmClock_tb.v, 80, 215" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="6" type="GuiResourceData"/>
+<property name="NEXT, Next " value="6" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, AlarmClock" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, AlarmClock_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, negedge_detect" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, negedge_detect_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, toggle" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, toggle_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 0, (String" value="6" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="12" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_FIT, Schematic_zoom_fit" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, AlarmClock (AlarmClock.v" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, negedge_detect (negedge_detect.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, toggle (toggle.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, AlarmClock_tb (AlarmClock_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, negedge_detect_tb (negedge_detect_tb.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, toggle_tb (toggle_tb.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Final Project/Final Project.xpr, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-1031] dec1 is not declared [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Final Project/Final Project.srcs/sources_1/new/AlarmClock.v:48]. ], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_STATUS_MESSAGES, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="4" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectTab_RELOAD, Reload" value="6" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_ATTRIBUTES_TABLE, Fanout For Scalar Pin ; false, 1, false, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_ATTRIBUTES_TABLE, Fanout For Scalar Pin ; true, 1, true, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_ATTRIBUTES_TABLE, Inst Equation ; false, 0, false, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_ATTRIBUTES_TABLE, Inst Equation ; true, 0, true, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_TABBED_PANE, PAResourceQtoS.SchOptionsView_COLORS, Colors, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchOptionsView_TABBED_PANE, PAResourceQtoS.SchOptionsView_DISPLAY_PROPERTIES, Display Properties, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SchematicView_OPTIONS, Schematic_options" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, counter_q[16:0] ; 00000 ; Array, 7, counter_q[16:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, counter_q[16:0] ; 00000 ; Array, 7, counter_q[16:0], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, cs[1:0] ; 1 ; Array, 4, 1, 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, ns[1:0] ; 1 ; Array, 5, 1, 1, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, ns[1:0] ; 1 ; Array, 5, 1, 1, true, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; AlarmClock ; Verilog Module, 1, AlarmClock, 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; toggle ; Verilog Module, 1, toggle, 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="6" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="5" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="16" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="6" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="35" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="16" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="2" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="7" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 101, 283" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 31, 220" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 31, 232" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 115, 55" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 136, 245" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 149, 311" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 158, 10" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 168, 260" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 190, 316" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 26, 160" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 31, 148" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 41, 113" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 46, 181" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 61, 318" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 61, 318, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="negedge_detect.v, 9, 360" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 155, 283" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 210, 248" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 25, 363" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 28, 163" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 50, 198" value="1" type="GuiResourceData"/>
+<property name="negedge_detect_tb.v, 90, 261" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 100, 421" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 101, 431" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 101, 433" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 106, 265" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 108, 268" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 113, 203" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 116, 298" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 118, 300" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 121, 218" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 128, 338" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 131, 185" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 138, 235" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 140, 210" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 143, 465" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 146, 248" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 151, 25" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 153, 438" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 158, 290" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 178, 8" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 193, 90" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 198, 138" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 198, 323" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 213, 148" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 213, 148, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 224, 167" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 23, 173" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 25, 370" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 259, 10" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 263, 198" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 266, 188" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 28, 126" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 38, 451" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 41, 130" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 464, 193" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 53, 470" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 56, 128" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 56, 128, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 60, 310" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 68, 383" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 70, 398" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 76, 256" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 78, 318" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 83, 178" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 88, 235" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 88, 235, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 91, 175" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 91, 175, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="toggle.v, 98, 178" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 135, 216" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 138, 178" value="2" type="GuiResourceData"/>
+<property name="toggle_tb.v, 140, 247" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 141, 207" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 168, 15" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 17, 203" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 209, 295" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 219, 312" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 25, 248" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 26, 175" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 26, 372" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 295, 230" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 35, 196" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 43, 413" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 48, 180" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 60, 178" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 63, 202" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 73, 160" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 73, 181" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 82, 207" value="1" type="GuiResourceData"/>
+<property name="toggle_tb.v, 90, 263" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="81" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="77" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

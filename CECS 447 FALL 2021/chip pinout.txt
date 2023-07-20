@@ -1,0 +1,17 @@
+Pin#->Name  -> Launchpad Pin
+1  -> GND   -> GND
+2  -> VCC   -> +3.3V
+3  -> NC
+4  -> NC
+5  -> NC
+6  -> RESET -> PA7
+7  -> A0    -> PA6
+8  -> SDA   -> PA5
+9  -> SCL   -> PA2
+10 -> CS    -> PA3
+11 -> SCK
+12 -> MISO
+13 -> MOSI
+14 -> SC_CS
+15 -> LED+  -> +3.3V
+16 -> LED-

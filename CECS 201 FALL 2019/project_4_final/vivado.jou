@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 07 14:33:15 2020
+# Process ID: 8512
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5512 C:\Users\oscar\Coding Projects\CSULB\CECS 201 FALL 2019\project_4_final\project_4_final.xpr
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final/vivado.log
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final/project_4_final.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final/project_4_final.runs/impl_1/mux_4to1_case.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/oscar/Coding Projects/CSULB/CECS 201 FALL 2019/project_4_final/project_4_final.runs/impl_1/mux_4to1_case.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close_project
+open_project {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.xpr}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new
+file mkdir C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1
+file mkdir {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new}
+close [ open {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new/FA8_Nexys_A7_100T.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.srcs/constrs_1/new/FA8_Nexys_A7_100T.xdc}}
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292AD3158A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292AD3158A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.runs/impl_1/FA8.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 1/Project 1.runs/impl_1/FA8.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+synth_design -rtl -name rtl_1
+close_design
+close_project

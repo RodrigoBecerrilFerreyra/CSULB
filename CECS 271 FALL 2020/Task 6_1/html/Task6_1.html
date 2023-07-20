@@ -1,0 +1,246 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Task6_1</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-11-04"><meta name="DC.source" content="Task6_1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Copyright</a></li><li><a href="#2">Problem 2</a></li><li><a href="#3">Problem 3</a></li><li><a href="#4">Problem 4</a></li><li><a href="#5">Problem 5</a></li></ul></div><h2 id="1">Copyright</h2><pre class="codeinput">close <span class="string">all</span>; format <span class="string">compact</span>; clc;
+fprintf(<span class="string">"Engineer: Rodrigo Becerril Ferreyra\n"</span>);
+fprintf(<span class="string">"Company: California State University, Long Beach\n"</span>);
+fprintf(<span class="string">"Project Name: Task 6.1\n"</span>);
+fprintf(<span class="string">"Start Date: 04 November 2020\n"</span>);
+</pre><pre class="codeoutput">Engineer: Rodrigo Becerril Ferreyra
+Company: California State University, Long Beach
+Project Name: Task 6.1
+Start Date: 04 November 2020
+</pre><h2 id="2">Problem 2</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 2\n"</span>);
+clear <span class="string">variables</span>;
+
+coefs = [1 -2; 3 2]; answers = [-2; 1];
+x = gauss(coefs, answers);
+fprintf(<span class="string">"(a), x = \n"</span>); disp(x);
+
+coefs = [4 -2 1; 2 5 2; 1 2 4]; answers = [8; 3; 11];
+x = gauss(coefs, answers);
+fprintf(<span class="string">"(b), x = \n"</span>); disp(x);
+
+coefs = [1 1 0 1; 2 1 -1 1; 4 -1 -2 2; 3 -1 -1 2]; answers = [2; 1; 0; -3];
+x = gauss(coefs, answers);
+fprintf(<span class="string">"(c), x = \n"</span>); disp(x);
+</pre><pre class="codeoutput">
+Problem 2
+(a), x = 
+   -0.2500
+    0.8750
+(b), x = 
+    0.7867
+   -0.9200
+    3.0133
+Warning: NO UNIQUE SOLUTIONS 
+(c), x = 
+     0
+     0
+     0
+     0
+</pre><h2 id="3">Problem 3</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 3\n"</span>);
+clear <span class="string">variables</span>;
+
+rank_coefs = @(S) rank([1 -1 S; -1 2 -S; S 1 1]);
+rank_aug = @(S) rank([1 -1 S -2; -1 2 -S 3; S 1 1 2]);
+num_arguments = 3;
+
+fprintf(<span class="string">"(a)  No solutions: S = 1, rank(A(S)) = %d, rank(augmented(S)) = %d, number of arguments = %d\n"</span>, rank_coefs(1), rank_aug(1), num_arguments);
+fprintf(<span class="string">"(b) Inf solutions: S = -1, rank(A(S)) = %d, rank(augmented(S)) = %d, number of arguments = %d\n"</span>, rank_coefs(-1), rank_aug(-1), num_arguments);
+
+S = 3;
+x = gauss([1 -1 S; -1 2 -S; S 1 1], [-2; 3; 2]);
+fprintf(<span class="string">"(c) Solution for S = 3:\nx = \n"</span>); disp(x);
+</pre><pre class="codeoutput">
+Problem 3
+(a)  No solutions: S = 1, rank(A(S)) = 2, rank(augmented(S)) = 3, number of arguments = 3
+(b) Inf solutions: S = -1, rank(A(S)) = 2, rank(augmented(S)) = 2, number of arguments = 3
+(c) Solution for S = 3:
+x = 
+    0.5000
+    1.0000
+   -0.5000
+</pre><h2 id="4">Problem 4</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 4\n"</span>);
+clear <span class="string">variables</span>;
+
+format <span class="string">rat</span>;
+var = 1./(1:9);
+coefs = [var(1:4); var(2:5); var(3:6); var(4:7)]; answers = transpose(var(6:9));
+x = gauss(coefs, answers);
+fprintf(<span class="string">"x = \n"</span>); disp(x);
+format;
+</pre><pre class="codeoutput">
+Problem 4
+x = 
+      -2/63    
+      25/42    
+     -50/21    
+      25/9     
+</pre><h2 id="5">Problem 5</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 5\n"</span>);
+clear <span class="string">variables</span>;
+
+a = [1 2 0 3; 1 0 2 2; 0 0 1 1]; x = [1000; 500; 350; 400]; b = [3500; 2700; 900];
+<span class="keyword">for</span> column = 1:4
+    a(:, column) = a(:, column).*x(column);
+<span class="keyword">end</span>
+
+answer = gauss(a, b);
+
+fprintf(<span class="string">"(a) Yes, there is enough food for the species because the system of linear equations\n"</span>);
+fprintf(<span class="string">"has a definite solution.\n"</span>);
+fprintf(<span class="string">"(b) No other species could be added without breaking\n"</span>);
+fprintf(<span class="string">"the system.\n"</span>);
+
+a = a(:, 1:3);
+answer2 = gauss(a, b);
+final = answer2 - answer;
+fprintf(<span class="string">"(c) No more would increase.\n"</span>);
+</pre><pre class="codeoutput">
+Problem 5
+(a) Yes, there is enough food for the species because the system of linear equations
+has a definite solution.
+(b) No other species could be added without breaking
+the system.
+(c) No more would increase.
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Copyright
+
+close all; format compact; clc;
+fprintf("Engineer: Rodrigo Becerril Ferreyra\n");
+fprintf("Company: California State University, Long Beach\n");
+fprintf("Project Name: Task 6.1\n");
+fprintf("Start Date: 04 November 2020\n");
+
+%% Problem 2
+fprintf("\nProblem 2\n");
+clear variables;
+
+coefs = [1 -2; 3 2]; answers = [-2; 1];
+x = gauss(coefs, answers);
+fprintf("(a), x = \n"); disp(x);
+
+coefs = [4 -2 1; 2 5 2; 1 2 4]; answers = [8; 3; 11];
+x = gauss(coefs, answers);
+fprintf("(b), x = \n"); disp(x);
+
+coefs = [1 1 0 1; 2 1 -1 1; 4 -1 -2 2; 3 -1 -1 2]; answers = [2; 1; 0; -3];
+x = gauss(coefs, answers);
+fprintf("(c), x = \n"); disp(x);
+
+%% Problem 3
+fprintf("\nProblem 3\n");
+clear variables;
+
+rank_coefs = @(S) rank([1 -1 S; -1 2 -S; S 1 1]);
+rank_aug = @(S) rank([1 -1 S -2; -1 2 -S 3; S 1 1 2]);
+num_arguments = 3;
+
+fprintf("(a)  No solutions: S = 1, rank(A(S)) = %d, rank(augmented(S)) = %d, number of arguments = %d\n", rank_coefs(1), rank_aug(1), num_arguments);
+fprintf("(b) Inf solutions: S = -1, rank(A(S)) = %d, rank(augmented(S)) = %d, number of arguments = %d\n", rank_coefs(-1), rank_aug(-1), num_arguments);
+
+S = 3;
+x = gauss([1 -1 S; -1 2 -S; S 1 1], [-2; 3; 2]);
+fprintf("(c) Solution for S = 3:\nx = \n"); disp(x);
+
+%% Problem 4
+fprintf("\nProblem 4\n");
+clear variables;
+
+format rat;
+var = 1./(1:9);
+coefs = [var(1:4); var(2:5); var(3:6); var(4:7)]; answers = transpose(var(6:9));
+x = gauss(coefs, answers);
+fprintf("x = \n"); disp(x);
+format;
+
+%% Problem 5
+fprintf("\nProblem 5\n");
+clear variables;
+
+a = [1 2 0 3; 1 0 2 2; 0 0 1 1]; x = [1000; 500; 350; 400]; b = [3500; 2700; 900];
+for column = 1:4
+    a(:, column) = a(:, column).*x(column);
+end
+
+answer = gauss(a, b);
+
+fprintf("(a) Yes, there is enough food for the species because the system of linear equations\n");
+fprintf("has a definite solution.\n");
+fprintf("(b) No other species could be added without breaking\n");
+fprintf("the system.\n");
+
+a = a(:, 1:3);
+answer2 = gauss(a, b);
+final = answer2 - answer;
+fprintf("(c) No more would increase.\n");
+
+##### SOURCE END #####
+--></body></html>

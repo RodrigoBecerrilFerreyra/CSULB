@@ -1,0 +1,16 @@
+Title: * C:\Users\oscar\Coding Projects\CSULB\CECS 211 FALL 2019\Lab 5\Schematic Files\Thevenin.asc
+Date: Fri Oct 18 17:17:34 2019
+Plotname: Operating Point
+Flags: real
+No. Variables: 5
+No. Points:            1
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Variables:
+	0	V(n001)	voltage
+	1	V(n002)	voltage
+	2	I(Rl)	device_current
+	3	I(R1)	device_current
+	4	I(V1)	device_current
+Binary:
+yé&1¬ú?ô´›?žqŸ:žqŸ:žqŸº

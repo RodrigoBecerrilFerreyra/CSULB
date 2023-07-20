@@ -1,0 +1,472 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Dec 07 21:29:56 2020
+# Process ID: 2016
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.runs/synth_1
+# Command line: vivado.exe -log timezoneset.vds -mode batch -messageDb vivado.pb -notrace -source timezoneset.tcl
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.runs/synth_1/timezoneset.vds
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source timezoneset.tcl -notrace
+Command: synth_design -top timezoneset -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 275.824 ; gain = 68.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'timezoneset' [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/sources_1/new/timezoneset.v:79]
+INFO: [Synth 8-256] done synthesizing module 'timezoneset' (1#1) [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/sources_1/new/timezoneset.v:79]
+WARNING: [Synth 8-3331] design timezoneset has unconnected port clk
+WARNING: [Synth 8-3331] design timezoneset has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 312.258 ; gain = 105.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 312.258 ; gain = 105.063
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DataIn[0]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[1]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[2]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[3]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[4]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[5]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[6]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[7]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[8]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[9]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[10]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[11]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[12]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[13]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[14]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataIn[15]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB[0]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB[1]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB[2]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[0]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[1]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[2]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[3]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[4]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[5]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[6]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cathode[7]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[0]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[1]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[2]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[3]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[4]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[5]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[6]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[7]'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_SD'. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/constrs_1/new/clock_NexysA7-100T.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/timezoneset_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/timezoneset_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 557.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'outVal_reg' [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/sources_1/new/timezoneset.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'currentState_reg' [C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/WorkingClock/WorkingClock.srcs/sources_1/new/timezoneset.v:89]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timezoneset 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design timezoneset has unconnected port clk
+WARNING: [Synth 8-3331] design timezoneset has unconnected port rst
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 557.285 ; gain = 350.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|timezoneset | outVal     | 64x6          | LUT            | 
+|timezoneset | outVal     | 64x6          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 557.285 ; gain = 350.090
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 557.285 ; gain = 350.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 573.035 ; gain = 365.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 573.035 ; gain = 365.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 582.699 ; gain = 375.504
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     8|
+|2     |LUT6 |     8|
+|3     |LD   |     9|
+|4     |IBUF |     4|
+|5     |OBUF |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    38|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 582.699 ; gain = 375.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 582.699 ; gain = 130.477
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 582.699 ; gain = 375.504
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 64 Warnings, 58 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 592.914 ; gain = 385.719
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 592.914 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 07 21:31:02 2020...

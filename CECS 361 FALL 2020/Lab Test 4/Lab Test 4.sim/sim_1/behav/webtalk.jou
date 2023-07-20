@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Sep 24 18:34:53 2020
+# Process ID: 1748
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 4/Lab Test 4.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 4/Lab Test 4.sim/sim_1/behav/xsim.dir/fib_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 4/Lab Test 4.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 4/Lab Test 4.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/oscar/Coding -notrace

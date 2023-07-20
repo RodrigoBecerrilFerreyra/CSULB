@@ -1,0 +1,15 @@
+Title: * C:\Users\oscar\Coding Projects\CSULB\CECS 211 FALL 2019\Lab 5\Schematic Files\Norton.asc
+Date: Fri Oct 18 17:19:50 2019
+Plotname: Operating Point
+Flags: real
+No. Variables: 4
+No. Points:            1
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Variables:
+	0	V(n001)	voltage
+	1	I(I1)	device_current
+	2	I(Rl)	device_current
+	3	I(R1)	device_current
+Binary:
+d	[4žuó?¼t“;jiŸ:Ä4W;

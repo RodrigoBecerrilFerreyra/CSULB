@@ -1,0 +1,5 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+Failure: simulation finished successfully
+Time: 600 ns  Iteration: 0  Process: /ALU16bit_tb/line__53  File: C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 4/CECS440Lab4/CECS440Lab4.srcs/sim_1/new/ALU16bit_tb.vhd
+$finish called at time : 600 ns : File "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 4/CECS440Lab4/CECS440Lab4.srcs/sim_1/new/ALU16bit_tb.vhd" Line 116

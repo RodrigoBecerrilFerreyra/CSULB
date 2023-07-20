@@ -1,0 +1,59 @@
+1.  Students working at individual PCs in a computer laboratory send their files
+    to be printed by a server that spools the files on its hard disk. Under what
+    conditions may a deadlock occur if the disk space for the print spool is
+    limited? How may the deadlock be avoided?
+
+Deadlock may occur if all students send their files to the server at the same
+    time, and the hard drive does not have enough space to queue all of them.
+    The printing daemon is waiting for a file to be queued, but will not receive
+    any file, since the hard drive is waiting for space to be freed, which will
+    not happen if the printing daemon does not print anything. Deadlock can be
+    avoided here if the server rejects all but one of the students' files. This
+    way, one student's file will be printed, while the others can quickly retry
+    their print job. If the others send their prints at the same time, the
+    server can perform the same procedure, until eventually all students' files
+    are printed.
+
+2.  In the preceding question, which resources are preemptable and which
+    are nonpreemptable?
+
+The printing daemon/server controller's focus is preemptable. An example of the
+    daemon's focus being preempted is the system choosing one student's print
+    job and rejecting the rest. The hard drive is non-preemptable in this
+    example: we don't want the hard drive to record half of a student's file,
+    and half of another one.
+
+3.  The four conditions (mutual exclusion, hold and wait, no preemption and
+    circular wait) are necessary for a resource deadlock to occur. Give an
+    example to show that these conditions are not sufficient for a resource
+    deadlock to occur. When are these conditions sufficient for a resource
+    deadlock to occur?
+
+Mutual exclusion means that no more than one process can use a given resource
+    at a time. If processes don't need to wait for a resource, deadlock cannot
+    occur. Hold and wait requires each process to state every single resource
+    before starting. This can cause waste of resources or artificial limits on
+    how many processes can run at a single time. Allowing processes to preempt
+    other processes and resources without caution can cause data corruptions
+    and other undesirable effects. Lastly, eliminating circular wait requires
+    that resources free the resources that they are using immediately after they
+    have performed a task, but this can limit the variety of tasks that a
+    process is allowed to perform.
+
+4.  Suppose four cars each approach an intersection from four different
+    directions simultaneously. Each corner of the intersection has a stop sign.
+    Assume that traffic regulations require that when two cars approach adjacent
+    stop signs at the same time, the car on the left must yield to the car on
+    the right. Thus, as four cars each drive up to their individual stop signs,
+    each waits (indefinitely) for the car on the left to proceed. Is this
+    anomaly a communication deadlock? Is it a resource deadlock?
+
+It is a communication deadlock, because the cars are waiting in a circular
+    fashion for the other to move.
+
+5.  A system has two processes and three identical resources. Each process needs
+    a maximum of two resources. Is deadlock possible? Explain your answer.
+
+Yes, a deadlock is in fact possible because if both processes ask for two
+    resources at the same time, they will be stuck waiting for the other one to
+    finish, thus creating a deadlock.

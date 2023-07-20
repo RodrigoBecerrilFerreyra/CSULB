@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Nov 03 18:16:46 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="859a57dc61544973b94fa9d6ec759db7" type="ProjectID"/>
+<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="17" type="JavaHandler"/>
+<property name="CloseProject" value="8" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="EditProperties" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="4" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="3" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="3" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="2" type="JavaHandler"/>
+<property name="RunSchematic" value="4" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="4" type="JavaHandler"/>
+<property name="SetTopNode" value="25" type="JavaHandler"/>
+<property name="ShowSimulationDefaultWaveFormView" value="1" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="41" type="JavaHandler"/>
+<property name="SimulationRun" value="59" type="JavaHandler"/>
+<property name="ToolsOptions" value="1" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="5" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="22" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="3" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
+<property name="ZoomIn" value="4" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FSM_try1.v, 105, 332" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 120, 155" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 125, 145" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 128, 125" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 132, 350" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 135, 112" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 135, 160" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 135, 160, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 135, 328" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 155, 128" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 155, 140" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 157, 165" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 165, 108" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 175, 250" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 175, 417" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 178, 160" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 182, 332" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 183, 307" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 192, 162" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 193, 158" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 195, 145" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 200, 130" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 212, 215" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 220, 162" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 222, 207" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 243, 177" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 300, 242" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 328, 233" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 330, 295" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 337, 232" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 390, 400" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 59, 213" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 60, 145" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 60, 210" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 65, 162" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 65, 195" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 68, 127" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 70, 125" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 90, 143" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 90, 143, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 95, 172" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 95, 330" value="1" type="GuiResourceData"/>
+<property name="FSM_try1.v, 98, 347" value="1" type="GuiResourceData"/>
+<property name="FSM_try1_tb.v, 271, 245" value="1" type="GuiResourceData"/>
+<property name="FSM_try1_tb.v, 281, 243" value="1" type="GuiResourceData"/>
+<property name="FSM_try1_tb.v, 376, 255" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 105, 328" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 113, 328" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 130, 323" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 135, 178" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 160, 215" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 162, 336" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 177, 211" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 197, 278" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 205, 280" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 212, 280" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 245, 333" value="1" type="GuiResourceData"/>
+<property name="Iter_Div_tb.v, 257, 330" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc], 5, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Iter_Div (Iter_Div.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, FSM_tb (FSM_tb.v" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, FSM_try1_tb (FSM_try1_tb.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Iter_Div_tb (Iter_Div_tb.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 13" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 12" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager], 26, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation], 9, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab 4/Lab 4.xpr, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, Recent Targets" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, Open target" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, Program device" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, cs[1:0] ; 3 ; Array, 13, cs[1:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, cs[1:0] ; 3 ; Array, 13, cs[1:0], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; FSM_try1 ; Verilog Module, 1, uut, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="3" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="2" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="4" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 110, 322" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 291, 274" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 279" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 323" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="82" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="78" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,48 @@
+Unable to capture context for thread 3824 in process 11688, can not generate back trace
+Unable to capture context for thread 9620 in process 11688, can not generate back trace
+Unable to capture context for thread 10916 in process 11688, can not generate back trace
+Unable to capture context for thread 8600 in process 11688, can not generate back trace
+Unable to capture context for thread 11804 in process 11688, can not generate back trace
+Unable to capture context for thread 6972 in process 11688, can not generate back trace
+Unable to capture context for thread 10816 in process 11688, can not generate back trace
+Unable to capture context for thread 8960 in process 11688, can not generate back trace
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Unable to capture context for thread 12048 in process 11688, can not generate back trace
+Unable to capture context for thread 11140 in process 11688, can not generate back trace
+Exception at PC 0x00007FFB562A3B29
+Unable to capture context for thread 12048 in process 11688, can not generate back trace
+Unable to capture context for thread 8940 in process 11688, can not generate back trace
+Unable to capture context for thread 11140 in process 11688, can not generate back trace
+Exception at PC 0x00007FFAEBBEBB93
+Printing stacktrace...
+
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29
+[0]  [0x00007FFAEBBEBB93]
+[1]  [0x00007FFAEBBEBB93]
+[2]  [0x00007FFAEBBEB4A1]
+[3]  [0x00007FFAEBBEB3EF]
+[4]  [0x00007FFAEBBD19FE]
+[5]  [0x00007FFAEBBD0ED1]
+[6]  [0x00007FFAEBBD0D76]
+[7]  [0x00007FFAEBB779F6]
+[8]  [0x00007FFAEBB67AFB]
+[9]  [0x00007FFAEBC8E90A]
+[10]  [0x00007FFAEBCA9F87]
+[11]  [0x00007FFAEBCAA05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FFB58047C24]
+[13] (RtlUserThreadStart+0x21) [0x00007FFB58DAD4D1]
+Done
+Exception at PC 0x00007FFB562A3B29
+Exception at PC 0x00007FFB562A3B29

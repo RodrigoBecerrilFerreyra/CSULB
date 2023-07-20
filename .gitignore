@@ -1,0 +1,16 @@
+# binaries, etc.
+*.exe
+.vscode/
+
+# mostly or all copywrited material
+CECS 343 SPRING 2022/
+CECS 460 SPRING 2021/
+
+# non-major related
+CSULB FTP Website/
+ECON 300 SPRING 2021/
+ENGL 205 SPRING 2021/
+ENGL 300 FALL 2021/
+HIST 172 FALL 2020/
+MATH 224 Notes/
+PHYS 254 FALL 2020/

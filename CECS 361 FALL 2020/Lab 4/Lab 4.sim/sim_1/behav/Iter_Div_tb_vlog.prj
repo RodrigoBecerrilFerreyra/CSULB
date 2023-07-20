@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/imports/Downloads/LShift_Reg_Clr.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/new/FA_5bit.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/new/Register.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/imports/Downloads/LShift_Reg.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/new/Counter.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/new/FSM_try1.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sources_1/new/Iter_Div.v"
+verilog xil_defaultlib  "../../../Lab 4.srcs/sim_1/new/Iter_Div_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

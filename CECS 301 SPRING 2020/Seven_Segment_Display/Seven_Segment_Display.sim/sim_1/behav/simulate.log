@@ -1,0 +1,902 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+
+Data In: 0000 Anode: fe Digit: 0
+Correct: switch 0 cathode c0 anode fe
+
+Data In: 3524 Anode: fd Digit: 2
+Correct: switch 2 cathode a4 anode fd
+
+Data In: 5e81 Anode: fb Digit: e
+Correct: switch e cathode 86 anode fb
+
+Data In: d609 Anode: f7 Digit: d
+Correct: switch d cathode a1 anode f7
+
+Data In: 5663 Anode: ef Digit: 3
+Correct: switch 3 cathode b0 anode ef
+
+Data In: 7b0d Anode: df Digit: 0
+Correct: switch 0 cathode c0 anode df
+
+Data In: 998d Anode: bf Digit: 9
+Correct: switch 9 cathode 90 anode bf
+
+Data In: 8465 Anode: 7f Digit: 8
+Correct: switch 8 cathode 80 anode 7f
+
+Data In: 5212 Anode: fe Digit: 2
+Correct: switch 2 cathode a4 anode fe
+
+Data In: e301 Anode: fd Digit: 0
+Correct: switch 0 cathode c0 anode fd
+
+Data In: cd0d Anode: fb Digit: d
+Correct: switch d cathode a1 anode fb
+
+Data In: f176 Anode: f7 Digit: f
+Correct: switch f cathode 8e anode f7
+
+Data In: cd3d Anode: ef Digit: d
+Correct: switch d cathode a1 anode ef
+
+Data In: 57ed Anode: df Digit: e
+Correct: switch e cathode 86 anode df
+
+Data In: f78c Anode: bf Digit: 7
+Correct: switch 7 cathode f8 anode bf
+
+Data In: e9f9 Anode: 7f Digit: e
+Correct: switch e cathode 86 anode 7f
+
+Data In: 24c6 Anode: fe Digit: 6
+Correct: switch 6 cathode 82 anode fe
+
+Data In: 84c5 Anode: fd Digit: c
+Correct: switch c cathode c6 anode fd
+
+Data In: d2aa Anode: fb Digit: 2
+Correct: switch 2 cathode a4 anode fb
+
+Data In: f7e5 Anode: f7 Digit: f
+Correct: switch f cathode 8e anode f7
+
+Data In: 7277 Anode: ef Digit: 7
+Correct: switch 7 cathode f8 anode ef
+
+Data In: d612 Anode: df Digit: 1
+Correct: switch 1 cathode f9 anode df
+
+Data In: db8f Anode: bf Digit: b
+Correct: switch b cathode 83 anode bf
+
+Data In: 69f2 Anode: 7f Digit: 6
+Correct: switch 6 cathode 82 anode 7f
+
+Data In: 96ce Anode: fe Digit: e
+Correct: switch e cathode 86 anode fe
+
+Data In: 7ae8 Anode: fd Digit: e
+Correct: switch e cathode 86 anode fd
+
+Data In: 4ec5 Anode: fb Digit: e
+Correct: switch e cathode 86 anode fb
+
+Data In: 495c Anode: f7 Digit: 4
+Correct: switch 4 cathode 99 anode f7
+
+Data In: 28bd Anode: ef Digit: d
+Correct: switch d cathode a1 anode ef
+
+Data In: 582d Anode: df Digit: 2
+Correct: switch 2 cathode a4 anode df
+
+Data In: 2665 Anode: bf Digit: 6
+Correct: switch 6 cathode 82 anode bf
+
+Data In: 6263 Anode: 7f Digit: 6
+Correct: switch 6 cathode 82 anode 7f
+
+Data In: 870a Anode: fe Digit: a
+Correct: switch a cathode 88 anode fe
+
+Data In: 2280 Anode: fd Digit: 8
+Correct: switch 8 cathode 80 anode fd
+
+Data In: 2120 Anode: fb Digit: 1
+Correct: switch 1 cathode f9 anode fb
+
+Data In: 45aa Anode: f7 Digit: 4
+Correct: switch 4 cathode 99 anode f7
+
+Data In: cc9d Anode: ef Digit: d
+Correct: switch d cathode a1 anode ef
+
+Data In: 3e96 Anode: df Digit: 9
+Correct: switch 9 cathode 90 anode df
+
+Data In: b813 Anode: bf Digit: 8
+Correct: switch 8 cathode 80 anode bf
+
+Data In: 380d Anode: 7f Digit: 3
+Correct: switch 3 cathode b0 anode 7f
+
+Data In: d653 Anode: fe Digit: 3
+Correct: switch 3 cathode b0 anode fe
+
+Data In: dd6b Anode: fd Digit: 6
+Correct: switch 6 cathode 82 anode fd
+
+Data In: 2ad5 Anode: fb Digit: a
+Correct: switch a cathode 88 anode fb
+
+Data In: 4a02 Anode: f7 Digit: 4
+Correct: switch 4 cathode 99 anode f7
+
+Data In: 3eae Anode: ef Digit: e
+Correct: switch e cathode 86 anode ef
+
+Data In: e91d Anode: df Digit: 1
+Correct: switch 1 cathode f9 anode df
+
+Data In: 72cf Anode: bf Digit: 2
+Correct: switch 2 cathode a4 anode bf
+
+Data In: 4923 Anode: 7f Digit: 4
+Correct: switch 4 cathode 99 anode 7f
+
+Data In: 650a Anode: fe Digit: a
+Correct: switch a cathode 88 anode fe
+
+Data In: 0aca Anode: fd Digit: c
+Correct: switch c cathode c6 anode fd
+
+Data In: 4c3c Anode: fb Digit: c
+Correct: switch c cathode c6 anode fb
+
+Data In: bdf2 Anode: f7 Digit: b
+Correct: switch b cathode 83 anode f7
+
+Data In: 618a Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: b341 Anode: df Digit: 4
+Correct: switch 4 cathode 99 anode df
+
+Data In: 34d8 Anode: bf Digit: 4
+Correct: switch 4 cathode 99 anode bf
+
+Data In: f378 Anode: 7f Digit: f
+Correct: switch f cathode 8e anode 7f
+
+Data In: 1289 Anode: fe Digit: 9
+Correct: switch 9 cathode 90 anode fe
+
+Data In: 0deb Anode: fd Digit: e
+Correct: switch e cathode 86 anode fd
+
+Data In: 65b6 Anode: fb Digit: 5
+Correct: switch 5 cathode 92 anode fb
+
+Data In: f9c6 Anode: f7 Digit: f
+Correct: switch f cathode 8e anode f7
+
+Data In: 13ae Anode: ef Digit: e
+Correct: switch e cathode 86 anode ef
+
+Data In: 02bc Anode: df Digit: b
+Correct: switch b cathode 83 anode df
+
+Data In: dd2a Anode: bf Digit: d
+Correct: switch d cathode a1 anode bf
+
+Data In: 9a0b Anode: 7f Digit: 9
+Correct: switch 9 cathode 90 anode 7f
+
+Data In: be71 Anode: fe Digit: 1
+Correct: switch 1 cathode f9 anode fe
+
+Data In: 4185 Anode: fd Digit: 8
+Correct: switch 8 cathode 80 anode fd
+
+Data In: 554f Anode: fb Digit: 5
+Correct: switch 5 cathode 92 anode fb
+
+Data In: 603b Anode: f7 Digit: 6
+Correct: switch 6 cathode 82 anode f7
+
+Data In: 333a Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: 327e Anode: df Digit: 7
+Correct: switch 7 cathode f8 anode df
+
+Data In: 4b15 Anode: bf Digit: b
+Correct: switch b cathode 83 anode bf
+
+Data In: 9bf1 Anode: 7f Digit: 9
+Correct: switch 9 cathode 90 anode 7f
+
+Data In: 4bd9 Anode: fe Digit: 9
+Correct: switch 9 cathode 90 anode fe
+
+Data In: 0762 Anode: fd Digit: 6
+Correct: switch 6 cathode 82 anode fd
+
+Data In: fb4c Anode: fb Digit: b
+Correct: switch b cathode 83 anode fb
+
+Data In: 559f Anode: f7 Digit: 5
+Correct: switch 5 cathode 92 anode f7
+
+Data In: a18f Anode: ef Digit: f
+Correct: switch f cathode 8e anode ef
+
+Data In: a9f8 Anode: df Digit: f
+Correct: switch f cathode 8e anode df
+
+Data In: 60b7 Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: 569f Anode: 7f Digit: 5
+Correct: switch 5 cathode 92 anode 7f
+
+Data In: 945c Anode: fe Digit: c
+Correct: switch c cathode c6 anode fe
+
+Data In: c05b Anode: fd Digit: 5
+Correct: switch 5 cathode 92 anode fd
+
+Data In: 3789 Anode: fb Digit: 7
+Correct: switch 7 cathode f8 anode fb
+
+Data In: 3249 Anode: f7 Digit: 3
+Correct: switch 3 cathode b0 anode f7
+
+Data In: 3ed0 Anode: ef Digit: 0
+Correct: switch 0 cathode c0 anode ef
+
+Data In: c0d7 Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: fc51 Anode: bf Digit: c
+Correct: switch c cathode c6 anode bf
+
+Data In: 2f96 Anode: 7f Digit: 2
+Correct: switch 2 cathode a4 anode 7f
+
+Data In: 7f0c Anode: fe Digit: c
+Correct: switch c cathode c6 anode fe
+
+Data In: cec2 Anode: fd Digit: c
+Correct: switch c cathode c6 anode fd
+
+Data In: edc8 Anode: fb Digit: d
+Correct: switch d cathode a1 anode fb
+
+Data In: 5a77 Anode: f7 Digit: 5
+Correct: switch 5 cathode 92 anode f7
+
+Data In: ed3d Anode: ef Digit: d
+Correct: switch d cathode a1 anode ef
+
+Data In: db12 Anode: df Digit: 1
+Correct: switch 1 cathode f9 anode df
+
+Data In: 007e Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: 816d Anode: 7f Digit: 8
+Correct: switch 8 cathode 80 anode 7f
+
+Data In: e739 Anode: fe Digit: 9
+Correct: switch 9 cathode 90 anode fe
+
+Data In: 8f1f Anode: fd Digit: 1
+Correct: switch 1 cathode f9 anode fd
+
+Data In: f6d3 Anode: fb Digit: 6
+Correct: switch 6 cathode 82 anode fb
+
+Data In: 2f85 Anode: f7 Digit: 2
+Correct: switch 2 cathode a4 anode f7
+
+Data In: 8878 Anode: ef Digit: 8
+Correct: switch 8 cathode 80 anode ef
+
+Data In: 595b Anode: df Digit: 5
+Correct: switch 5 cathode 92 anode df
+
+Data In: 4b49 Anode: bf Digit: b
+Correct: switch b cathode 83 anode bf
+
+Data In: ae3f Anode: 7f Digit: a
+Correct: switch a cathode 88 anode 7f
+
+Data In: af2a Anode: fe Digit: a
+Correct: switch a cathode 88 anode fe
+
+Data In: 6358 Anode: fd Digit: 5
+Correct: switch 5 cathode 92 anode fd
+
+Data In: 3886 Anode: fb Digit: 8
+Correct: switch 8 cathode 80 anode fb
+
+Data In: 0c8e Anode: f7 Digit: 0
+Correct: switch 0 cathode c0 anode f7
+
+Data In: f29c Anode: ef Digit: c
+Correct: switch c cathode c6 anode ef
+
+Data In: 99fa Anode: df Digit: f
+Correct: switch f cathode 8e anode df
+
+Data In: bc26 Anode: bf Digit: c
+Correct: switch c cathode c6 anode bf
+
+Data In: 1773 Anode: 7f Digit: 1
+Correct: switch 1 cathode f9 anode 7f
+
+Data In: b4a3 Anode: fe Digit: 3
+Correct: switch 3 cathode b0 anode fe
+
+Data In: a82f Anode: fd Digit: 2
+Correct: switch 2 cathode a4 anode fd
+
+Data In: 92b3 Anode: fb Digit: 2
+Correct: switch 2 cathode a4 anode fb
+
+Data In: 565f Anode: f7 Digit: 5
+Correct: switch 5 cathode 92 anode f7
+
+Data In: 0d44 Anode: ef Digit: 4
+Correct: switch 4 cathode 99 anode ef
+
+Data In: fdf7 Anode: df Digit: f
+Correct: switch f cathode 8e anode df
+
+Data In: 36cb Anode: bf Digit: 6
+Correct: switch 6 cathode 82 anode bf
+
+Data In: 1ae6 Anode: 7f Digit: 1
+Correct: switch 1 cathode f9 anode 7f
+
+Data In: db5a Anode: fe Digit: a
+Correct: switch a cathode 88 anode fe
+
+Data In: c129 Anode: fd Digit: 2
+Correct: switch 2 cathode a4 anode fd
+
+Data In: e2ed Anode: fb Digit: 2
+Correct: switch 2 cathode a4 anode fb
+
+Data In: 6cda Anode: f7 Digit: 6
+Correct: switch 6 cathode 82 anode f7
+
+Data In: b665 Anode: ef Digit: 5
+Correct: switch 5 cathode 92 anode ef
+
+Data In: e2b5 Anode: df Digit: b
+Correct: switch b cathode 83 anode df
+
+Data In: 94df Anode: bf Digit: 4
+Correct: switch 4 cathode 99 anode bf
+
+Data In: 1979 Anode: 7f Digit: 1
+Correct: switch 1 cathode f9 anode 7f
+
+Data In: ff44 Anode: fe Digit: 4
+Correct: switch 4 cathode 99 anode fe
+
+Data In: 0cd0 Anode: fd Digit: d
+Correct: switch d cathode a1 anode fd
+
+Data In: 0b2a Anode: fb Digit: b
+Correct: switch b cathode 83 anode fb
+
+Data In: adab Anode: f7 Digit: a
+Correct: switch a cathode 88 anode f7
+
+Data In: cf0e Anode: ef Digit: e
+Correct: switch e cathode 86 anode ef
+
+Data In: addc Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: bc9a Anode: bf Digit: c
+Correct: switch c cathode c6 anode bf
+
+Data In: 72fd Anode: 7f Digit: 7
+Correct: switch 7 cathode f8 anode 7f
+
+Data In: 02c3 Anode: fe Digit: 3
+Correct: switch 3 cathode b0 anode fe
+
+Data In: ed56 Anode: fd Digit: 5
+Correct: switch 5 cathode 92 anode fd
+
+Data In: e94e Anode: fb Digit: 9
+Correct: switch 9 cathode 90 anode fb
+
+Data In: 7667 Anode: f7 Digit: 7
+Correct: switch 7 cathode f8 anode f7
+
+Data In: 340a Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: b9b6 Anode: df Digit: b
+Correct: switch b cathode 83 anode df
+
+Data In: 8a38 Anode: bf Digit: a
+Correct: switch a cathode 88 anode bf
+
+Data In: 8779 Anode: 7f Digit: 8
+Correct: switch 8 cathode 80 anode 7f
+
+Data In: c4b8 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: bf94 Anode: fd Digit: 9
+Correct: switch 9 cathode 90 anode fd
+
+Data In: 5d93 Anode: fb Digit: d
+Correct: switch d cathode a1 anode fb
+
+Data In: 2c04 Anode: f7 Digit: 2
+Correct: switch 2 cathode a4 anode f7
+
+Data In: ca59 Anode: ef Digit: 9
+Correct: switch 9 cathode 90 anode ef
+
+Data In: 69db Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: de4d Anode: bf Digit: e
+Correct: switch e cathode 86 anode bf
+
+Data In: b7d9 Anode: 7f Digit: b
+Correct: switch b cathode 83 anode 7f
+
+Data In: 266d Anode: fe Digit: d
+Correct: switch d cathode a1 anode fe
+
+Data In: e276 Anode: fd Digit: 7
+Correct: switch 7 cathode f8 anode fd
+
+Data In: 49ca Anode: fb Digit: 9
+Correct: switch 9 cathode 90 anode fb
+
+Data In: 2db6 Anode: f7 Digit: 2
+Correct: switch 2 cathode a4 anode f7
+
+Data In: 7195 Anode: ef Digit: 5
+Correct: switch 5 cathode 92 anode ef
+
+Data In: 1a46 Anode: df Digit: 4
+Correct: switch 4 cathode 99 anode df
+
+Data In: 9b04 Anode: bf Digit: b
+Correct: switch b cathode 83 anode bf
+
+Data In: 61f7 Anode: 7f Digit: 6
+Correct: switch 6 cathode 82 anode 7f
+
+Data In: 0769 Anode: fe Digit: 9
+Correct: switch 9 cathode 90 anode fe
+
+Data In: bab4 Anode: fd Digit: b
+Correct: switch b cathode 83 anode fd
+
+Data In: 8d88 Anode: fb Digit: d
+Correct: switch d cathode a1 anode fb
+
+Data In: d928 Anode: f7 Digit: d
+Correct: switch d cathode a1 anode f7
+
+Data In: 042d Anode: ef Digit: d
+Correct: switch d cathode a1 anode ef
+
+Data In: 30c7 Anode: df Digit: c
+Correct: switch c cathode c6 anode df
+
+Data In: 9c2e Anode: bf Digit: c
+Correct: switch c cathode c6 anode bf
+
+Data In: e408 Anode: 7f Digit: e
+Correct: switch e cathode 86 anode 7f
+
+Data In: 451c Anode: fe Digit: c
+Correct: switch c cathode c6 anode fe
+
+Data In: a6fd Anode: fd Digit: f
+Correct: switch f cathode 8e anode fd
+
+Data In: 0729 Anode: fb Digit: 7
+Correct: switch 7 cathode f8 anode fb
+
+Data In: 901c Anode: f7 Digit: 9
+Correct: switch 9 cathode 90 anode f7
+
+Data In: 6786 Anode: ef Digit: 6
+Correct: switch 6 cathode 82 anode ef
+
+Data In: 08da Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: c63d Anode: bf Digit: 6
+Correct: switch 6 cathode 82 anode bf
+
+Data In: a766 Anode: 7f Digit: a
+Correct: switch a cathode 88 anode 7f
+
+Data In: c470 Anode: fe Digit: 0
+Correct: switch 0 cathode c0 anode fe
+
+Data In: 0473 Anode: fd Digit: 7
+Correct: switch 7 cathode f8 anode fd
+
+Data In: 99ba Anode: fb Digit: 9
+Correct: switch 9 cathode 90 anode fb
+
+Data In: b35e Anode: f7 Digit: b
+Correct: switch b cathode 83 anode f7
+
+Data In: 79fa Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: 05d5 Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: f61a Anode: bf Digit: 6
+Correct: switch 6 cathode 82 anode bf
+
+Data In: 00b9 Anode: 7f Digit: 0
+Correct: switch 0 cathode c0 anode 7f
+
+Data In: 6137 Anode: fe Digit: 7
+Correct: switch 7 cathode f8 anode fe
+
+Data In: 3796 Anode: fd Digit: 9
+Correct: switch 9 cathode 90 anode fd
+
+Data In: 21c0 Anode: fb Digit: 1
+Correct: switch 1 cathode f9 anode fb
+
+Data In: 9f26 Anode: f7 Digit: 9
+Correct: switch 9 cathode 90 anode f7
+
+Data In: 1ab6 Anode: ef Digit: 6
+Correct: switch 6 cathode 82 anode ef
+
+Data In: 837d Anode: df Digit: 7
+Correct: switch 7 cathode f8 anode df
+
+Data In: 0fdc Anode: bf Digit: f
+Correct: switch f cathode 8e anode bf
+
+Data In: 5786 Anode: 7f Digit: 5
+Correct: switch 5 cathode 92 anode 7f
+
+Data In: ff78 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: 9b7e Anode: fd Digit: 7
+Correct: switch 7 cathode f8 anode fd
+
+Data In: 80db Anode: fb Digit: 0
+Correct: switch 0 cathode c0 anode fb
+
+Data In: b6cf Anode: f7 Digit: b
+Correct: switch b cathode 83 anode f7
+
+Data In: 2b79 Anode: ef Digit: 9
+Correct: switch 9 cathode 90 anode ef
+
+Data In: e4fa Anode: df Digit: f
+Correct: switch f cathode 8e anode df
+
+Data In: ee61 Anode: bf Digit: e
+Correct: switch e cathode 86 anode bf
+
+Data In: 0917 Anode: 7f Digit: 0
+Correct: switch 0 cathode c0 anode 7f
+
+Data In: 78a1 Anode: fe Digit: 1
+Correct: switch 1 cathode f9 anode fe
+
+Data In: 9186 Anode: fd Digit: 8
+Correct: switch 8 cathode 80 anode fd
+
+Data In: 9650 Anode: fb Digit: 6
+Correct: switch 6 cathode 82 anode fb
+
+Data In: 59f5 Anode: f7 Digit: 5
+Correct: switch 5 cathode 92 anode f7
+
+Data In: 8835 Anode: ef Digit: 5
+Correct: switch 5 cathode 92 anode ef
+
+Data In: 8a29 Anode: df Digit: 2
+Correct: switch 2 cathode a4 anode df
+
+Data In: 75c1 Anode: bf Digit: 5
+Correct: switch 5 cathode 92 anode bf
+
+Data In: 74c5 Anode: 7f Digit: 7
+Correct: switch 7 cathode f8 anode 7f
+
+Data In: b498 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: 7b4b Anode: fd Digit: 4
+Correct: switch 4 cathode 99 anode fd
+
+Data In: 4273 Anode: fb Digit: 2
+Correct: switch 2 cathode a4 anode fb
+
+Data In: e6ec Anode: f7 Digit: e
+Correct: switch e cathode 86 anode f7
+
+Data In: 168a Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: d14e Anode: df Digit: 4
+Correct: switch 4 cathode 99 anode df
+
+Data In: 80a8 Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: fda9 Anode: 7f Digit: f
+Correct: switch f cathode 8e anode 7f
+
+Data In: 8ca1 Anode: fe Digit: 1
+Correct: switch 1 cathode f9 anode fe
+
+Data In: b90e Anode: fd Digit: 0
+Correct: switch 0 cathode c0 anode fd
+
+Data In: 66e6 Anode: fb Digit: 6
+Correct: switch 6 cathode 82 anode fb
+
+Data In: c09f Anode: f7 Digit: c
+Correct: switch c cathode c6 anode f7
+
+Data In: b52a Anode: ef Digit: a
+Correct: switch a cathode 88 anode ef
+
+Data In: 1d2a Anode: df Digit: 2
+Correct: switch 2 cathode a4 anode df
+
+Data In: f48d Anode: bf Digit: 4
+Correct: switch 4 cathode 99 anode bf
+
+Data In: ff9e Anode: 7f Digit: f
+Correct: switch f cathode 8e anode 7f
+
+Data In: e638 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: a879 Anode: fd Digit: 7
+Correct: switch 7 cathode f8 anode fd
+
+Data In: e3c8 Anode: fb Digit: 3
+Correct: switch 3 cathode b0 anode fb
+
+Data In: 45ca Anode: f7 Digit: 4
+Correct: switch 4 cathode 99 anode f7
+
+Data In: 4113 Anode: ef Digit: 3
+Correct: switch 3 cathode b0 anode ef
+
+Data In: c96b Anode: df Digit: 6
+Correct: switch 6 cathode 82 anode df
+
+Data In: aec7 Anode: bf Digit: e
+Correct: switch e cathode 86 anode bf
+
+Data In: ddb6 Anode: 7f Digit: d
+Correct: switch d cathode a1 anode 7f
+
+Data In: 9dba Anode: fe Digit: a
+Correct: switch a cathode 88 anode fe
+
+Data In: abc4 Anode: fd Digit: c
+Correct: switch c cathode c6 anode fd
+
+Data In: 95b9 Anode: fb Digit: 5
+Correct: switch 5 cathode 92 anode fb
+
+Data In: d392 Anode: f7 Digit: d
+Correct: switch d cathode a1 anode f7
+
+Data In: 9ab4 Anode: ef Digit: 4
+Correct: switch 4 cathode 99 anode ef
+
+Data In: 3b7f Anode: df Digit: 7
+Correct: switch 7 cathode f8 anode df
+
+Data In: 9086 Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: f5fa Anode: 7f Digit: f
+Correct: switch f cathode 8e anode 7f
+
+Data In: 94f2 Anode: fe Digit: 2
+Correct: switch 2 cathode a4 anode fe
+
+Data In: 2132 Anode: fd Digit: 3
+Correct: switch 3 cathode b0 anode fd
+
+Data In: 5ebd Anode: fb Digit: e
+Correct: switch e cathode 86 anode fb
+
+Data In: cd84 Anode: f7 Digit: c
+Correct: switch c cathode c6 anode f7
+
+Data In: a4e4 Anode: ef Digit: 4
+Correct: switch 4 cathode 99 anode ef
+
+Data In: cfca Anode: df Digit: c
+Correct: switch c cathode c6 anode df
+
+Data In: 79a9 Anode: bf Digit: 9
+Correct: switch 9 cathode 90 anode bf
+
+Data In: a8a1 Anode: 7f Digit: a
+Correct: switch a cathode 88 anode 7f
+
+Data In: a98e Anode: fe Digit: e
+Correct: switch e cathode 86 anode fe
+
+Data In: 6afb Anode: fd Digit: f
+Correct: switch f cathode 8e anode fd
+
+Data In: 1e0b Anode: fb Digit: e
+Correct: switch e cathode 86 anode fb
+
+Data In: 90ef Anode: f7 Digit: 9
+Correct: switch 9 cathode 90 anode f7
+
+Data In: 3dc9 Anode: ef Digit: 9
+Correct: switch 9 cathode 90 anode ef
+
+Data In: e536 Anode: df Digit: 3
+Correct: switch 3 cathode b0 anode df
+
+Data In: 4875 Anode: bf Digit: 8
+Correct: switch 8 cathode 80 anode bf
+
+Data In: 568f Anode: 7f Digit: 5
+Correct: switch 5 cathode 92 anode 7f
+
+Data In: bf6b Anode: fe Digit: b
+Correct: switch b cathode 83 anode fe
+
+Data In: e788 Anode: fd Digit: 8
+Correct: switch 8 cathode 80 anode fd
+
+Data In: b4ae Anode: fb Digit: 4
+Correct: switch 4 cathode 99 anode fb
+
+Data In: 819b Anode: f7 Digit: 8
+Correct: switch 8 cathode 80 anode f7
+
+Data In: 4592 Anode: ef Digit: 2
+Correct: switch 2 cathode a4 anode ef
+
+Data In: df28 Anode: df Digit: 2
+Correct: switch 2 cathode a4 anode df
+
+Data In: e02d Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: 5f4b Anode: 7f Digit: 5
+Correct: switch 5 cathode 92 anode 7f
+
+Data In: b0c2 Anode: fe Digit: 2
+Correct: switch 2 cathode a4 anode fe
+
+Data In: f61e Anode: fd Digit: 1
+Correct: switch 1 cathode f9 anode fd
+
+Data In: 050d Anode: fb Digit: 5
+Correct: switch 5 cathode 92 anode fb
+
+Data In: fdec Anode: f7 Digit: f
+Correct: switch f cathode 8e anode f7
+
+Data In: 9d18 Anode: ef Digit: 8
+Correct: switch 8 cathode 80 anode ef
+
+Data In: 1bd1 Anode: df Digit: d
+Correct: switch d cathode a1 anode df
+
+Data In: 1c86 Anode: bf Digit: c
+Correct: switch c cathode c6 anode bf
+
+Data In: 2441 Anode: 7f Digit: 2
+Correct: switch 2 cathode a4 anode 7f
+
+Data In: 643b Anode: fe Digit: b
+Correct: switch b cathode 83 anode fe
+
+Data In: f9d8 Anode: fd Digit: d
+Correct: switch d cathode a1 anode fd
+
+Data In: e953 Anode: fb Digit: 9
+Correct: switch 9 cathode 90 anode fb
+
+Data In: 6256 Anode: f7 Digit: 6
+Correct: switch 6 cathode 82 anode f7
+
+Data In: 225b Anode: ef Digit: b
+Correct: switch b cathode 83 anode ef
+
+Data In: fae2 Anode: df Digit: e
+Correct: switch e cathode 86 anode df
+
+Data In: e204 Anode: bf Digit: 2
+Correct: switch 2 cathode a4 anode bf
+
+Data In: 0373 Anode: 7f Digit: 0
+Correct: switch 0 cathode c0 anode 7f
+
+Data In: b4d8 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: 4d12 Anode: fd Digit: 1
+Correct: switch 1 cathode f9 anode fd
+
+Data In: 44b8 Anode: fb Digit: 4
+Correct: switch 4 cathode 99 anode fb
+
+Data In: 1239 Anode: f7 Digit: 1
+Correct: switch 1 cathode f9 anode f7
+
+Data In: b6e5 Anode: ef Digit: 5
+Correct: switch 5 cathode 92 anode ef
+
+Data In: dca1 Anode: df Digit: a
+Correct: switch a cathode 88 anode df
+
+Data In: 0f2b Anode: bf Digit: f
+Correct: switch f cathode 8e anode bf
+
+Data In: 5d81 Anode: 7f Digit: 5
+Correct: switch 5 cathode 92 anode 7f
+
+Data In: 85c8 Anode: fe Digit: 8
+Correct: switch 8 cathode 80 anode fe
+
+Data In: 5527 Anode: fd Digit: 2
+Correct: switch 2 cathode a4 anode fd
+
+Data In: f9a1 Anode: fb Digit: 9
+Correct: switch 9 cathode 90 anode fb
+
+Data In: 6e1f Anode: f7 Digit: 6
+Correct: switch 6 cathode 82 anode f7
+
+Data In: 3a04 Anode: ef Digit: 4
+Correct: switch 4 cathode 99 anode ef
+
+Data In: 2358 Anode: df Digit: 5
+Correct: switch 5 cathode 92 anode df
+
+Data In: 8096 Anode: bf Digit: 0
+Correct: switch 0 cathode c0 anode bf
+
+Data In: 9314 Anode: 7f Digit: 9
+Correct: switch 9 cathode 90 anode 7f
+
+Data In: b412 Anode: fe Digit: 2
+Correct: switch 2 cathode a4 anode fe
+
+Data In: 7096 Anode: fd Digit: 9
+Correct: switch 9 cathode 90 anode fd
+
+Data In: e2b1 Anode: fb Digit: 2
+Correct: switch 2 cathode a4 anode fb
+
+Data In: d555 Anode: f7 Digit: d
+Correct: switch d cathode a1 anode f7

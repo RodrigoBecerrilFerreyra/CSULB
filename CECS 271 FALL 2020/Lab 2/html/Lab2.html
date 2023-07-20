@@ -1,0 +1,564 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Lab2</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-09-23"><meta name="DC.source" content="Lab2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Copyright</a></li><li><a href="#2">Problem 1</a></li><li><a href="#3">Problem 2</a></li><li><a href="#4">Problem 3</a></li><li><a href="#5">Problem 4</a></li><li><a href="#6">Problem 5</a></li><li><a href="#7">Problem 6</a></li></ul></div><h2 id="1">Copyright</h2><pre class="codeinput">close <span class="string">all</span>; format <span class="string">compact</span>; clc;
+fprintf(<span class="string">"Engineer: Rodrigo Becerril Ferreyra\n"</span>);
+fprintf(<span class="string">"Company: California State University, Long Beach\n"</span>);
+fprintf(<span class="string">"Project Name: Lab 2\n"</span>);
+fprintf(<span class="string">"Date: 22 September 2020\n"</span>);
+</pre><pre class="codeoutput">Engineer: Rodrigo Becerril Ferreyra
+Company: California State University, Long Beach
+Project Name: Lab 2
+Date: 22 September 2020
+</pre><h2 id="2">Problem 1</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 1'</span>);
+f=@(x) cos(x) - x.*exp(x);
+g=@(x) cos(x)./exp(x);
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = 2; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(-xinit,xinit,100); <span class="comment">%Careful: not good if xinit=0!</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,1,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= cos(x) - xe^x'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 1
+  Sequence of iterations:
+  Columns 1 through 7
+   -0.0563    1.0563    0.1711    0.8304    0.2940    0.7133    0.3706
+    1.0563    0.1711    0.8304    0.2940    0.7133    0.3706    0.6435
+  Columns 8 through 14
+    0.6435    0.4204    0.5996    0.4533    0.5714    0.4750    0.5530
+    0.4204    0.5996    0.4533    0.5714    0.4750    0.5530    0.4895
+  Columns 15 through 21
+    0.4895    0.5410    0.4991    0.5331    0.5054    0.5279    0.5096
+    0.5410    0.4991    0.5331    0.5054    0.5279    0.5096    0.5244
+  Columns 22 through 28
+    0.5244    0.5124    0.5222    0.5142    0.5207    0.5154    0.5197
+    0.5124    0.5222    0.5142    0.5207    0.5154    0.5197    0.5162
+  Columns 29 through 35
+    0.5162    0.5190    0.5167    0.5186    0.5171    0.5183    0.5173
+    0.5190    0.5167    0.5186    0.5171    0.5183    0.5173    0.5181
+  Columns 36 through 42
+    0.5181    0.5175    0.5180    0.5176    0.5179    0.5176    0.5179
+    0.5175    0.5180    0.5176    0.5179    0.5176    0.5179    0.5177
+  Columns 43 through 46
+    0.5177    0.5178    0.5177    0.5178
+    0.5178    0.5177    0.5178    0.5177
+  root=x1=0.51772 after 46 iterations
+  Check: y(x)=0.51772 = 0.00011324(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_01.png" alt=""> <h2 id="3">Problem 2</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 2'</span>);
+f=@(x) x.^4 - x - 10;
+g=@(x) (x + 10).^0.25;
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = 4; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(-xinit,xinit,100); <span class="comment">%Careful: not good if xinit=0!</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,2,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= x^4-x-10'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 2
+  Sequence of iterations:
+    1.9343    1.8587    1.8557    1.8556
+    1.8587    1.8557    1.8556    1.8556
+  root=x1=1.8556 after 4 iterations
+  Check: y(x)=1.8556 = 4.5216e-06(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_02.png" alt=""> <h2 id="4">Problem 3</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 3'</span>);
+f=@(x) x - exp(-x);
+g=@(x) exp(-x);
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = 3; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(-xinit,xinit,100); <span class="comment">%Careful: not good if xinit=0!</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,3,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= x - e^{-x}'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 3
+  Sequence of iterations:
+  Columns 1 through 7
+    0.0498    0.9514    0.3862    0.6796    0.5068    0.6024    0.5475
+    0.9514    0.3862    0.6796    0.5068    0.6024    0.5475    0.5784
+  Columns 8 through 14
+    0.5784    0.5608    0.5708    0.5651    0.5683    0.5665    0.5675
+    0.5608    0.5708    0.5651    0.5683    0.5665    0.5675    0.5669
+  Columns 15 through 18
+    0.5669    0.5673    0.5671    0.5672
+    0.5673    0.5671    0.5672    0.5671
+  root=x1=0.56712 after 18 iterations
+  Check: y(x)=0.56712 = -3.4332e-05(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_03.png" alt=""> <h2 id="5">Problem 4</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 4'</span>);
+f=@(x) exp(x) - (x .* (x.^2 + 3.*x -3)) + (x.^3 + 4.*x.^2 + x + 2);
+g=@(x) (exp(x) + x.^3 + 4.*x.^2 + x + 2)./(x.^2 + 3.*x - 3);
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = -2; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(-xinit,xinit,100); <span class="comment">%Careful: not good if xinit=0!</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,4,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= e^x - x(x^2 +3x - 3) + (x^3 + 4x^2 + x + 2)'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 4
+  Sequence of iterations:
+  Columns 1 through 7
+   -1.6271   -1.3091   -1.0688   -0.9129   -0.8279   -0.7885   -0.7721
+   -1.3091   -1.0688   -0.9129   -0.8279   -0.7885   -0.7721   -0.7657
+  Columns 8 through 12
+   -0.7657   -0.7633   -0.7623   -0.7620   -0.7619
+   -0.7633   -0.7623   -0.7620   -0.7619   -0.7618
+  root=x1=-0.76182 after 12 iterations
+  Check: y(x)=-0.76182 = -8.5377e-05(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_04.png" alt=""> <h2 id="6">Problem 5</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 5'</span>);
+f=@(x) x - sin(x) - 0.5;
+g=@(x) sin(x) + 0.5;
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = 2; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(-xinit,xinit,100); <span class="comment">%Careful: not good if xinit=0!</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,5,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= x + sin(x) + {}^1/{}_2'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 5
+  Sequence of iterations:
+    1.4093    1.4870    1.4965    1.4972
+    1.4870    1.4965    1.4972    1.4973
+  root=x1=1.4973 after 4 iterations
+  Check: y(x)=1.4973 = -4.0722e-06(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_05.png" alt=""> <h2 id="7">Problem 6</h2><pre class="codeinput">clear <span class="string">variables</span>;
+disp(<span class="string">'Problem 6'</span>);
+f=@(x) exp(-x) + 3.*log(x);
+g=@(x) exp(exp(-x)./3);
+
+tolerance=1e-4; maxits=100; <span class="comment">%Initialize loop constraints</span>
+xinit = 2; <span class="comment">%Initial guess</span>
+k=0; x0=xinit; <span class="comment">%Initialize counter and point x0</span>
+x1=g(x0); <span class="comment">%Get first iterate</span>
+
+<span class="keyword">while</span>(k&lt;maxits &amp;&amp; abs(x0-x1)&gt; tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; <span class="comment">%Save the old x values</span>
+    x1 = g(x0); ypts(k)=x1; <span class="comment">%Save new x values (the y values)</span>
+<span class="keyword">end</span>
+root=x1; <span class="comment">%Save answer as the root</span>
+
+<span class="comment">%Display some fixed point iterationresults</span>
+disp(<span class="string">'  Sequence of iterations:'</span>);
+disp([xpts;ypts]);
+disp([<span class="string">'  root=x1='</span>,num2str(root),<span class="string">' after '</span>,num2str(k),<span class="string">' iterations'</span>]);
+disp([<span class="string">'  Check: y(x)='</span>,num2str(root),<span class="string">' = '</span>,num2str(f(root)),<span class="string">'(should be ~0)'</span>]);
+
+<span class="comment">% Plot results</span>
+x=linspace(1e-6,xinit,100); <span class="comment">%The domain of ln is (0, inf)</span>
+figure(); hold <span class="string">on</span>;
+plot(x,f(x));
+plot(root,f(root),<span class="string">'r*'</span>);
+plot(xinit,f(xinit),<span class="string">'k*'</span>);
+grid <span class="string">on</span>;
+str=sprintf(<span class="string">'Fig. %d:  Root=%6.4f'</span>,6,root);
+title(str); xlabel(<span class="string">'x'</span>); ylabel(<span class="string">'f(x)= e^{-x} + 3ln(x)'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">Problem 6
+  Sequence of iterations:
+    1.0461    1.1242    1.1144    1.1156    1.1154
+    1.1242    1.1144    1.1156    1.1154    1.1154
+  root=x1=1.1154 after 5 iterations
+  Check: y(x)=1.1154 = 0.65554(should be ~0)
+</pre><img vspace="5" hspace="5" src="Lab2_06.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Copyright
+
+close all; format compact; clc;
+fprintf("Engineer: Rodrigo Becerril Ferreyra\n");
+fprintf("Company: California State University, Long Beach\n");
+fprintf("Project Name: Lab 2\n");
+fprintf("Date: 22 September 2020\n");
+
+%% Problem 1
+clear variables;
+disp('Problem 1');
+f=@(x) cos(x) - x.*exp(x);
+g=@(x) cos(x)./exp(x);
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = 2; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(-xinit,xinit,100); %Careful: not good if xinit=0!
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',1,root);
+title(str); xlabel('x'); ylabel('f(x)= cos(x) - xe^x');
+hold off;
+
+%% Problem 2
+clear variables;
+disp('Problem 2');
+f=@(x) x.^4 - x - 10;
+g=@(x) (x + 10).^0.25;
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = 4; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(-xinit,xinit,100); %Careful: not good if xinit=0!
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',2,root);
+title(str); xlabel('x'); ylabel('f(x)= x^4-x-10');
+hold off;
+
+%% Problem 3
+clear variables;
+disp('Problem 3');
+f=@(x) x - exp(-x);
+g=@(x) exp(-x);
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = 3; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(-xinit,xinit,100); %Careful: not good if xinit=0!
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',3,root);
+title(str); xlabel('x'); ylabel('f(x)= x - e^{-x}');
+hold off;
+
+%% Problem 4
+clear variables;
+disp('Problem 4');
+f=@(x) exp(x) - (x .* (x.^2 + 3.*x -3)) + (x.^3 + 4.*x.^2 + x + 2);
+g=@(x) (exp(x) + x.^3 + 4.*x.^2 + x + 2)./(x.^2 + 3.*x - 3);
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = -2; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(-xinit,xinit,100); %Careful: not good if xinit=0!
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',4,root);
+title(str); xlabel('x'); ylabel('f(x)= e^x - x(x^2 +3x - 3) + (x^3 + 4x^2 + x + 2)');
+hold off;
+
+%% Problem 5
+clear variables;
+disp('Problem 5');
+f=@(x) x - sin(x) - 0.5;
+g=@(x) sin(x) + 0.5;
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = 2; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(-xinit,xinit,100); %Careful: not good if xinit=0!
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',5,root);
+title(str); xlabel('x'); ylabel('f(x)= x + sin(x) + {}^1/{}_2');
+hold off;
+
+%% Problem 6
+clear variables;
+disp('Problem 6');
+f=@(x) exp(-x) + 3.*log(x);
+g=@(x) exp(exp(-x)./3);
+
+tolerance=1e-4; maxits=100; %Initialize loop constraints
+xinit = 2; %Initial guess
+k=0; x0=xinit; %Initialize counter and point x0
+x1=g(x0); %Get first iterate
+
+while(k<maxits && abs(x0-x1)> tolerance)
+    k=k+1;
+    x0 = x1; xpts(k)=x0; %Save the old x values
+    x1 = g(x0); ypts(k)=x1; %Save new x values (the y values)
+end
+root=x1; %Save answer as the root
+
+%Display some fixed point iterationresults
+disp('  Sequence of iterations:');
+disp([xpts;ypts]);
+disp(['  root=x1=',num2str(root),' after ',num2str(k),' iterations']);
+disp(['  Check: y(x)=',num2str(root),' = ',num2str(f(root)),'(should be ~0)']);
+
+% Plot results
+x=linspace(1e-6,xinit,100); %The domain of ln is (0, inf)
+figure(); hold on;
+plot(x,f(x));
+plot(root,f(root),'r*');
+plot(xinit,f(xinit),'k*');
+grid on;
+str=sprintf('Fig. %d:  Root=%6.4f',6,root);
+title(str); xlabel('x'); ylabel('f(x)= e^{-x} + 3ln(x)');
+hold off;
+
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,140 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              02/13/2020 21:59:00 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Program Files (x86)\Keil uVision 5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTE
+                    -XTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          //#include <stdint.h>
+   3          
+   4          void bounce2(unsigned char times);
+   5          void bounce1(unsigned char times);
+   6          
+   7          void left(unsigned char times);
+   8          void right(unsigned char times);
+   9          
+  10          
+  11          
+  12          int main(void)
+  13          {
+  14   1        while(1)
+  15   1        {
+  16   2          bounce2(2);
+  17   2          
+  18   2          bounce1(2);
+  19   2          
+  20   2          left(2); right(2);
+  21   2        }
+  22   1        
+  23   1        return 0;
+  24   1      }
+  25          
+  26          
+  27          
+  28          void bounce2(unsigned char times)
+  29          {
+  30   1        unsigned char i;
+  31   1        unsigned int delay;
+  32   1        for(i=0;i<times;i++)
+  33   1        {
+  34   2          P1 = 0x18;
+  35   2          for(delay = 0; delay < 16384; delay++);
+  36   2          P1 = 0x24;
+  37   2          for(delay = 0; delay < 16384; delay++);
+  38   2          P1 = 0x42;
+  39   2          for(delay = 0; delay < 16384; delay++);
+  40   2          P1 = 0x81;
+  41   2          for(delay = 0; delay < 16384; delay++);
+  42   2          P1 = 0x42;
+  43   2          for(delay = 0; delay < 16384; delay++);
+  44   2          P1 = 0x24;
+  45   2          for(delay = 0; delay < 16384; delay++);
+  46   2          P1 = 0x18;
+  47   2        }
+  48   1      }
+  49          
+  50          void bounce1(unsigned char times)
+  51          {
+  52   1        unsigned char i;
+  53   1        
+  54   1        for(i=0;i<times;i++)
+C51 COMPILER V9.60.0.0   MAIN                                                              02/13/2020 21:59:00 PAGE 2   
+
+  55   1        {
+  56   2          right(1);
+  57   2          left(1);
+  58   2        }
+  59   1      }
+  60          
+  61          void left(unsigned char times)
+  62          {
+  63   1        unsigned char i;
+  64   1        unsigned int delay;
+  65   1        
+  66   1        for(i=0; i<times; i++)
+  67   1        {
+  68   2          P1 = 0x80;
+  69   2          for(delay = 0; delay < 16384; delay++);
+  70   2          P1 = 0x40;
+  71   2          for(delay = 0; delay < 16384; delay++);
+  72   2          P1 = 0x20;
+  73   2          for(delay = 0; delay < 16384; delay++);
+  74   2          P1 = 0x10;
+  75   2          for(delay = 0; delay < 16384; delay++);
+  76   2          P1 = 0x08;
+  77   2          for(delay = 0; delay < 16384; delay++);
+  78   2          P1 = 0x04;
+  79   2          for(delay = 0; delay < 16384; delay++);
+  80   2          P1 = 0x02;
+  81   2          for(delay = 0; delay < 16384; delay++);
+  82   2          P1 = 0x01;
+  83   2          for(delay = 0; delay < 16384; delay++);
+  84   2        }
+  85   1      }
+  86          
+  87          void right(unsigned char times)
+  88          {
+  89   1        unsigned char i;
+  90   1        unsigned int delay;
+  91   1        
+  92   1        for(i=0;i<times;i++)
+  93   1        {
+  94   2          P1 = 0x01;
+  95   2          for(delay = 0; delay < 16384; delay++);
+  96   2          P1 = 0x02;
+  97   2          for(delay = 0; delay < 16384; delay++);
+  98   2          P1 = 0x04;
+  99   2          for(delay = 0; delay < 16384; delay++);
+ 100   2          P1 = 0x08;
+ 101   2          for(delay = 0; delay < 16384; delay++);
+ 102   2          P1 = 0x10;
+ 103   2          for(delay = 0; delay < 16384; delay++);
+ 104   2          P1 = 0x20;
+ 105   2          for(delay = 0; delay < 16384; delay++);
+ 106   2          P1 = 0x40;
+ 107   2          for(delay = 0; delay < 16384; delay++);
+ 108   2          P1 = 0x80;
+ 109   2          for(delay = 0; delay < 16384; delay++);
+ 110   2        }
+ 111   1      }
+*** WARNING C294 IN LINE 23 OF main.c: unreachable code
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    511    ----
+C51 COMPILER V9.60.0.0   MAIN                                                              02/13/2020 21:59:00 PAGE 3   
+
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,399 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Task4</title><meta name="generator" content="MATLAB 9.8"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-10-11"><meta name="DC.source" content="Task4.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Copyright</a></li><li><a href="#2">Problem 1</a></li><li><a href="#3">Problem 2</a></li><li><a href="#4">Problem 3</a></li><li><a href="#5">Problem 4</a></li><li><a href="#6">Problem 5</a></li></ul></div><h2 id="1">Copyright</h2><pre class="codeinput">close <span class="string">all</span>; format <span class="string">compact</span>; clc;
+fprintf(<span class="string">"Engineer: Rodrigo Becerril Ferreyra\n"</span>);
+fprintf(<span class="string">"Company: California State University, Long Beach\n"</span>);
+fprintf(<span class="string">"Project Name: Task 4 Supplemental\n"</span>);
+fprintf(<span class="string">"Date: 09 October 2020\n"</span>);
+</pre><pre class="codeoutput">Engineer: Rodrigo Becerril Ferreyra
+Company: California State University, Long Beach
+Project Name: Task 4 Supplemental
+Date: 09 October 2020
+</pre><h2 id="2">Problem 1</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 1\n"</span>);
+clear <span class="string">variables</span>;
+<span class="comment">% Fixed point method</span>
+
+f = @(x) 2.*sin(sqrt(x)) - x; <span class="comment">% function to find root for</span>
+g = @(x) 2.*sin(sqrt(x)); <span class="comment">% obtained by solving f for x</span>
+
+x = 0.5; <span class="comment">% initial guess</span>
+
+last_x = x; x = g(x); <span class="comment">% algorithm</span>
+iters = 25;
+
+<span class="keyword">while</span> (abs(last_x - x) &gt;= 1e-6) &amp;&amp; (iters &gt; 0)
+    last_x = x;
+    x = g(x);
+    iters = iters - 1;
+<span class="keyword">end</span>
+
+fprintf(<span class="string">"f(x) = 0 for x = %f\n"</span>, x);
+</pre><pre class="codeoutput">
+Problem 1
+f(x) = 0 for x = 1.972381
+</pre><h2 id="3">Problem 2</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 2\n"</span>);
+clear <span class="string">variables</span>;
+<span class="comment">% Newton's method</span>
+
+<span class="comment">%                        x^4       x^3      x^2        x</span>
+f  = @(x) polyval([0.0074,   -0.284,   3.355,   -12.183, 5], x);
+<span class="comment">%                          x^3       x^2      x</span>
+fp = @(x) polyval([0.0074*4, -0.284*3, 3.355*2, -12.183*1] , x); <span class="comment">% derivative of x</span>
+
+x = 16.75; <span class="comment">% using x=16.15 gives a root of 0.468480</span>
+
+last_x = x; x = x - (f(x)/fp(x)); <span class="comment">% algorithm</span>
+iters = 25;
+
+<span class="keyword">while</span> (abs(last_x - x) &gt;= 1e-6) &amp;&amp; (iters &gt; 0)
+    last_x = x;
+    x = x - (f(x)/fp(x));
+    iters = iters - 1;
+<span class="keyword">end</span>
+
+fprintf(<span class="string">"f(x) = 0 for x = %f\n"</span>, x);
+</pre><pre class="codeoutput">
+Problem 2
+f(x) = 0 for x = 18.894766
+</pre><h2 id="4">Problem 3</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 3\n"</span>);
+clear <span class="string">variables</span>;
+<span class="comment">% Regula Falsi method</span>
+<span class="comment">% Taken from An Introduction to Programming and Numerical Methods in MATLAB Page 122 (PDF page 133)</span>
+
+<span class="comment">% Function definition</span>
+R = 0.518; T = -50 + 273.15; p = 65e3;
+pc = 4580; Tc = 191;
+a = 0.427*(R^2)*(Tc^2.5)/pc; b = 0.0866*R*(Tc/pc);
+f = @(v) (R*T)./(v-b) - a./( v .* (v + b) .* T^0.5 ) - p;
+<span class="comment">%f = @(v) p - (R*T)./(v-b) + a./(v .* (v + b) .* sqrt(T));</span>
+
+<span class="comment">% Initial guesses</span>
+x0 = 0.0027; x1 = 0.0028; x2 = x0;
+iters = 25;
+
+<span class="comment">% loop</span>
+<span class="keyword">while</span> (abs(f(x2)) &gt;= 1e-6) &amp;&amp; (iters &gt; 0)
+
+    f0 = f(x0); f1 = f(x1);
+    x2 = x0 - f0 * (x1-x0)/(f1-f0);
+    <span class="keyword">if</span> f(x2) * f0 &lt; 0
+        x1 = x2;
+    <span class="keyword">else</span>
+        x0 = x2;
+    <span class="keyword">end</span>
+
+    iters = iters - 1;
+
+<span class="keyword">end</span>
+
+fprintf(<span class="string">"The mass M is %f kg (v = %f m^3/kg)\n"</span>, 3/x2, x2);
+</pre><pre class="codeoutput">
+Problem 3
+The mass M is 1090.833338 kg (v = 0.002750 m^3/kg)
+</pre><h2 id="5">Problem 4</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 4\n"</span>);
+clear <span class="string">variables</span>;
+<span class="comment">% Secant method</span>
+
+<span class="comment">% formula</span>
+R = 3; V = 30;
+f = @(h) (pi.*h.^2 .*(3*R - h) ./ 3) - V;
+
+<span class="comment">% initial guesses</span>
+h0 = 0; h1 = 3;
+h = h1-f(h1)*((h1-h0)/(f(h1) - f(h0))); <span class="comment">% algorithm</span>
+last_h = 1000000;
+
+iters = 25;
+
+fprintf(<span class="string">"%-2s %-6s %-10s\n"</span>, <span class="string">"#"</span>, <span class="string">"height"</span>, <span class="string">"error"</span>);
+fprintf(<span class="string">"%-2d %-6.4f %-10f%%\n"</span>, 1, h, 100);
+
+<span class="keyword">while</span> (abs(last_h - h) &gt;= 1e-6) &amp;&amp; (iters &gt; 0)
+
+    last_h = h;
+    h0 = h1;
+    h1 = h;
+    h = h1-f(h1)*((h1-h0)/(f(h1) - f(h0)));
+    iters = iters - 1;
+    fprintf(<span class="string">"%-2d %-6.4f %-10f%%\n"</span>, 26 - iters, h, abs(last_h - h)*100);
+
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">
+Problem 4
+#  height error     
+1  1.5915 100.000000%
+2  1.9866 39.502557 %
+3  2.0295 4.297278  %
+4  2.0269 0.265516  %
+5  2.0269 0.001310  %
+6  2.0269 0.000000  %
+</pre><h2 id="6">Problem 5</h2><pre class="codeinput">fprintf(<span class="string">"\nProblem 5\n"</span>);
+clear <span class="string">variables</span>;
+<span class="comment">% Bisection method</span>
+
+<span class="comment">% function definition</span>
+x = 5000; y0 = 1000; v = 275; g = 9.81;
+f = @(theta) x.*tan(theta) - g*x^2./(2*v^2 .* (cos(theta).^2)) + y0 - 250; <span class="comment">% the -250 s is because the target is 250 m above sea level</span>
+
+<span class="comment">% initial guesses</span>
+a = 0.1; b = 0.2;
+c = (a + b)/2;
+
+<span class="keyword">if</span> sign(f(a)) == sign(f(c))
+    a = c;
+<span class="keyword">elseif</span> sign(f(b)) == sign(f(c))
+    b = c;
+<span class="keyword">else</span>
+    fprintf(<span class="string">"Error a, b, c = %f %f %f\n"</span>, a, b, c);
+<span class="keyword">end</span>
+
+iters = 25; last_c = 1000000;
+<span class="keyword">while</span> (abs(last_c - c) &gt;= 1e-6) &amp;&amp; (iters &gt; 0)
+
+    last_c = c;
+    c = (a + b)/2;
+
+    <span class="keyword">if</span> sign(f(a)) == sign(f(c))
+        a = c;
+    <span class="keyword">elseif</span> sign(f(b)) == sign(f(c))
+        b = c;
+    <span class="keyword">else</span>
+        fprintf(<span class="string">"Error a, b, c = %f %f %f\n"</span>, a, b, c);
+    <span class="keyword">end</span>
+
+    iters = iters - 1;
+
+<span class="keyword">end</span>
+
+fprintf(<span class="string">"Angle measure is %f radians or %f degrees.\n"</span>, c, c*180/pi);
+</pre><pre class="codeoutput">
+Problem 5
+Angle measure is 0.183367 radians or 10.506164 degrees.
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Copyright
+
+close all; format compact; clc;
+fprintf("Engineer: Rodrigo Becerril Ferreyra\n");
+fprintf("Company: California State University, Long Beach\n");
+fprintf("Project Name: Task 4 Supplemental\n");
+fprintf("Date: 09 October 2020\n");
+
+%% Problem 1
+fprintf("\nProblem 1\n");
+clear variables;
+% Fixed point method
+
+f = @(x) 2.*sin(sqrt(x)) - x; % function to find root for
+g = @(x) 2.*sin(sqrt(x)); % obtained by solving f for x
+
+x = 0.5; % initial guess
+
+last_x = x; x = g(x); % algorithm
+iters = 25;
+
+while (abs(last_x - x) >= 1e-6) && (iters > 0)
+    last_x = x;
+    x = g(x);
+    iters = iters - 1;
+end
+
+fprintf("f(x) = 0 for x = %f\n", x);
+
+%% Problem 2
+fprintf("\nProblem 2\n");
+clear variables;
+% Newton's method
+
+%                        x^4       x^3      x^2        x
+f  = @(x) polyval([0.0074,   -0.284,   3.355,   -12.183, 5], x);
+%                          x^3       x^2      x
+fp = @(x) polyval([0.0074*4, -0.284*3, 3.355*2, -12.183*1] , x); % derivative of x
+
+x = 16.75; % using x=16.15 gives a root of 0.468480
+
+last_x = x; x = x - (f(x)/fp(x)); % algorithm
+iters = 25;
+
+while (abs(last_x - x) >= 1e-6) && (iters > 0)
+    last_x = x;
+    x = x - (f(x)/fp(x));
+    iters = iters - 1;
+end
+
+fprintf("f(x) = 0 for x = %f\n", x);
+
+%% Problem 3
+fprintf("\nProblem 3\n");
+clear variables;
+% Regula Falsi method
+% Taken from An Introduction to Programming and Numerical Methods in MATLAB Page 122 (PDF page 133)
+
+% Function definition
+R = 0.518; T = -50 + 273.15; p = 65e3;
+pc = 4580; Tc = 191;
+a = 0.427*(R^2)*(Tc^2.5)/pc; b = 0.0866*R*(Tc/pc);
+f = @(v) (R*T)./(v-b) - a./( v .* (v + b) .* T^0.5 ) - p;
+%f = @(v) p - (R*T)./(v-b) + a./(v .* (v + b) .* sqrt(T));
+
+% Initial guesses
+x0 = 0.0027; x1 = 0.0028; x2 = x0;
+iters = 25;
+
+% loop
+while (abs(f(x2)) >= 1e-6) && (iters > 0)
+
+    f0 = f(x0); f1 = f(x1);
+    x2 = x0 - f0 * (x1-x0)/(f1-f0);
+    if f(x2) * f0 < 0
+        x1 = x2;
+    else
+        x0 = x2;
+    end
+    
+    iters = iters - 1;
+
+end
+
+fprintf("The mass M is %f kg (v = %f m^3/kg)\n", 3/x2, x2);
+
+%% Problem 4
+fprintf("\nProblem 4\n");
+clear variables;
+% Secant method
+
+% formula
+R = 3; V = 30;
+f = @(h) (pi.*h.^2 .*(3*R - h) ./ 3) - V;
+
+% initial guesses
+h0 = 0; h1 = 3;
+h = h1-f(h1)*((h1-h0)/(f(h1) - f(h0))); % algorithm
+last_h = 1000000;
+
+iters = 25;
+
+fprintf("%-2s %-6s %-10s\n", "#", "height", "error");
+fprintf("%-2d %-6.4f %-10f%%\n", 1, h, 100);
+
+while (abs(last_h - h) >= 1e-6) && (iters > 0)
+
+    last_h = h;
+    h0 = h1;
+    h1 = h;
+    h = h1-f(h1)*((h1-h0)/(f(h1) - f(h0)));
+    iters = iters - 1;
+    fprintf("%-2d %-6.4f %-10f%%\n", 26 - iters, h, abs(last_h - h)*100);
+
+end
+
+%% Problem 5
+fprintf("\nProblem 5\n");
+clear variables;
+% Bisection method
+
+% function definition
+x = 5000; y0 = 1000; v = 275; g = 9.81; 
+f = @(theta) x.*tan(theta) - g*x^2./(2*v^2 .* (cos(theta).^2)) + y0 - 250; % the -250 s is because the target is 250 m above sea level
+
+% initial guesses
+a = 0.1; b = 0.2;
+c = (a + b)/2;
+
+if sign(f(a)) == sign(f(c))
+    a = c;
+elseif sign(f(b)) == sign(f(c))
+    b = c;
+else
+    fprintf("Error a, b, c = %f %f %f\n", a, b, c);
+end
+
+iters = 25; last_c = 1000000;
+while (abs(last_c - c) >= 1e-6) && (iters > 0)
+
+    last_c = c;
+    c = (a + b)/2;
+    
+    if sign(f(a)) == sign(f(c))
+        a = c;
+    elseif sign(f(b)) == sign(f(c))
+        b = c;
+    else
+        fprintf("Error a, b, c = %f %f %f\n", a, b, c);
+    end
+    
+    iters = iters - 1;
+
+end
+
+fprintf("Angle measure is %f radians or %f degrees.\n", c, c*180/pi);
+
+##### SOURCE END #####
+--></body></html>

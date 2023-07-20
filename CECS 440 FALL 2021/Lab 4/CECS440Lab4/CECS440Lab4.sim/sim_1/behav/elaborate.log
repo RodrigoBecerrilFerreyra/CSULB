@@ -1,0 +1,22 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 73e8a523aebf4c2da7ed36aad2377209 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU16bit_tb_behav xil_defaultlib.ALU16bit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavior of entity xil_defaultlib.and_gate [and_gate_default]
+Compiling architecture behavioral of entity xil_defaultlib.or_gate [or_gate_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX31 [mux31_default]
+Compiling architecture behavior of entity xil_defaultlib.ALU1bit [alu1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU16bit [alu16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu16bit_tb
+Built simulation snapshot ALU16bit_tb_behav

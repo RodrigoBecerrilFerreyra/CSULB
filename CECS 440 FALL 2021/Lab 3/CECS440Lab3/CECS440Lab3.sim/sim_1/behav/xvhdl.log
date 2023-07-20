@@ -1,0 +1,16 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/Lab 3 Files/or_world.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity or_word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.srcs/sources_1/new/and_word.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and_word
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.srcs/sources_1/new/onebit_2to1mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.srcs/sources_1/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity full_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.srcs/sim_1/new/and_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/Lab 3 Files/or_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/Lab 3 Files/1bit_2to1mux_Tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/oscar/Coding Projects/CSULB/CECS 440 FALL 2021/Lab 3/CECS440Lab3/CECS440Lab3.srcs/sim_1/new/full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity full_adder_tb

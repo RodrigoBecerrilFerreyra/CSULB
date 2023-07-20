@@ -1,0 +1,97 @@
+1.  Consider a swapping system in which memory consists of the following hole
+    sizes in memory order: 10MB, 4MB, 20MB, 18MB, 7MB, 9MB, 12MB, and 15MB.
+    Which hole is taken for successive segment requests of: 12MB, 10MB, 9MB for
+    first fit? Repeat the question for best fit, worst fit, and next fit.
+
+First fit:
+    The 12 MB segment goes in the 3rd hole, the 10 MB segment goes in the 1st
+    hole, and the 9 MB segment goes in the 4th hole.
+Best fit:
+    The 12 MB segment goes in the 7th hole, the 10 MB segment goes in the 1st
+    hole, and the 9 MB segment goes in the 6th hole.
+Worst fit:
+    The 12 MB segment goes in the 3rd hole, the 10 MB segment goes in the 4th
+    hole, and the 9 MB segment goes in the 8th hole.
+Next fit:
+    The 12 MB segment goes in the 3rd hole, the 10 MB segment goes in the 4th
+    hole, and the 9 MB segment goes in the 6th hole.
+
+2.  What is the difference between a physical address and a virtual address?
+
+A physical address is directly mapped to the hardware, while a virtual address
+    is an abstraction that must be converted to a physical address.
+
+3.  Using the page table of Fig. 3-9 of MOS4e, give the physical address
+    corresponding to each of the following virtual addresses: 20, 4100, 8300.
+
+Address 20 maps to 8212, 4100 maps to 4100, and 8300 maps to 108.
+
+4.  Copy on write is an interesting idea used on server systems.
+Does it make any sense on a smartphone? Why?
+
+Using copy-on-write on a smartphone does not bring any benefits. Copy-on-write
+    is helpful for multiprogramming systems where many people are using a system
+    at once, something that does not happen on a smartphone.
+
+5.  If FIFO page replacement is used with four page frames and eight pages,
+    how many page faults will occur with the reference string 0172327103
+    if the four frames are initially empty? Repeat this problem for LRU.
+
+FIFO:
+    At the beginning of the program, the first four page frames need to be
+    loaded in, so they will all generate page faults, so the frames will have
+    loaded 0, 1, 7, and 2, in that order. Next it will load 3 and evict 0
+    (the FIFO will look like this: 1723). Next it will use 2, which is loaded.
+    Next it will use 3, which is loaded. Next it will use 7, which is loaded.
+    Next it will use 1, which is already loaded. Next it will load 0 and evict
+    1 (7230). Lastly, it will use 3, which is already loaded. In total, there
+    are siz page faults.
+LRU:
+    At the beginning of the program, the first four page frames need to be
+    loaded in, so they will all generate page faults, so the frames will have
+    loaded 0, 1, 7, and 2, in that order. Next it will load 3 and evict 0
+    (the FIFO will look like this: 1723). Next it will use 2, which is already
+    loaded in (1732). Then it will use 7 which is loaded in (1327). Then it
+    will use 1 which is already loaded in (3271). Then it will load 0 and
+    evict 1 (3270). Lastly, it will use 3 (2703). In total, there are six
+    page faults.
+
+6.  In the WSClock algorithm of Fig. 3-20(c) on pg. 220 of MOS4e, the hand
+    points to a page with R=0. If tau(400), will this page be removed?
+    What about if tau(1000)?
+
+The page will be removed if it tau = 400. This is because the time noted is
+    1213, which is larger than the specified tau. This also applies to
+    tau = 1000; the page will be removed in both cases.
+
+7.  Virtual memory provides a mechanism for isolating one process from another.
+    What memory management difficulties would be involved in allowing two
+    operating systems to run concurrently? How might these difficulties
+    be addressed?
+
+Perhaps the different operating systems have different paging algorithms that
+    are incompatible with each other, and they will overwrite each others'
+    pages. Perhaps this can be remedied by disallowing one OS to overwrite
+    the other OS's pages.
+
+8.  When segmentation and paging are both being used, as in MULTICS, first the
+    segment descriptor must be looked up, then the page descriptor. Does the
+    TLB also work this way, with two levels of lookup?
+
+Yes, TLB uses two levels of lookup. First, it looks in a table, and if the
+    lookup is a "miss," then it looks for the page normally. A "soft miss"
+    describes the event where the table lookup is a miss but the page is loaded
+    in memory, while a "hard miss" describes the event where the page needs to
+    be loaded from disk.
+
+9.  A student in a compiler design course proposes to the professor a project
+    of writing a compiler that will produce a list of page references that can
+    be used to implement the optimal page replacement algorithm.
+    Is this possible? Why or why not? Is there anything that could be done to
+    improve paging efficiency at run time?
+
+The optimal paging algorithm is theoretically impossible to achieve in one run.
+    This is because the algorithm needs to know in advance every single page
+    that will be referenced, and it needs to know them in the correct order.
+    The only way this can be achieved (short of time travel) is to simulate the
+    program running the exact way twice. Paging can be improved via TLB tables.

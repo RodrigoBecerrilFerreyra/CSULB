@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Nov 17 23:24:18 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="f98092bee7d14ff29a3eac8931fdf1fa" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="5" type="JavaHandler"/>
+<property name="SimulationRun" value="4" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="APPLY, Apply" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 1, 10" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 106, 238" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 109, 467" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 109, 467, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 109, 480" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 109, 480, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 111, 365" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 111, 365, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 114, 313" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 114, 467" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 114, 467, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 118, 313" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 118, 313, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 121, 348" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 121, 348, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 123, 360" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 129, 445" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 131, 211" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 131, 211, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 131, 265" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 131, 360" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 134, 382" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 210" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 210, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 220" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 298" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 298, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 328" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 136, 328, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 137, 380" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 139, 312" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 141, 215" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 141, 265" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 144, 191" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 144, 328" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 146, 360" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 146, 360, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 148, 316" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 153, 25" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 154, 265" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 154, 400" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 156, 282" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 158, 160" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 145" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 162" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 25" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 278" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 282" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 159, 323" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 166, 102" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 166, 22" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 166, 290" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 169, 358" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 171, 233" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 173, 330" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 174, 208" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 174, 415" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 176, 210" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 176, 210, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 176, 285" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 176, 92" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 178, 95" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 179, 213" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 181, 208" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 181, 283" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 182, 285" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 184, 180" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 184, 330" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 186, 453" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 194, 270" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 196, 265" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 196, 265, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 203, 145" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 206, 122" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 216, 210" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 219, 65" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 221, 321" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 224, 162" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 225, 227" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 228, 83" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 229, 193" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 23, 146" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 230, 228" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 231, 295" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 239, 437" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 239, 490" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 241, 287" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 242, 438" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 245, 167" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 251, 305" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 251, 305, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 254, 432" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 26, 112" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 264, 368" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 266, 226" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 268, 228" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 269, 285" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 283, 235" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 284, 460" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 286, 161" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 286, 247" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 291, 245" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 296, 413" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 297, 385" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 297, 385, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 299, 330" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 300, 267" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 300, 267, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 306, 415" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 308, 259" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 308, 278" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 309, 248" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 309, 270" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 311, 181" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 314, 400" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 314, 400, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 316, 181" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 316, 203" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 318, 182" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 318, 230" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 319, 248" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 321, 227" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 321, 283" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 324, 283" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 326, 250" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 329, 352" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 329, 435" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 331, 215" value="2" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 331, 445" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 332, 450" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 337, 318" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 338, 248" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 343, 260" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 343, 300" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 344, 392" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 348, 195" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 353, 197" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 356, 346" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 357, 450" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 362, 460" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 371, 440" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 376, 310" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 376, 315" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 46, 115" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 464, 295" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 48, 28" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 53, 68" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 57, 212" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 68, 75" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 99, 297" value="1" type="GuiResourceData"/>
+<property name="Debounce_skeleton.v, 99, 457" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
+<property name="NEXT, Next " value="8" type="GuiResourceData"/>
+<property name="OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AbstractFileView_READ_ONLY, C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab Test 6/Lab Test 6.srcs/sim_1/new/debounce_tb.v" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, debounce_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 0, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, debounce (Debounce_skeleton.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, debounce_tb (debounce_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Simulation Settings], 10, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewProjectWizard_DO_NOT_SPECIFY_SOURCES_AT_THIS_TIME, Do not specify sources at this time, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Nexys A7-100T ; digilentinc.com ; D.0 ; xc7a100tcsg324-1 ; 324 ; 1.0 ; 135 ; 240 ; 126800 ; 0 ; 0 ; 210 ; 63400 ; 6 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0, 0, Nexys A7-100T, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Lab Test 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, Simulation, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, i[31:0] ;  ; Array, 4" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, i[31:0] ;  ; Array, 4, i[31:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, i[31:0] ;  ; Array, 4, i[31:0], 0, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state_next[2:0] ; 0 ; Array, 8, state_next[2:0], 0, true, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state_reg[2:0] ; 0 ; Array, 7, state_reg[2:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state_reg[2:0] ; 0 ; Array, 7, state_reg[2:0], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, debounce_tb ; debounce_tb ; Verilog Module, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, debounce_tb ; debounce_tb ; Verilog Module, 0, debounce_tb, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, debounce_tb ; debounce_tb ; Verilog Module, 0, debounce_tb, 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, glbl ; glbl ; Verilog Module, 1, glbl, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, Verilog Module, 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, debounce, 1, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, debounce, 1, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, uut, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, uut, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; debounce ; Verilog Module, 1, uut, 0, false, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="3" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="5" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="6" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="7" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="3" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 251" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 258" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 117, 223" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 139, 230" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 14, 235" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 142, 238" value="2" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 159, 184" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 161, 182" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 17, 233" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 19, 216" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 19, 268" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 201, 215" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 202, 207" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 202, 208" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 207, 223" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 209, 221" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 175" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 211, 223" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 22, 198" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 24, 218" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 304, 214" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 306, 210" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 32, 213" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 324, 271" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 396, 237" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 40, 237" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 42, 203" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 42, 268" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 44, 263" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 449, 244" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 479, 208" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 484, 183" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 487, 193" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 492, 183" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 508, 253" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 6, 248" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 61, 230" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 675, 173" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 676, 203" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 782, 191" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 786, 339" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 91, 172" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 97, 246" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state_next[2:0]], 6, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state_next[2:0]], 6, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 104, 455" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 106, 502" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 110, 63" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 111, 198" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 111, 198, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 124, 300" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 13, 368" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 133, 12" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 149, 468" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 159, 500" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 164, 435" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 180, 200" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 181, 60" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 186, 380" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 215, 145" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 215, 197" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 245, 203" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 253, 433" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 26, 415" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 383, 313" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 403, 80" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 41, 485" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 61, 503" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 66, 197" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 66, 402" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 66, 503" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 71, 445" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 73, 131" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 73, 131, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 74, 193" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 74, 193, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 84, 442" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 91, 13" value="2" type="GuiResourceData"/>
+<property name="debounce_tb.v, 91, 487" value="1" type="GuiResourceData"/>
+<property name="debounce_tb.v, 96, 505" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="88" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="84" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

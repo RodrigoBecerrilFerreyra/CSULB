@@ -1,0 +1,13 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1804a3ecb4764bb4b83369cfe40a3f39 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SevenSegmentDisplay_tf_behav xil_defaultlib.SevenSegmentDisplay_tf xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seven_segment
+Compiling module xil_defaultlib.SevenSegmentDisplay_tf
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SevenSegmentDisplay_tf_behav

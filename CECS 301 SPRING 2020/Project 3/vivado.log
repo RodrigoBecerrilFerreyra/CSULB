@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Mar 16 11:47:49 2020
+# Process ID: 3972
+# Current directory: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6580 C:\Users\oscar\Coding Projects\CSULB\CECS 301 SPRING 2020\Project 3\Project 3.xpr
+# Log file: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 3/vivado.log
+# Journal file: C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/oscar/Coding Projects/CSULB/CECS 301 SPRING 2020/Project 3/Project 3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 698.344 ; gain = 103.059
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 11:49:56 2020...

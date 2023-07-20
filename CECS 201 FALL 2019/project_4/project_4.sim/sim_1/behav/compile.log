@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_4/project_4.srcs/sources_1/imports/project_4_files/mux_4to1_4bit_case.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4to1_4bit_case
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_4/project_4.srcs/sources_1/imports/project_4_files/mux_4to1_4bit_case_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4to1_4bit_case_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

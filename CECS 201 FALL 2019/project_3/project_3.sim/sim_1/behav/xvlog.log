@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_3/project_3.srcs/sources_1/imports/delet this folder/X_Kmap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module X_Kmap
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_3/project_3.srcs/sources_1/imports/delet this folder/X_Kmap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module X_Kmap_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

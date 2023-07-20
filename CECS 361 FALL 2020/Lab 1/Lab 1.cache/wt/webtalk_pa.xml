@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Oct 29 18:55:04 2020">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="c496003c4ca040fc9e6e7826e28ceafd" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="3" type="JavaHandler"/>
+<property name="CloseProject" value="5" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="2" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="4" type="JavaHandler"/>
+<property name="SimulationRestart" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="14" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="ArrMult_4bit.v, 476, 163" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit.v, 79, 166" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 100, 98" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 100, 98, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 103, 150" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 108, 163" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 112, 421" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 120, 180" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 120, 383" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 135, 246" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 135, 246, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 137, 255" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 141, 211" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 141, 211, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 141, 221" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 141, 221, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 142, 278" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 142, 278, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 157, 345" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 165, 163" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 173, 413" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 178, 315" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 187, 385" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 188, 345" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 195, 207" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 195, 235" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 199, 413" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 200, 317" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 200, 343" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 210, 176" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 215, 145" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 217, 175" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 238, 160" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 238, 162" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 240, 281" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 240, 368" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 241, 160" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 241, 418" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 243, 160" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 245, 281" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 245, 327" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 245, 453" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 250, 347" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 250, 347, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 256, 183" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 259, 215" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 261, 197" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 261, 197, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 262, 358" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 265, 363" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 270, 327" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 28, 245" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 28, 275" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 283, 160" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 287, 280" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 290, 401" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 305, 421" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 315, 113" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 32, 280" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 320, 196" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 328, 345" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 330, 213" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 330, 215" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 331, 180" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 342, 193" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 343, 210" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 373, 250" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 411, 215" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 411, 215, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 419, 220" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 52, 311" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 523, 210" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 523, 210, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 578, 208" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 58, 280" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 603, 415" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 63, 246" value="1" type="GuiResourceData"/>
+<property name="ArrMult_4bit_tb.v, 95, 166" value="1" type="GuiResourceData"/>
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, ArrMult_4bit (ArrMult_4bit.v" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, ArrMult_4bit_tb (ArrMult_4bit_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, C:/Users/oscar/Coding Projects/CSULB/CECS 361 FALL 2020/Lab 1/Lab 1.xpr, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="6" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="6" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, clc, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, clear, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, cls, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="2" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="5" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 13, 130" value="2" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 209, 174" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 335, 234" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 65, 337" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 78, 253" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, Tcl Console_remove" value="3" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 104, 34" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 136, 37" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 136, 39" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 609, 69" value="1" type="GuiResourceData"/>
+<property name="mux2to1.v, 186, 182" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="73" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="69" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

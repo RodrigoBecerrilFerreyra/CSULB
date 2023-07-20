@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sources_1/new/pulse_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sources_1/new/fsm_w_pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_w_pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sources_1/new/fsm_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sources_1/new/fsm_no_pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_no_pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sim_1/new/fsm_w_pulse_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_w_pulse_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sim_1/new/fsm_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sim_1/new/pulse_generator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_generator_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.srcs/sim_1/new/fsm_no_pulse_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_no_pulse_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Coding Projects/CECS 201 FALL 2019/project_8/project_8.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

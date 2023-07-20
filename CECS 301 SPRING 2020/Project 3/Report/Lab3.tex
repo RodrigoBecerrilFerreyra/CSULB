@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+%\renewcommand{\c}[1]{\texttt{#1}}
+
+\begin{document}
+
+\begin{flushright}
+    \noindent
+    Rodrigo Becerril Ferreyra\\
+    CECS 301 Section 03\\
+    Lab 3\\
+    Due 12 March 2020
+\end{flushright}
+
+\section{Introduction} In this lab, we were tasked with creating
+a three-part circuit: the first part is a circuit that eliminates
+the mechanical chatter inherent to buttons and switches; the
+second part is a circuit that detects the positive edge of a
+signal; and the third part is a counter that feeds into the
+seven-segment display that we programmed last lab. The final
+behavior of this design is the following: the user pushes a
+button and the count on the seven-segment display increments
+by one.
+
+\section{Debounce Circuit} To achieve the desired effect of
+eliminating the mechanical chatter of a signal, the design
+called for shifting in the value of the signal in question
+every millisecond (timed using a clock counter/pulse generator)
+into a register that is ten bits wide. This will ensure that
+the signal is stable for ten milliseconds. Every D-flip-flop
+inside this register is then passed through a bitwise AND gate
+which is then the output of the positive-edge detector.
+
+\section{Positive Edge Detector} The positive-edge detector
+circuit (PED circuit) is used to output a one clock-wide pulse
+whenever the input signal experiences a rising edge. The
+input to the PED circuit is the signal in question. The circuit
+consists of two D-flip-flops, with the signal connected to the
+input of the first flop, and the output of the first flop
+connected to the input of the second flop. The PED circuit output
+is then calculated as follows:
+\begin{equation*}
+    \text{ped\_out} = Q_1 \cdot \overline{Q_2}
+\end{equation*}
+This ensures that \texttt{ped\_out} is only one clock wide
+and fires when the input is high.
+
+\section{Counter and Seven-Segment Display} The final part of
+this lab was to connect the output of the PED circuit to a
+counter. The counter is 32 bits wide (to match with the input
+of the seven-segment display). It is incremented once and only
+once every time the button is pushed thanks to the PED circuit.
+The output of the counter is given to the input of the
+seven-segment display.
+
+\end{document}
